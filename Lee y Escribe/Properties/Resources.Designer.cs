@@ -223,16 +223,6 @@ namespace Lee_y_Escribe.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Ima10 {
-            get {
-                object obj = ResourceManager.GetObject("Ima10", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Ima11 {
             get {
                 object obj = ResourceManager.GetObject("Ima11", resourceCulture);
@@ -246,6 +236,46 @@ namespace Lee_y_Escribe.Properties {
         internal static System.Drawing.Bitmap Ima12 {
             get {
                 object obj = ResourceManager.GetObject("Ima12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ima13 {
+            get {
+                object obj = ResourceManager.GetObject("Ima13", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ima14 {
+            get {
+                object obj = ResourceManager.GetObject("Ima14", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ima15 {
+            get {
+                object obj = ResourceManager.GetObject("Ima15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ima16 {
+            get {
+                object obj = ResourceManager.GetObject("Ima16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

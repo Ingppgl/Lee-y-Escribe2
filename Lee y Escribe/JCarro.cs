@@ -16,7 +16,8 @@ namespace Lee_y_Escribe
         List<PictureBox> ListaObtaculosAmarillo = new List<PictureBox>();
         Random RnTipoObstaculo = new Random();
         int Velocidad = 2;
-        int Animacion1 = 0;
+        //int Animacion1 = 0;
+        bool estado = false;
 
         public JCarro()
         {
@@ -26,8 +27,8 @@ namespace Lee_y_Escribe
         public void CrearObstaculo(List<PictureBox> ListaElementos, Form panelJuegoUno, int DistaciaUno, int DistanciaDos)
         {
             int NumeroCarro = 1;
-            int TipoObstaculo = RnTipoObstaculo.Next(1, 4);
-            int UbucacionObstaculo = RnTipoObstaculo.Next(1, 3);
+            int TipoObstaculo = RnTipoObstaculo.Next(1, 7);
+            int UbucacionObstaculo = RnTipoObstaculo.Next(1, 7);
             int DistanciaUbicacionObstaculo = (UbucacionObstaculo == 1) ? DistaciaUno : DistanciaDos;
 
             PictureBox pb = new PictureBox();
@@ -55,7 +56,7 @@ namespace Lee_y_Escribe
 
             if (ListaObtaculosAmarillo.Count > 0)
             {
-                if (ListaObtaculosAmarillo[(ListaObtaculosAmarillo.Count) - 1].Location.Y > 230)
+                if (ListaObtaculosAmarillo[(ListaObtaculosAmarillo.Count) - 1].Location.Y > 275)
                 {
                     CrearObstaculo(ListaObtaculosAmarillo, this, 10, 80);
                 }
@@ -68,7 +69,7 @@ namespace Lee_y_Escribe
                 {
                     if (ListaObtaculosAmarillo[i].Location.Y > 650)
                     {
-                        if (ListaObtaculosAmarillo[i].Tag.ToString() == "1_1")
+                        if (ListaObtaculosAmarillo[i].Tag.ToString() != "1_6")
                         {
                             ReiniciarJuego();
                         }
@@ -79,7 +80,7 @@ namespace Lee_y_Escribe
                     //sI HAY CHOQUE
                     if (ListaObtaculosAmarillo[i].Bounds.IntersectsWith(carro1.Bounds))
                     {
-                        if (ListaObtaculosAmarillo[i].Tag.ToString() == "1_1")
+                        if (ListaObtaculosAmarillo[i].Tag.ToString() != "1_6")
                         {
                             this.Controls.Remove(ListaObtaculosAmarillo[i]);
                             int TotalPuntos = Convert.ToInt32(lblPuntos.Text) + 5;
@@ -87,7 +88,7 @@ namespace Lee_y_Escribe
                             {
                                 Velocidad++;
                             }
-                            if (TotalPuntos % 100 == 0)
+                            if (TotalPuntos % 100 ==  0)
                             {
                                 Velocidad = 10;
                             }
@@ -106,7 +107,6 @@ namespace Lee_y_Escribe
                             ListaObtaculosAmarillo.Remove(ListaObtaculosAmarillo[i]);
                             ReiniciarJuego();
                         }
-
                     }
                 }
             }
@@ -123,12 +123,6 @@ namespace Lee_y_Escribe
             carro1.Location = new Point(CambioCarro, carro1.Location.Y);
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            carro1.Image = (Animacion1 == 0) ? Properties.Resources.Carr2 : Properties.Resources.Carro;
-            Animacion1 = (Animacion1 == 0) ? 0 : 0;
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
             Principal principal = new Principal();
@@ -138,9 +132,15 @@ namespace Lee_y_Escribe
 
         private void Inicio_Click(object sender, EventArgs e)
         {
-            CrearObstaculo(ListaObtaculosAmarillo, this, 10, 80);
+            estado = estado == true ? false : true;
+            Inicio.Text = Inicio.Text.Equals("Iniciar") ? "Pausa" : "Iniciar";
+            timer2.Enabled = estado;
+            if (estado)
+            {
+                if (ListaObtaculosAmarillo.Count == 0) { CrearObstaculo(ListaObtaculosAmarillo, this, 10, 80); }
+               
+            }           
         }
     }
     }
-   
-
+  

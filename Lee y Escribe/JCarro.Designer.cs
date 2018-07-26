@@ -34,8 +34,8 @@
             this.lblPuntos = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.Inicio = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.carro1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -45,7 +45,7 @@
             this.carro1.BackColor = System.Drawing.Color.Transparent;
             this.carro1.BackgroundImage = global::Lee_y_Escribe.Properties.Resources.Carr1;
             this.carro1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.carro1.Location = new System.Drawing.Point(7, 546);
+            this.carro1.Location = new System.Drawing.Point(7, 522);
             this.carro1.Name = "carro1";
             this.carro1.Size = new System.Drawing.Size(48, 103);
             this.carro1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -54,7 +54,6 @@
             // 
             // timer2
             // 
-            this.timer2.Enabled = true;
             this.timer2.Interval = 1;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
@@ -90,18 +89,6 @@
             this.panel2.Size = new System.Drawing.Size(200, 335);
             this.panel2.TabIndex = 3;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Berlin Sans FB", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(67, 198);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 26);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Atras";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // Inicio
             // 
             this.Inicio.AutoSize = true;
@@ -113,6 +100,18 @@
             this.Inicio.TabIndex = 3;
             this.Inicio.Text = "Iniciar";
             this.Inicio.Click += new System.EventHandler(this.Inicio_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Berlin Sans FB", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(67, 198);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 26);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Atras";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // JCarro
             // 

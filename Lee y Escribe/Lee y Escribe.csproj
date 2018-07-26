@@ -220,7 +220,7 @@
     <None Include="Resources\Carretera.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Ima12.png" />
+    <None Include="Resources\Ima16.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Calle.png" />
@@ -242,6 +242,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Ima10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ima13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ima14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ima15.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

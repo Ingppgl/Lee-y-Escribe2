@@ -121,8 +121,8 @@
   <data name="Im6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Im6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ima12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ima12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Ima16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ima16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Im3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Im3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,7 +178,16 @@
   <data name="aprende" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aprende.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ima10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Ima12" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ima10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ima13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ima13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ima14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ima14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ima15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ima15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
