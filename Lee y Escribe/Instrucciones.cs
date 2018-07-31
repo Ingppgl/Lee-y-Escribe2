@@ -83,7 +83,7 @@ namespace Lee_y_Escribe
                 PFlechaL.Visible = false;
                 PFlechaL1.Visible = false;                
             }
-            if (Time == 33)
+            if (Time == 28)
             {
                 Principal principal = new Principal();
                 this.Hide();
@@ -91,6 +91,18 @@ namespace Lee_y_Escribe
             }
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            voz.Pause();
+            Time = 33;
+            Principal principal = new Principal();
+            this.Hide();
+            principal.Visible = true;
+        }
+
+        private void Salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

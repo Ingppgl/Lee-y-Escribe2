@@ -29,7 +29,7 @@ namespace Lee_y_Escribe
             
                 voz.Rate = TVelocidad.Value;
                 voz.SelectVoiceByHints(VoiceGender.Female);
-               // voz.SetOutputToDefaultAudioDevice();
+                voz.SetOutputToDefaultAudioDevice();
                 voz.Speak(texto.ToString());
         }
 

@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Instrucciones));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.PAtras = new System.Windows.Forms.Button();
             this.PFlechaL1 = new System.Windows.Forms.PictureBox();
             this.TVelocidad = new System.Windows.Forms.TrackBar();
@@ -57,6 +58,7 @@
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.PAtras);
             this.panel2.Controls.Add(this.PFlechaL1);
             this.panel2.Controls.Add(this.TVelocidad);
@@ -68,6 +70,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(661, 544);
             this.panel2.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(573, 11);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Saltar Intro";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // PAtras
             // 
@@ -194,6 +208,7 @@
             this.Salir.Text = "   Salir";
             this.Salir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Salir.UseVisualStyleBackColor = true;
+            this.Salir.Click += new System.EventHandler(this.Salir_Click);
             // 
             // LVocales
             // 
@@ -273,5 +288,6 @@
         private System.Windows.Forms.Timer Tiempo;
         private System.Windows.Forms.PictureBox PFlechaL1;
         private System.Windows.Forms.Button PAtras;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -119,8 +119,12 @@ namespace Lee_y_Escribe
 
         private void JCarro_KeyPress(object sender, KeyPressEventArgs e)
         {
-            int CambioCarro = (carro1.Location.X == 80) ? 10 : 80;
-            carro1.Location = new Point(CambioCarro, carro1.Location.Y);
+            //Movimiento del carro izquierda derecha, o no movimiento con el juego en pausa
+            if (timer2.Enabled == true)
+            {
+                int CambioCarro = (carro1.Location.X == 80) ? 10 : 80;
+                carro1.Location = new Point(CambioCarro, carro1.Location.Y);
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)

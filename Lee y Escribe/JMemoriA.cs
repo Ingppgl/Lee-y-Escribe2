@@ -16,6 +16,7 @@ namespace Lee_y_Escribe
         int Columnas_Filas = 4;
         int Movimientos = 0;
         int CantidadCartasVol = 0;
+        int Contador = 8;
         List<string> CartasEnumeradas;
         List<string> CartasRevueltas;
         ArrayList CartaSeleccionada;
@@ -42,7 +43,12 @@ namespace Lee_y_Escribe
             CartasEnumeradas = new List<string>();
             CartasRevueltas = new List<string>();
             CartaSeleccionada = new ArrayList();
-            for (int i = 0; i < 8; i++)
+            
+
+            
+           
+
+            for (int i = 0; i < Contador; i++)
             {
                 CartasEnumeradas.Add(i.ToString());
                 CartasEnumeradas.Add(i.ToString());
@@ -98,7 +104,6 @@ namespace Lee_y_Escribe
                     lblRecord.Text = Convert.ToString(Movimientos);
                     var CartasSeleccionadaUsuario = (PictureBox)sender;
 
-
                     CartaActual = Convert.ToInt32(CartasRevueltas[Convert.ToInt32(CartasSeleccionadaUsuario.Name) - 1]);
                     CartasSeleccionadaUsuario.Image = RecuperarImagen(CartaActual);
                     CartaSeleccionada.Add(CartasSeleccionadaUsuario);
@@ -136,10 +141,8 @@ namespace Lee_y_Escribe
             {
 
                 throw;
-            }
-           
+            }    
         }
-
         public Bitmap RecuperarImagen(int NumeroImagen)
         {
             Bitmap TmpImg = new Bitmap(200, 100);
@@ -179,7 +182,31 @@ namespace Lee_y_Escribe
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {         
+            iniciarJuego();
+        }
+
+        private void RFacil_CheckedChanged(object sender, EventArgs e)
         {
+            Contador = 8;
+            Columnas_Filas = 4;
+            CantidadCartasVol = 7;
+            iniciarJuego();
+        }
+
+        private void RMedio_CheckedChanged(object sender, EventArgs e)
+        {
+            Contador = 16;
+            Columnas_Filas = 6;
+            CantidadCartasVol = 17;
+            iniciarJuego();
+        }
+
+        private void RDificil_CheckedChanged(object sender, EventArgs e)
+        {
+            Contador = 32;
+            Columnas_Filas = 8;
+            CantidadCartasVol = 63;
             iniciarJuego();
         }
     }

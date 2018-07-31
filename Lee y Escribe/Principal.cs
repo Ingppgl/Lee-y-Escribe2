@@ -47,7 +47,7 @@ namespace Lee_y_Escribe
             {
                 try
                 {
-                    tarea.Start("Elige que deseas hacer"); 
+                    tarea.Start("Elige una actividad"); 
                 }
                 catch (Exception)
                 {
@@ -66,7 +66,7 @@ namespace Lee_y_Escribe
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             JCarro jcarro = new JCarro();
-            this.Hide();
+            this.Close();
             jcarro.Visible = true;
         }
 
@@ -74,7 +74,7 @@ namespace Lee_y_Escribe
         {
             JMemoriA memoria = new JMemoriA();
             voz.Pause();
-            this.Hide();
+            this.Close();
             memoria.Visible = true;
         }
     }
