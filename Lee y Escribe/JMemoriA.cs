@@ -99,15 +99,12 @@ namespace Lee_y_Escribe
             {
                 if (CartaSeleccionada.Count < 2)
                 {
-
                     Movimientos++;
                     lblRecord.Text = Convert.ToString(Movimientos);
                     var CartasSeleccionadaUsuario = (PictureBox)sender;
-
                     CartaActual = Convert.ToInt32(CartasRevueltas[Convert.ToInt32(CartasSeleccionadaUsuario.Name) - 1]);
                     CartasSeleccionadaUsuario.Image = RecuperarImagen(CartaActual);
                     CartaSeleccionada.Add(CartasSeleccionadaUsuario);
-
                     if (CartaSeleccionada.Count == 2)
                     {
                         Temp1 = (PictureBox)CartaSeleccionada[0];
@@ -115,31 +112,45 @@ namespace Lee_y_Escribe
 
                         int Carta1 = Convert.ToInt32(CartasRevueltas[Convert.ToInt32(Temp1.Name) - 1]);
                         int Carta2 = Convert.ToInt32(CartasRevueltas[Convert.ToInt32(Temp2.Name) - 1]);
-                        
+
                         if (Carta1 != Carta2)
                         {
-                            
                             timer1.Enabled = true;
                             timer1.Start();
                         }
                         else
                         {
                             CantidadCartasVol++;
-                            if (CantidadCartasVol > 7)
+                            if (RFacil.Checked == true)
                             {
-                                MessageBox.Show("                         Muy Bien!!!                        ");
+                                if (CantidadCartasVol > 7)
+                                {
+                                    MessageBox.Show("                         Muy Bien!!!                        ");
+                                }
+                            }
+                            if (RMedio.Checked == true)
+                            {
+                                if (CantidadCartasVol > 17)
+                                {
+                                    MessageBox.Show("                         Muy Bien!!!                        ");
+                                }
+                            }
+                            if (RDificil.Checked == true)
+                            {
+                                if (CantidadCartasVol > 31)
+                                {
+                                    MessageBox.Show("                         Muy Bien!!!                        ");
+                                }
                             }
                             Temp1.Enabled = false;
                             Temp2.Enabled = false;
                             CartaSeleccionada.Clear();
                         }
                     }
-
                 }
             }
             catch (Exception )
             {
-
                 throw;
             }    
         }
@@ -149,22 +160,19 @@ namespace Lee_y_Escribe
             switch (NumeroImagen)
             {
                 case 0:
-                    TmpImg = Properties.Resources.Agua;
+                    TmpImg = Properties.Resources.Im5;
                     break;
                 default:
-                    TmpImg = (Bitmap)Properties.Resources.ResourceManager.GetObject("Im" + NumeroImagen);
+                    TmpImg = (Bitmap)Properties.Resources.ResourceManager.GetObject("Imag" + NumeroImagen);
                     break;
             }
-
             return TmpImg;
         }
-
         private void timer1_Tick_1(object sender, EventArgs e)
         {
             int TiempoVirarCarta = 1;
              if (TiempoVirarCarta == 1)
-            {
-                
+            {              
                 Temp1.Image = Properties.Resources.Libros;
                 Temp2.Image = Properties.Resources.Libros;
                 CartaSeleccionada.Clear();

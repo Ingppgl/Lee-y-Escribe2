@@ -253,6 +253,117 @@
   <ItemGroup>
     <None Include="Resources\Ima15.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag10.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imag3.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
