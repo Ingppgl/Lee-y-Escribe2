@@ -102,6 +102,7 @@ namespace Lee_y_Escribe
                     Movimientos++;
                     lblRecord.Text = Convert.ToString(Movimientos);
                     var CartasSeleccionadaUsuario = (PictureBox)sender;
+                    //MessageBox.Show(Convert.ToString(Convert.ToInt32(CartasSeleccionadaUsuario.Name) - 1));
                     CartaActual = Convert.ToInt32(CartasRevueltas[Convert.ToInt32(CartasSeleccionadaUsuario.Name) - 1]);
                     CartasSeleccionadaUsuario.Image = RecuperarImagen(CartaActual);
                     CartaSeleccionada.Add(CartasSeleccionadaUsuario);
@@ -139,7 +140,7 @@ namespace Lee_y_Escribe
                             {
                                 if (CantidadCartasVol > 31)
                                 {
-                                    MessageBox.Show("                         Muy Bien!!!                        ");
+                                    MessageBox.Show("                         Eres Muy Bueno!!!                        ");
                                 }
                             }
                             Temp1.Enabled = false;
@@ -149,9 +150,9 @@ namespace Lee_y_Escribe
                     }
                 }
             }
-            catch (Exception )
+            catch (Exception ex)
             {
-                throw;
+                MessageBox.Show(ex.ToString());
             }    
         }
         public Bitmap RecuperarImagen(int NumeroImagen)
@@ -190,7 +191,7 @@ namespace Lee_y_Escribe
         }
 
         private void label3_Click(object sender, EventArgs e)
-        {         
+        {     
             iniciarJuego();
         }
 
@@ -204,7 +205,7 @@ namespace Lee_y_Escribe
 
         private void RMedio_CheckedChanged(object sender, EventArgs e)
         {
-            Contador = 16;
+            Contador = 18;
             Columnas_Filas = 6;
             CantidadCartasVol = 17;
             iniciarJuego();

@@ -15,7 +15,7 @@ namespace Lee_y_Escribe
 
         List<PictureBox> ListaObtaculosAmarillo = new List<PictureBox>();
         Random RnTipoObstaculo = new Random();
-        int Velocidad = 2;
+        int Velocidad = 2; int TotalPuntos = 0;
         //int Animacion1 = 0;
         bool estado = false;
 
@@ -61,7 +61,7 @@ namespace Lee_y_Escribe
                     CrearObstaculo(ListaObtaculosAmarillo, this, 10, 80);
                 }
             }
-            // Validar con quien hay una colicion 
+            // Validar si las vocales chocan con el carro o se pasan directo del carro 
 
             if (ListaObtaculosAmarillo.Count > 0)
             {
@@ -70,7 +70,12 @@ namespace Lee_y_Escribe
                     if (ListaObtaculosAmarillo[i].Location.Y > 650)
                     {
                         if (ListaObtaculosAmarillo[i].Tag.ToString() != "1_6")
-                        {
+                        {   //Si las vocales se van, que me muestre la puntuacion y reinicie el juego                       
+                            estado = estado == true ? false : true;
+                            Inicio.Text = Inicio.Text.Equals("Iniciar") ? "Pausa" : "Iniciar";                         
+                            timer2.Enabled = estado;
+                            MessageBox.Show("  Dejaste ir Una Vocal" + System.Environment.NewLine 
+                                + "Tu Puntuaión = " + TotalPuntos);
                             ReiniciarJuego();
                         }
                         this.Controls.Remove(ListaObtaculosAmarillo[i]);
@@ -83,7 +88,7 @@ namespace Lee_y_Escribe
                         if (ListaObtaculosAmarillo[i].Tag.ToString() != "1_6")
                         {
                             this.Controls.Remove(ListaObtaculosAmarillo[i]);
-                            int TotalPuntos = Convert.ToInt32(lblPuntos.Text) + 5;
+                            TotalPuntos = Convert.ToInt32(lblPuntos.Text) + 5;
                             if (TotalPuntos % 3 == 0)
                             {
                                 Velocidad++;
@@ -103,9 +108,18 @@ namespace Lee_y_Escribe
                         }
                         else
                         {
+
+                            
+                            estado = estado == true ? false : true;
+                            Inicio.Text = Inicio.Text.Equals("Iniciar") ? "Pausa" : "Iniciar";
+                            
+                            timer2.Enabled = estado;
+                            MessageBox.Show("   Chocaste el Obstáculo" + System.Environment.NewLine
+                                + "Tu Puntuaión = " + TotalPuntos);
+                            ReiniciarJuego();
                             this.Controls.Remove(ListaObtaculosAmarillo[i]);
                             ListaObtaculosAmarillo.Remove(ListaObtaculosAmarillo[i]);
-                            ReiniciarJuego();
+                            
                         }
                     }
                 }
