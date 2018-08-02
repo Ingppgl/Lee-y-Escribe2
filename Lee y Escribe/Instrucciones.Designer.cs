@@ -75,9 +75,10 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(573, 11);
+            this.button1.Image = global::Lee_y_Escribe.Properties.Resources.Im1;
+            this.button1.Location = new System.Drawing.Point(487, 11);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(161, 156);
             this.button1.TabIndex = 11;
             this.button1.Text = "Saltar Intro";
             this.button1.UseVisualStyleBackColor = false;
