@@ -138,6 +138,7 @@ namespace Lee_y_Escribe
             {
                 int CambioCarro = (carro1.Location.X == 80) ? 10 : 80;
                 carro1.Location = new Point(CambioCarro, carro1.Location.Y);
+               
             }
         }
 
@@ -159,6 +160,8 @@ namespace Lee_y_Escribe
                
             }           
         }
+
+        
     }
     }
   

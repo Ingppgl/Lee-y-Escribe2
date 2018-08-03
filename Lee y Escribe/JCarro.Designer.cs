@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JCarro));
             this.carro1 = new System.Windows.Forms.PictureBox();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.lblPuntos = new System.Windows.Forms.Label();
@@ -36,6 +37,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.Inicio = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.carro1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -113,6 +115,15 @@
             this.label1.Text = "Atras";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Location = new System.Drawing.Point(137, 160);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 158);
+            this.panel3.TabIndex = 4;
+            // 
             // JCarro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -120,6 +131,7 @@
             this.BackgroundImage = global::Lee_y_Escribe.Properties.Resources.Calle1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(339, 661);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.carro1);
@@ -145,5 +157,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Inicio;
+        private System.Windows.Forms.Panel panel3;
     }
 }

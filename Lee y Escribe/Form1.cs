@@ -25,8 +25,7 @@ namespace Lee_y_Escribe
         }
 
         private void Narrador(object texto)
-        {
-            
+        {           
                 voz.Rate = TVelocidad.Value;
                 voz.SelectVoiceByHints(VoiceGender.Female);
                 voz.SetOutputToDefaultAudioDevice();
@@ -68,10 +67,9 @@ namespace Lee_y_Escribe
                     + System.Environment.NewLine
                     + "Para ir a la pantalla de lecciones presiona aquí,");
                 }
-                catch (Exception)
+                catch (Exception es)
                 {
-
-                    throw;
+                    MessageBox.Show("Vaz Muy Rapido");                  
                 }
             }
             
