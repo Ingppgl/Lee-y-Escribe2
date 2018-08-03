@@ -113,6 +113,18 @@
     <Compile Include="JMemoriA.Designer.cs">
       <DependentUpon>JMemoriA.cs</DependentUpon>
     </Compile>
+    <Compile Include="LetraM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LetraM.designer.cs">
+      <DependentUpon>LetraM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LetraP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LetraP.designer.cs">
+      <DependentUpon>LetraP.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +138,12 @@
     </Compile>
     <Compile Include="PruebaDePaneles.designer.cs">
       <DependentUpon>PruebaDePaneles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PruebaDePanelesCons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PruebaDePanelesCons.designer.cs">
+      <DependentUpon>PruebaDePanelesCons.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FMamá.resx">
       <DependentUpon>FMamá.cs</DependentUpon>
@@ -160,6 +178,12 @@
     <EmbeddedResource Include="JMemoriA.resx">
       <DependentUpon>JMemoriA.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LetraM.resx">
+      <DependentUpon>LetraM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LetraP.resx">
+      <DependentUpon>LetraP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,6 +199,9 @@
     </Compile>
     <EmbeddedResource Include="PruebaDePaneles.resx">
       <DependentUpon>PruebaDePaneles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PruebaDePanelesCons.resx">
+      <DependentUpon>PruebaDePanelesCons.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">

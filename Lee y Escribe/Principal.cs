@@ -97,10 +97,10 @@ namespace Lee_y_Escribe
 
         private void LConsM_Click(object sender, EventArgs e)
         {
-          //PruebaDePanelesCons pruebapanelesC = new PruebaDePanelesCons();
+            PruebaDePanelesCons pruebapanelesC = new PruebaDePanelesCons();
             voz.Pause();
             this.Hide();
-           // pruebapanelesC.Visible = true;
+            pruebapanelesC.Visible = true;
         }
 
         private void JCar_Click(object sender, EventArgs e)
