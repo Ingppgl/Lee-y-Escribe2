@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LetraP));
             this.PVocaleE = new System.Windows.Forms.Panel();
-            this.Velocidad = new System.Windows.Forms.TrackBar();
-            this.Tiempo1 = new System.Windows.Forms.Timer(this.components);
             this.SiguienteP = new System.Windows.Forms.Button();
             this.ConsPu = new System.Windows.Forms.PictureBox();
             this.ConsPo = new System.Windows.Forms.PictureBox();
@@ -41,19 +39,21 @@
             this.ConsPa = new System.Windows.Forms.PictureBox();
             this.BatrasP = new System.Windows.Forms.Button();
             this.BRepP = new System.Windows.Forms.Button();
+            this.Velocidad = new System.Windows.Forms.TrackBar();
             this.LtraPA = new System.Windows.Forms.PictureBox();
             this.LtraPE = new System.Windows.Forms.PictureBox();
             this.LtraPI = new System.Windows.Forms.PictureBox();
             this.LtraPO = new System.Windows.Forms.PictureBox();
             this.LtraPU = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.Tiempo1 = new System.Windows.Forms.Timer(this.components);
             this.PVocaleE.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsPu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsPo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsPi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsPe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsPa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LtraPA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LtraPE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LtraPI)).BeginInit();
@@ -88,21 +88,6 @@
             this.PVocaleE.Size = new System.Drawing.Size(805, 540);
             this.PVocaleE.TabIndex = 12;
             // 
-            // Velocidad
-            // 
-            this.Velocidad.Location = new System.Drawing.Point(12, 483);
-            this.Velocidad.Minimum = -10;
-            this.Velocidad.Name = "Velocidad";
-            this.Velocidad.Size = new System.Drawing.Size(171, 45);
-            this.Velocidad.TabIndex = 10;
-            this.Velocidad.Value = -2;
-            // 
-            // Tiempo1
-            // 
-            this.Tiempo1.Enabled = true;
-            this.Tiempo1.Interval = 1000;
-            this.Tiempo1.Tick += new System.EventHandler(this.Tiempo1_Tick);
-            // 
             // SiguienteP
             // 
             this.SiguienteP.BackColor = System.Drawing.Color.SteelBlue;
@@ -117,7 +102,6 @@
             this.SiguienteP.Text = "   Siguiente";
             this.SiguienteP.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.SiguienteP.UseVisualStyleBackColor = false;
-            this.SiguienteP.AutoSizeChanged += new System.EventHandler(this.SiguienteP_Click);
             this.SiguienteP.Click += new System.EventHandler(this.SiguienteP_Click);
             // 
             // ConsPu
@@ -164,7 +148,7 @@
             // 
             this.ConsPa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ConsPa.BackgroundImage")));
             this.ConsPa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ConsPa.Location = new System.Drawing.Point(74, 29);
+            this.ConsPa.Location = new System.Drawing.Point(64, 29);
             this.ConsPa.Name = "ConsPa";
             this.ConsPa.Size = new System.Drawing.Size(103, 99);
             this.ConsPa.TabIndex = 14;
@@ -184,7 +168,6 @@
             this.BatrasP.Text = "    Atras";
             this.BatrasP.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BatrasP.UseVisualStyleBackColor = false;
-            this.BatrasP.AutoSizeChanged += new System.EventHandler(this.BatrasP_Click);
             this.BatrasP.Click += new System.EventHandler(this.BatrasP_Click);
             // 
             // BRepP
@@ -200,8 +183,16 @@
             this.BRepP.Text = "   Repetir";
             this.BRepP.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BRepP.UseVisualStyleBackColor = true;
-            this.BRepP.AutoSizeChanged += new System.EventHandler(this.BRepP_Click);
             this.BRepP.Click += new System.EventHandler(this.BRepP_Click);
+            // 
+            // Velocidad
+            // 
+            this.Velocidad.Location = new System.Drawing.Point(12, 483);
+            this.Velocidad.Minimum = -10;
+            this.Velocidad.Name = "Velocidad";
+            this.Velocidad.Size = new System.Drawing.Size(171, 45);
+            this.Velocidad.TabIndex = 10;
+            this.Velocidad.Value = -2;
             // 
             // LtraPA
             // 
@@ -219,7 +210,7 @@
             // 
             this.LtraPE.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LtraPE.BackgroundImage")));
             this.LtraPE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LtraPE.Location = new System.Drawing.Point(156, 245);
+            this.LtraPE.Location = new System.Drawing.Point(162, 245);
             this.LtraPE.Name = "LtraPE";
             this.LtraPE.Size = new System.Drawing.Size(103, 99);
             this.LtraPE.TabIndex = 20;
@@ -231,7 +222,7 @@
             this.LtraPI.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LtraPI.BackgroundImage")));
             this.LtraPI.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.LtraPI.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.LtraPI.Location = new System.Drawing.Point(619, 17);
+            this.LtraPI.Location = new System.Drawing.Point(614, 29);
             this.LtraPI.Name = "LtraPI";
             this.LtraPI.Size = new System.Drawing.Size(103, 99);
             this.LtraPI.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -270,6 +261,12 @@
             this.pictureBox14.TabIndex = 0;
             this.pictureBox14.TabStop = false;
             // 
+            // Tiempo1
+            // 
+            this.Tiempo1.Enabled = true;
+            this.Tiempo1.Interval = 1000;
+            this.Tiempo1.Tick += new System.EventHandler(this.Tiempo1_Tick);
+            // 
             // LetraP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,12 +277,12 @@
             this.Text = "LetraP";
             this.PVocaleE.ResumeLayout(false);
             this.PVocaleE.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsPu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsPo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsPi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsPe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsPa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LtraPA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LtraPE)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LtraPI)).EndInit();

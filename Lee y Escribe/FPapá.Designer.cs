@@ -28,215 +28,262 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FPapá));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BAtrasA = new System.Windows.Forms.Button();
+            this.Mapa = new System.Windows.Forms.Button();
+            this.Puma = new System.Windows.Forms.Button();
+            this.Pipa = new System.Windows.Forms.Button();
+            this.Papá = new System.Windows.Forms.Button();
+            this.BRepPapá = new System.Windows.Forms.Button();
+            this.BAtrasLeccionP = new System.Windows.Forms.Button();
+            this.Pu = new System.Windows.Forms.Button();
+            this.Po = new System.Windows.Forms.Button();
+            this.Pi = new System.Windows.Forms.Button();
+            this.Pe = new System.Windows.Forms.Button();
+            this.Pa = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Velocidad = new System.Windows.Forms.TrackBar();
+            this.Tiempo1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel1.Controls.Add(this.BAtrasA);
+            this.panel1.Controls.Add(this.Mapa);
+            this.panel1.Controls.Add(this.Puma);
+            this.panel1.Controls.Add(this.Pipa);
+            this.panel1.Controls.Add(this.Papá);
+            this.panel1.Controls.Add(this.BRepPapá);
+            this.panel1.Controls.Add(this.BAtrasLeccionP);
+            this.panel1.Controls.Add(this.Pu);
+            this.panel1.Controls.Add(this.Po);
+            this.panel1.Controls.Add(this.Pi);
+            this.panel1.Controls.Add(this.Pe);
+            this.panel1.Controls.Add(this.Pa);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.trackBar1);
-            this.panel1.Controls.Add(this.pictureBox10);
-            this.panel1.Controls.Add(this.pictureBox9);
-            this.panel1.Controls.Add(this.pictureBox8);
-            this.panel1.Controls.Add(this.pictureBox7);
-            this.panel1.Controls.Add(this.pictureBox6);
-            this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(-3, -2);
+            this.panel1.Controls.Add(this.Velocidad);
+            this.panel1.Location = new System.Drawing.Point(-2, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(795, 504);
-            this.panel1.TabIndex = 3;
+            this.panel1.Size = new System.Drawing.Size(808, 545);
+            this.panel1.TabIndex = 4;
+            // 
+            // BAtrasA
+            // 
+            this.BAtrasA.BackColor = System.Drawing.Color.SteelBlue;
+            this.BAtrasA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BAtrasA.Font = new System.Drawing.Font("Berlin Sans FB Demi", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BAtrasA.ForeColor = System.Drawing.Color.Navy;
+            this.BAtrasA.Location = new System.Drawing.Point(390, 14);
+            this.BAtrasA.Name = "BAtrasA";
+            this.BAtrasA.Size = new System.Drawing.Size(216, 97);
+            this.BAtrasA.TabIndex = 14;
+            this.BAtrasA.Text = " papá";
+            this.BAtrasA.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BAtrasA.UseVisualStyleBackColor = false;
+            // 
+            // Mapa
+            // 
+            this.Mapa.BackColor = System.Drawing.Color.SteelBlue;
+            this.Mapa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Mapa.Font = new System.Drawing.Font("Berlin Sans FB Demi", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Mapa.ForeColor = System.Drawing.Color.Black;
+            this.Mapa.Image = ((System.Drawing.Image)(resources.GetObject("Mapa.Image")));
+            this.Mapa.Location = new System.Drawing.Point(546, 325);
+            this.Mapa.Name = "Mapa";
+            this.Mapa.Size = new System.Drawing.Size(195, 71);
+            this.Mapa.TabIndex = 28;
+            this.Mapa.Text = "mapa";
+            this.Mapa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Mapa.UseVisualStyleBackColor = false;
+            // 
+            // Puma
+            // 
+            this.Puma.BackColor = System.Drawing.Color.SteelBlue;
+            this.Puma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Puma.Font = new System.Drawing.Font("Berlin Sans FB Demi", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Puma.ForeColor = System.Drawing.Color.Black;
+            this.Puma.Image = ((System.Drawing.Image)(resources.GetObject("Puma.Image")));
+            this.Puma.Location = new System.Drawing.Point(286, 321);
+            this.Puma.Name = "Puma";
+            this.Puma.Size = new System.Drawing.Size(187, 71);
+            this.Puma.TabIndex = 27;
+            this.Puma.Text = "puma";
+            this.Puma.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Puma.UseVisualStyleBackColor = false;
+            // 
+            // Pipa
+            // 
+            this.Pipa.BackColor = System.Drawing.Color.SteelBlue;
+            this.Pipa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Pipa.Font = new System.Drawing.Font("Berlin Sans FB Demi", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pipa.ForeColor = System.Drawing.Color.Black;
+            this.Pipa.Image = ((System.Drawing.Image)(resources.GetObject("Pipa.Image")));
+            this.Pipa.Location = new System.Drawing.Point(546, 227);
+            this.Pipa.Name = "Pipa";
+            this.Pipa.Size = new System.Drawing.Size(195, 71);
+            this.Pipa.TabIndex = 26;
+            this.Pipa.Text = "pipa";
+            this.Pipa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Pipa.UseVisualStyleBackColor = false;
+            // 
+            // Papá
+            // 
+            this.Papá.BackColor = System.Drawing.Color.SteelBlue;
+            this.Papá.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Papá.Font = new System.Drawing.Font("Berlin Sans FB Demi", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Papá.ForeColor = System.Drawing.Color.Black;
+            this.Papá.Image = ((System.Drawing.Image)(resources.GetObject("Papá.Image")));
+            this.Papá.Location = new System.Drawing.Point(286, 227);
+            this.Papá.Name = "Papá";
+            this.Papá.Size = new System.Drawing.Size(187, 71);
+            this.Papá.TabIndex = 25;
+            this.Papá.Text = "papá";
+            this.Papá.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Papá.UseVisualStyleBackColor = false;
+            // 
+            // BRepPapá
+            // 
+            this.BRepPapá.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BRepPapá.Font = new System.Drawing.Font("Berlin Sans FB Demi", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BRepPapá.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.BRepPapá.Image = ((System.Drawing.Image)(resources.GetObject("BRepPapá.Image")));
+            this.BRepPapá.Location = new System.Drawing.Point(556, 448);
+            this.BRepPapá.Name = "BRepPapá";
+            this.BRepPapá.Size = new System.Drawing.Size(185, 70);
+            this.BRepPapá.TabIndex = 24;
+            this.BRepPapá.Text = "   Repetir";
+            this.BRepPapá.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BRepPapá.UseVisualStyleBackColor = true;
+            this.BRepPapá.Click += new System.EventHandler(this.BRepPapá_Click);
+            // 
+            // BAtrasLeccionP
+            // 
+            this.BAtrasLeccionP.BackColor = System.Drawing.Color.SteelBlue;
+            this.BAtrasLeccionP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BAtrasLeccionP.Font = new System.Drawing.Font("Berlin Sans FB Demi", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BAtrasLeccionP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.BAtrasLeccionP.Image = ((System.Drawing.Image)(resources.GetObject("BAtrasLeccionP.Image")));
+            this.BAtrasLeccionP.Location = new System.Drawing.Point(269, 448);
+            this.BAtrasLeccionP.Name = "BAtrasLeccionP";
+            this.BAtrasLeccionP.Size = new System.Drawing.Size(176, 70);
+            this.BAtrasLeccionP.TabIndex = 23;
+            this.BAtrasLeccionP.Text = "   Atras";
+            this.BAtrasLeccionP.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BAtrasLeccionP.UseVisualStyleBackColor = false;
+            this.BAtrasLeccionP.Click += new System.EventHandler(this.BAtrasLeccionP_Click);
+            // 
+            // Pu
+            // 
+            this.Pu.BackColor = System.Drawing.Color.SteelBlue;
+            this.Pu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Pu.Font = new System.Drawing.Font("Berlin Sans FB Demi", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pu.ForeColor = System.Drawing.Color.Black;
+            this.Pu.Location = new System.Drawing.Point(625, 42);
+            this.Pu.Name = "Pu";
+            this.Pu.Size = new System.Drawing.Size(108, 69);
+            this.Pu.TabIndex = 21;
+            this.Pu.Text = " pu";
+            this.Pu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Pu.UseVisualStyleBackColor = false;
+            // 
+            // Po
+            // 
+            this.Po.BackColor = System.Drawing.Color.SteelBlue;
+            this.Po.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Po.Font = new System.Drawing.Font("Berlin Sans FB Demi", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Po.ForeColor = System.Drawing.Color.Black;
+            this.Po.Location = new System.Drawing.Point(561, 127);
+            this.Po.Name = "Po";
+            this.Po.Size = new System.Drawing.Size(107, 76);
+            this.Po.TabIndex = 20;
+            this.Po.Text = " po";
+            this.Po.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Po.UseVisualStyleBackColor = false;
+            // 
+            // Pi
+            // 
+            this.Pi.BackColor = System.Drawing.Color.SteelBlue;
+            this.Pi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Pi.Font = new System.Drawing.Font("Berlin Sans FB Demi", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pi.ForeColor = System.Drawing.Color.Black;
+            this.Pi.Location = new System.Drawing.Point(441, 127);
+            this.Pi.Name = "Pi";
+            this.Pi.Size = new System.Drawing.Size(103, 76);
+            this.Pi.TabIndex = 19;
+            this.Pi.Text = " pi";
+            this.Pi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Pi.UseVisualStyleBackColor = false;
+            // 
+            // Pe
+            // 
+            this.Pe.BackColor = System.Drawing.Color.SteelBlue;
+            this.Pe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Pe.Font = new System.Drawing.Font("Berlin Sans FB Demi", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pe.ForeColor = System.Drawing.Color.Black;
+            this.Pe.Location = new System.Drawing.Point(314, 127);
+            this.Pe.Name = "Pe";
+            this.Pe.Size = new System.Drawing.Size(107, 76);
+            this.Pe.TabIndex = 18;
+            this.Pe.Text = " pe";
+            this.Pe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Pe.UseVisualStyleBackColor = false;
+            // 
+            // Pa
+            // 
+            this.Pa.BackColor = System.Drawing.Color.SteelBlue;
+            this.Pa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Pa.Font = new System.Drawing.Font("Berlin Sans FB Demi", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pa.ForeColor = System.Drawing.Color.Black;
+            this.Pa.Location = new System.Drawing.Point(269, 42);
+            this.Pa.Name = "Pa";
+            this.Pa.Size = new System.Drawing.Size(106, 69);
+            this.Pa.TabIndex = 16;
+            this.Pa.Text = " pa";
+            this.Pa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Pa.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel2.BackColor = System.Drawing.Color.SteelBlue;
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(244, 504);
+            this.panel2.Size = new System.Drawing.Size(244, 545);
             this.panel2.TabIndex = 15;
             // 
-            // trackBar1
+            // Velocidad
             // 
-            this.trackBar1.Location = new System.Drawing.Point(250, 456);
-            this.trackBar1.Minimum = -10;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(171, 45);
-            this.trackBar1.TabIndex = 14;
-            this.trackBar1.Value = -2;
+            this.Velocidad.Location = new System.Drawing.Point(269, 485);
+            this.Velocidad.Minimum = -10;
+            this.Velocidad.Name = "Velocidad";
+            this.Velocidad.Size = new System.Drawing.Size(171, 45);
+            this.Velocidad.TabIndex = 14;
+            this.Velocidad.Value = -2;
             // 
-            // pictureBox10
+            // Tiempo1
             // 
-            this.pictureBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.pictureBox10.Location = new System.Drawing.Point(269, 344);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(171, 65);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 11;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.pictureBox9.Location = new System.Drawing.Point(551, 343);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(171, 66);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 10;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.pictureBox8.Location = new System.Drawing.Point(269, 226);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(171, 65);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 9;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.pictureBox7.Location = new System.Drawing.Point(551, 226);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(171, 65);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 8;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.pictureBox6.Location = new System.Drawing.Point(678, 117);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(82, 57);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 7;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.pictureBox5.Location = new System.Drawing.Point(580, 117);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(82, 57);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 6;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.pictureBox4.Location = new System.Drawing.Point(480, 117);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(82, 57);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 5;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.pictureBox3.Location = new System.Drawing.Point(381, 117);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(82, 57);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.pictureBox2.Location = new System.Drawing.Point(281, 117);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(82, 57);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.pictureBox1.Location = new System.Drawing.Point(411, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(209, 95);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.Tiempo1.Enabled = true;
+            this.Tiempo1.Interval = 1000;
+            this.Tiempo1.Tick += new System.EventHandler(this.Tiempo1_Tick);
             // 
             // FPapá
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(789, 501);
+            this.ClientSize = new System.Drawing.Size(805, 543);
             this.Controls.Add(this.panel1);
             this.Name = "FPapá";
             this.Text = "FPapá";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -244,17 +291,20 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button BAtrasA;
+        private System.Windows.Forms.Button Mapa;
+        private System.Windows.Forms.Button Puma;
+        private System.Windows.Forms.Button Pipa;
+        private System.Windows.Forms.Button Papá;
+        private System.Windows.Forms.Button BRepPapá;
+        private System.Windows.Forms.Button BAtrasLeccionP;
+        private System.Windows.Forms.Button Pu;
+        private System.Windows.Forms.Button Po;
+        private System.Windows.Forms.Button Pi;
+        private System.Windows.Forms.Button Pe;
+        private System.Windows.Forms.Button Pa;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TrackBar trackBar1;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TrackBar Velocidad;
+        private System.Windows.Forms.Timer Tiempo1;
     }
 }

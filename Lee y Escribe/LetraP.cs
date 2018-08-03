@@ -43,7 +43,74 @@ namespace Lee_y_Escribe
         }
         private void Tiempo1_Tick(object sender, EventArgs e)
         {
+            Time1 += 1;
+            if (Time1 == 1)
+            {
+                Thread tarea = new Thread(new ParameterizedThreadStart(Narrador));
+                tarea.Start("Esta es la pe, no es un vocal, "
+                        + System.Environment.NewLine
+                        + "esta se llama consonante,"
+                        + System.Environment.NewLine
+                        + "y para escribirla parece como dos vocales unidas, y se llama pe, "
+                        + System.Environment.NewLine
+                        + "la letra pe al igual que las demas consonantes al juntarlas con las vocales forman silabas, "
+                        + System.Environment.NewLine
+                        + "entonces aprendamos como suena la letra pe unida con las vocales, "
+                        + System.Environment.NewLine
+                        + "primero la pe y luego la vocal a suena pa"
+                        + System.Environment.NewLine
+                        + "primero la pe y luego la vocal e suena pe"
+                        + System.Environment.NewLine
+                        + "primero la pe y luego la vocal i suena pI"
+                        + System.Environment.NewLine
+                        + "primero la pe y luego la vocal o suena po"
+                         + System.Environment.NewLine
+                        + "primero la pe y luego la vocal u suena pu");
+            }
+            if (Time1 == 29)
+            {
+                ConsPa.Visible = true;
+            }
 
+            if (Time1 == 30)
+            {
+                LtraPA.Visible = true;
+            }
+
+            if (Time1 == 32)
+            {
+                ConsPe.Visible = true;
+            }
+            if (Time1 == 33)
+            {
+                LtraPE.Visible = true;
+            }
+            if (Time1 == 35)
+            {
+                ConsPi.Visible = true;
+            }
+            if (Time1 == 36)
+            {
+                LtraPI.Visible = true;
+            }
+            if (Time1 == 38)
+            {
+                ConsPo.Visible = true;
+            }
+            if (Time1 == 39)
+            {
+                LtraPO.Visible = true;
+            }
+            if (Time1 == 41)
+            {
+                ConsPu.Visible = true;
+            }
+            if (Time1 == 42)
+            {
+                LtraPU.Visible = true;
+                BRepP.Enabled = true;
+                Tiempo1.Stop();
+            }
         }
 
         private void BatrasP_Click(object sender, EventArgs e)
