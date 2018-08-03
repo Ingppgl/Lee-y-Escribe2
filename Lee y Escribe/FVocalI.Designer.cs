@@ -77,6 +77,7 @@
             this.BatrasI.Text = "    Atras";
             this.BatrasI.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BatrasI.UseVisualStyleBackColor = false;
+            this.BatrasI.Click += new System.EventHandler(this.BatrasI_Click);
             // 
             // Velocidad
             // 
@@ -97,6 +98,7 @@
             this.PIglesia.Size = new System.Drawing.Size(211, 186);
             this.PIglesia.TabIndex = 14;
             this.PIglesia.TabStop = false;
+            this.PIglesia.Visible = false;
             // 
             // PIsla
             // 
@@ -134,6 +136,7 @@
             this.BRepI.Text = "   Repetir";
             this.BRepI.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BRepI.UseVisualStyleBackColor = false;
+            this.BRepI.Click += new System.EventHandler(this.BRepI_Click);
             // 
             // pictureBox1
             // 
@@ -152,6 +155,7 @@
             // 
             this.Tiempo1.Enabled = true;
             this.Tiempo1.Interval = 1000;
+            this.Tiempo1.Tick += new System.EventHandler(this.Tiempo1_Tick);
             // 
             // FVocalI
             // 

@@ -31,14 +31,14 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FVocalE));
             this.PVocaleE = new System.Windows.Forms.Panel();
+            this.Velocidad = new System.Windows.Forms.TrackBar();
+            this.Tiempo1 = new System.Windows.Forms.Timer(this.components);
             this.BatrasE = new System.Windows.Forms.Button();
             this.BRepE = new System.Windows.Forms.Button();
-            this.Velocidad = new System.Windows.Forms.TrackBar();
             this.PEspada = new System.Windows.Forms.PictureBox();
             this.PEstrella = new System.Windows.Forms.PictureBox();
             this.PElefante = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.Tiempo1 = new System.Windows.Forms.Timer(this.components);
             this.PVocaleE.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PEspada)).BeginInit();
@@ -65,6 +65,21 @@
             this.PVocaleE.Size = new System.Drawing.Size(805, 540);
             this.PVocaleE.TabIndex = 9;
             // 
+            // Velocidad
+            // 
+            this.Velocidad.Location = new System.Drawing.Point(12, 483);
+            this.Velocidad.Minimum = -10;
+            this.Velocidad.Name = "Velocidad";
+            this.Velocidad.Size = new System.Drawing.Size(171, 45);
+            this.Velocidad.TabIndex = 10;
+            this.Velocidad.Value = -2;
+            // 
+            // Tiempo1
+            // 
+            this.Tiempo1.Enabled = true;
+            this.Tiempo1.Interval = 1000;
+            this.Tiempo1.Tick += new System.EventHandler(this.Tiempo1_Tick);
+            // 
             // BatrasE
             // 
             this.BatrasE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -79,6 +94,8 @@
             this.BatrasE.Text = "    Atras";
             this.BatrasE.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BatrasE.UseVisualStyleBackColor = false;
+            this.BatrasE.AutoSizeChanged += new System.EventHandler(this.BatrasE_Click);
+            this.BatrasE.Click += new System.EventHandler(this.BatrasE_Click);
             // 
             // BRepE
             // 
@@ -93,15 +110,8 @@
             this.BRepE.Text = "   Repetir";
             this.BRepE.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BRepE.UseVisualStyleBackColor = true;
-            // 
-            // Velocidad
-            // 
-            this.Velocidad.Location = new System.Drawing.Point(12, 483);
-            this.Velocidad.Minimum = -10;
-            this.Velocidad.Name = "Velocidad";
-            this.Velocidad.Size = new System.Drawing.Size(171, 45);
-            this.Velocidad.TabIndex = 10;
-            this.Velocidad.Value = -2;
+            this.BRepE.AutoSizeChanged += new System.EventHandler(this.BRepE_Click);
+            this.BRepE.Click += new System.EventHandler(this.BRepE_Click);
             // 
             // PEspada
             // 
@@ -145,11 +155,6 @@
             this.pictureBox14.Size = new System.Drawing.Size(345, 320);
             this.pictureBox14.TabIndex = 0;
             this.pictureBox14.TabStop = false;
-            // 
-            // Tiempo1
-            // 
-            this.Tiempo1.Enabled = true;
-            this.Tiempo1.Interval = 1000;
             // 
             // FVocalE
             // 

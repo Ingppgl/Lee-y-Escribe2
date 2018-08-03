@@ -31,14 +31,14 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FVocalU));
             this.PVocalU = new System.Windows.Forms.Panel();
-            this.BatrasU = new System.Windows.Forms.Button();
             this.Velocidad = new System.Windows.Forms.TrackBar();
+            this.Tiempo1 = new System.Windows.Forms.Timer(this.components);
+            this.BatrasU = new System.Windows.Forms.Button();
             this.PUlises = new System.Windows.Forms.PictureBox();
             this.PUva = new System.Windows.Forms.PictureBox();
             this.PUña = new System.Windows.Forms.PictureBox();
             this.BRepU = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Tiempo1 = new System.Windows.Forms.Timer(this.components);
             this.PVocalU.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PUlises)).BeginInit();
@@ -63,6 +63,21 @@
             this.PVocalU.Size = new System.Drawing.Size(805, 540);
             this.PVocalU.TabIndex = 9;
             // 
+            // Velocidad
+            // 
+            this.Velocidad.Location = new System.Drawing.Point(12, 453);
+            this.Velocidad.Minimum = -10;
+            this.Velocidad.Name = "Velocidad";
+            this.Velocidad.Size = new System.Drawing.Size(171, 45);
+            this.Velocidad.TabIndex = 9;
+            this.Velocidad.Value = -2;
+            // 
+            // Tiempo1
+            // 
+            this.Tiempo1.Enabled = true;
+            this.Tiempo1.Interval = 1000;
+            this.Tiempo1.Tick += new System.EventHandler(this.Tiempo1_Tick);
+            // 
             // BatrasU
             // 
             this.BatrasU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -77,15 +92,7 @@
             this.BatrasU.Text = "    Atras";
             this.BatrasU.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BatrasU.UseVisualStyleBackColor = false;
-            // 
-            // Velocidad
-            // 
-            this.Velocidad.Location = new System.Drawing.Point(12, 453);
-            this.Velocidad.Minimum = -10;
-            this.Velocidad.Name = "Velocidad";
-            this.Velocidad.Size = new System.Drawing.Size(171, 45);
-            this.Velocidad.TabIndex = 9;
-            this.Velocidad.Value = -2;
+            this.BatrasU.Click += new System.EventHandler(this.BatrasU_Click_1);
             // 
             // PUlises
             // 
@@ -130,6 +137,7 @@
             this.BRepU.Text = "   Repetir";
             this.BRepU.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BRepU.UseVisualStyleBackColor = true;
+            this.BRepU.Click += new System.EventHandler(this.BRepU_Click_1);
             // 
             // pictureBox1
             // 
@@ -142,11 +150,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(345, 320);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // Tiempo1
-            // 
-            this.Tiempo1.Enabled = true;
-            this.Tiempo1.Interval = 1000;
             // 
             // FVocalU
             // 
