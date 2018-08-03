@@ -20,6 +20,8 @@ namespace Lee_y_Escribe
         {
             InitializeComponent();
             TVelocidad.Visible = false;
+            LVocal.Visible = false;
+            LConsM.Visible = false;
             BRepetir.Enabled = false;
             Jmen.Visible = false;
             Jcar.Visible = false;
@@ -76,6 +78,36 @@ namespace Lee_y_Escribe
             voz.Pause();
             this.Close();
             memoria.Visible = true;
+        }
+
+        private void LVocales_Click(object sender, EventArgs e)
+        {
+            voz.Pause();
+            LVocal.Visible = true;
+            LConsM.Visible = true;
+        }
+
+        private void LVocal_Click(object sender, EventArgs e)
+        {
+            PruebaDePaneles pruebapaneles = new PruebaDePaneles();
+            voz.Pause();
+            this.Hide();
+            pruebapaneles.Visible = true;
+        }
+
+        private void LConsM_Click(object sender, EventArgs e)
+        {
+          //PruebaDePanelesCons pruebapanelesC = new PruebaDePanelesCons();
+            voz.Pause();
+            this.Hide();
+           // pruebapanelesC.Visible = true;
+        }
+
+        private void JCar_Click(object sender, EventArgs e)
+        {
+            JCarro jcarro = new JCarro();
+            this.Close();
+            jcarro.Visible = true;
         }
     }
 }
