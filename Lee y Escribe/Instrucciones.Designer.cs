@@ -48,6 +48,7 @@
             this.BJuegos = new System.Windows.Forms.Button();
             this.Salir = new System.Windows.Forms.Button();
             this.Inicio = new System.Windows.Forms.Button();
+            this.Tiempo3 = new System.Windows.Forms.Timer(this.components);
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PFlechaL1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TVelocidad)).BeginInit();
@@ -174,7 +175,6 @@
             // 
             // Tiempo
             // 
-            this.Tiempo.Enabled = true;
             this.Tiempo.Interval = 1000;
             this.Tiempo.Tick += new System.EventHandler(this.Tiempo_Tick);
             // 
@@ -342,6 +342,12 @@
             this.Inicio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Inicio.UseVisualStyleBackColor = true;
             // 
+            // Tiempo3
+            // 
+            this.Tiempo3.Enabled = true;
+            this.Tiempo3.Interval = 1000;
+            this.Tiempo3.Tick += new System.EventHandler(this.Tiempo3_Tick);
+            // 
             // Instrucciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -384,5 +390,6 @@
         private System.Windows.Forms.Button BJuegos;
         private System.Windows.Forms.Button Salir;
         private System.Windows.Forms.Button Inicio;
+        private System.Windows.Forms.Timer Tiempo3;
     }
 }

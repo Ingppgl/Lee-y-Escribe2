@@ -57,7 +57,7 @@
             this.PVocalO.Controls.Add(this.POjo);
             this.PVocalO.Controls.Add(this.POlla);
             this.PVocalO.Controls.Add(this.pictureBox1);
-            this.PVocalO.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PVocalO.Cursor = System.Windows.Forms.Cursors.Default;
             this.PVocalO.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PVocalO.Location = new System.Drawing.Point(0, 0);
             this.PVocalO.Name = "PVocalO";
@@ -67,6 +67,7 @@
             // BTRAS
             // 
             this.BTRAS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BTRAS.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTRAS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTRAS.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTRAS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -84,6 +85,7 @@
             // BRepO
             // 
             this.BRepO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BRepO.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BRepO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BRepO.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BRepO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -113,7 +115,7 @@
             // 
             this.POso.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("POso.BackgroundImage")));
             this.POso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.POso.Cursor = System.Windows.Forms.Cursors.Default;
+            this.POso.Cursor = System.Windows.Forms.Cursors.Hand;
             this.POso.Location = new System.Drawing.Point(346, 379);
             this.POso.Name = "POso";
             this.POso.Size = new System.Drawing.Size(121, 149);
@@ -121,12 +123,14 @@
             this.POso.TabStop = false;
             this.POso.Visible = false;
             this.POso.Click += new System.EventHandler(this.POso_Click);
+            this.POso.MouseLeave += new System.EventHandler(this.POso_MouseLeave);
+            this.POso.MouseHover += new System.EventHandler(this.POso_MouseHover);
             // 
             // POjo
             // 
             this.POjo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("POjo.BackgroundImage")));
             this.POjo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.POjo.Cursor = System.Windows.Forms.Cursors.Default;
+            this.POjo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.POjo.Location = new System.Drawing.Point(556, 39);
             this.POjo.Name = "POjo";
             this.POjo.Size = new System.Drawing.Size(170, 134);
@@ -134,12 +138,14 @@
             this.POjo.TabStop = false;
             this.POjo.Visible = false;
             this.POjo.Click += new System.EventHandler(this.POjo_Click);
+            this.POjo.MouseLeave += new System.EventHandler(this.POjo_MouseLeave);
+            this.POjo.MouseHover += new System.EventHandler(this.POjo_MouseHover);
             // 
             // POlla
             // 
             this.POlla.BackgroundImage = global::Lee_y_Escribe.Properties.Resources.Imag32;
             this.POlla.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.POlla.Cursor = System.Windows.Forms.Cursors.Default;
+            this.POlla.Cursor = System.Windows.Forms.Cursors.Hand;
             this.POlla.Location = new System.Drawing.Point(86, 30);
             this.POlla.Name = "POlla";
             this.POlla.Size = new System.Drawing.Size(165, 237);
@@ -154,7 +160,7 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Location = new System.Drawing.Point(245, 82);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(345, 320);

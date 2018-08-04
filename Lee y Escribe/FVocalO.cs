@@ -119,5 +119,26 @@ namespace Lee_y_Escribe
         {
             POlla.Size = new Size(165, 237);
         }
+
+        private void POjo_MouseHover(object sender, EventArgs e)
+        {
+            POjo.Size = new Size(180, 144);
+        }
+
+        private void POjo_MouseLeave(object sender, EventArgs e)
+        {
+            POjo.Size = new Size(170, 134);
+
+        }
+        private void POso_MouseLeave(object sender, EventArgs e)
+        {
+            POso.Size = new Size(170, 134);
+
+        }
+        private void POso_MouseHover(object sender, EventArgs e)
+        {
+            POso.Size = new Size(180, 144);
+
+        }
     }
 }
