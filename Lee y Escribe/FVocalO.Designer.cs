@@ -147,6 +147,8 @@
             this.POlla.TabStop = false;
             this.POlla.Visible = false;
             this.POlla.Click += new System.EventHandler(this.POlla_Click);
+            this.POlla.MouseLeave += new System.EventHandler(this.POlla_MouseLeave);
+            this.POlla.MouseHover += new System.EventHandler(this.POlla_MouseHover);
             // 
             // pictureBox1
             // 

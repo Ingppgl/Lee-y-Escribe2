@@ -109,5 +109,15 @@ namespace Lee_y_Escribe
             Thread tarea = new Thread(new ParameterizedThreadStart(Narrador));
             tarea.Start("O");
         }
+
+        private void POlla_MouseHover(object sender, EventArgs e)
+        {
+            POlla.Size = new Size(175, 247);
+        }
+
+        private void POlla_MouseLeave(object sender, EventArgs e)
+        {
+            POlla.Size = new Size(165, 237);
+        }
     }
 }
