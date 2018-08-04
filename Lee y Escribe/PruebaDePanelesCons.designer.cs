@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PruebaDePanelesCons));
             this.PanelConsonantes = new System.Windows.Forms.Panel();
-            this.Velocidad = new System.Windows.Forms.TrackBar();
             this.BatrasPanelCon = new System.Windows.Forms.Button();
             this.BRepPanelC = new System.Windows.Forms.Button();
             this.ConsoZ = new System.Windows.Forms.PictureBox();
@@ -55,10 +54,10 @@
             this.ConsoF = new System.Windows.Forms.PictureBox();
             this.ConsoD = new System.Windows.Forms.PictureBox();
             this.ConsC = new System.Windows.Forms.PictureBox();
+            this.Velocidad = new System.Windows.Forms.TrackBar();
             this.ConsB = new System.Windows.Forms.PictureBox();
             this.Tiempo1 = new System.Windows.Forms.Timer(this.components);
             this.PanelConsonantes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoZ)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoQ)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoT)).BeginInit();
@@ -80,6 +79,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ConsoF)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsB)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,15 +116,6 @@
             this.PanelConsonantes.Name = "PanelConsonantes";
             this.PanelConsonantes.Size = new System.Drawing.Size(805, 540);
             this.PanelConsonantes.TabIndex = 7;
-            // 
-            // Velocidad
-            // 
-            this.Velocidad.Location = new System.Drawing.Point(28, 495);
-            this.Velocidad.Minimum = -10;
-            this.Velocidad.Name = "Velocidad";
-            this.Velocidad.Size = new System.Drawing.Size(171, 45);
-            this.Velocidad.TabIndex = 8;
-            this.Velocidad.Value = -2;
             // 
             // BatrasPanelCon
             // 
@@ -388,6 +379,15 @@
             this.ConsC.TabStop = false;
             this.ConsC.Click += new System.EventHandler(this.ConsC_Click);
             // 
+            // Velocidad
+            // 
+            this.Velocidad.Location = new System.Drawing.Point(28, 495);
+            this.Velocidad.Minimum = -10;
+            this.Velocidad.Name = "Velocidad";
+            this.Velocidad.Size = new System.Drawing.Size(171, 45);
+            this.Velocidad.TabIndex = 8;
+            this.Velocidad.Value = -2;
+            // 
             // ConsB
             // 
             this.ConsB.Image = ((System.Drawing.Image)(resources.GetObject("ConsB.Image")));
@@ -410,12 +410,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(805, 540);
+            this.ControlBox = false;
             this.Controls.Add(this.PanelConsonantes);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "PruebaDePanelesCons";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PruebaDePanelesCons";
             this.PanelConsonantes.ResumeLayout(false);
             this.PanelConsonantes.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoZ)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoQ)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoT)).EndInit();
@@ -437,6 +441,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ConsoF)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsB)).EndInit();
             this.ResumeLayout(false);
 

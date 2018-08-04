@@ -272,9 +272,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(805, 540);
+            this.ControlBox = false;
             this.Controls.Add(this.PVocaleE);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "LetraP";
-            this.Text = "LetraP";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Sílabas con P";
             this.PVocaleE.ResumeLayout(false);
             this.PVocaleE.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConsPu)).EndInit();

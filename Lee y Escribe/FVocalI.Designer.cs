@@ -169,10 +169,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(805, 540);
+            this.ControlBox = false;
             this.Controls.Add(this.PVocalI);
             this.Name = "FVocalI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FVocalI";
+            this.Text = "Vocal I";
             this.PVocalI.ResumeLayout(false);
             this.PVocalI.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).EndInit();

@@ -19,27 +19,14 @@ namespace Lee_y_Escribe
         public LetraM()
         {
             InitializeComponent();
-            Velocidad.Visible = false;
-            ConsMa.Visible = false;
-            LtraA.Visible = false;
-            ConsMe.Visible = false;
-            LtraE.Visible = false;
-            ConsMi.Visible = false;
-            LtraI.Visible = false;
-            ConsMo.Visible = false;
-            LtraO.Visible = false;
-            ConsMu.Visible = false;
-            LtraU.Visible = false;
             BRepM.Enabled = false;
         }
         private void Narrador(object texto)
         {
-
             voz.SelectVoiceByHints(VoiceGender.Female);
             voz.Rate = Velocidad.Value;
             voz.SetOutputToDefaultAudioDevice();
             voz.Speak(texto.ToString());
-
         }
         private void Tiempo1_Tick(object sender, EventArgs e)
         {
@@ -47,77 +34,77 @@ namespace Lee_y_Escribe
             if (Time1 == 1)
             {
                 Thread tarea = new Thread(new ParameterizedThreadStart(Narrador));
-                tarea.Start("Esta es la m, no es un vocal, "
+                tarea.Start("Esta es la letra m, no es una vocal, esta forma parte del grupo llamadas consonantes "
                         + System.Environment.NewLine
-                        + "esta se llama, consonante,"
+                        + "y para escribirla parece como dos vocales, u, juntas con las patitas hacia abajo y se llama, eme, "
                         + System.Environment.NewLine
-                        + "y para escribirla parece como dos vocales unidas, y se llama eme, "
+                        + "la letra eme al igual que las demas consonantes al combinarla con las vocales forman silabas, "
                         + System.Environment.NewLine
-                        + "la letra eme al igual que las demas consonantes al juntarlas con las vocales forman silabas, "
+                        + "entonces aprendamos como suena la letra eme seguida de una vocal, osea, primero la eme y luego la combinamos con cada una de las vocales "
                         + System.Environment.NewLine
-                        + "entonces aprendamos como suena la letra eme unida con las vocales, "
+                        + "la eme combinada con la, a, suena Ma"
                         + System.Environment.NewLine
-                        + "primero la eme y luego la vocal a suena Ma"
+                        + "Con la e, suena Me"
                         + System.Environment.NewLine
-                        + "primero la eme y luego la vocal e suena Me"
+                        + "Con la i, suena MI"
                         + System.Environment.NewLine
-                        + "primero la eme y luego la vocal i suena MI"
-                        + System.Environment.NewLine
-                        + "primero la eme y luego la vocal o suena Mo"
+                        + "Con la o, suena Mo"
                          + System.Environment.NewLine
-                        + "primero la eme y luego la vocal u suena Mu");
+                        + "Y con la u, suena Mu, recuerda elsonido de cada combinación de la consonante eme con las vocales, ma, me, mi, mo, mu, esto te ayudará en la siguiente lección ");
             }
-            if (Time1 == 29)
+            if (Time1 == 37)
             {
                 ConsMa.Visible = true;
             }
 
-            if (Time1 == 30)
+            if (Time1 == 38)
             {
                 LtraA.Visible = true;
             }
 
-            if (Time1 == 32)
+            if (Time1 == 39)
             {
                 ConsMe.Visible = true;
             }
-            if (Time1 == 33)
+            if (Time1 == 40)
             {
                 LtraE.Visible = true;
             }
-            if (Time1 == 35)
+            if (Time1 == 41)
             {
                 ConsMi.Visible = true;
             }
-            if (Time1 == 36)
+            if (Time1 == 42)
             {
                 LtraI.Visible = true;
             }
-            if (Time1 == 38)
+            if (Time1 == 43)
             {
                 ConsMo.Visible = true;
             }
-            if (Time1 == 39)
+            if (Time1 == 44)
             {
                 LtraO.Visible = true;
             }
-            if (Time1 == 41)
+            if (Time1 == 46)
             {
                 ConsMu.Visible = true;
             }
-            if (Time1 == 42)
+            if (Time1 == 47)
             {
                 LtraU.Visible = true;
+            }
+            if (Time1 == 53)
+            {
                 BRepM.Enabled = true;
+                SiguienteM.Enabled = true;
                 Tiempo1.Stop();
             }
         }
         private void BatrasM_Click(object sender, EventArgs e)
         {
-            PruebaDePanelesCons consonante = new PruebaDePanelesCons();
             voz.Pause();
-            this.Hide();
-            consonante.Visible = true;
+            this.Close();
         }
 
         private void BRepM_Click_1(object sender, EventArgs e)
@@ -132,40 +119,15 @@ namespace Lee_y_Escribe
             LtraO.Visible = false;
             ConsMu.Visible = false;
             LtraU.Visible = false;
-            Time1 = 1;
+            Time1 = 0;
             Tiempo1.Start();
-            Thread tarea = new Thread(new ParameterizedThreadStart(Narrador));
-            tarea.Start("Esta es la m, no es un vocal, "
-                        + System.Environment.NewLine
-                        + "esta se llama, consonante,"
-                        + System.Environment.NewLine
-                        + "y para escribirla parece como dos vocales unidas, y se llama eme, "
-                        + System.Environment.NewLine
-                        + "la letra eme al igual que las demas consonantes al juntarlas con las vocales forman silabas, "
-                        + System.Environment.NewLine
-                        + "entonces aprendamos como suena la letra eme unida con las vocales, "
-                        + System.Environment.NewLine
-                       + "primero la eme y luego la vocal a suena Ma"
-                        + System.Environment.NewLine
-                        + "primero la eme y luego la vocal e suena Me"
-                        + System.Environment.NewLine
-                        + "primero la eme y luego la vocal i suena MI"
-                        + System.Environment.NewLine
-                        + "primero la eme y luego la vocal o suena Mo"
-                         + System.Environment.NewLine
-                        + "primero la eme y luego la vocal u suena Mu");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             FMamá leccionM = new FMamá();
             voz.Pause();
-            this.Hide();
             leccionM.Visible = true;
         }
-    
-
-
-
     }
 }

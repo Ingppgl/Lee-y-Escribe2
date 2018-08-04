@@ -131,6 +131,7 @@
             this.BackgroundImage = global::Lee_y_Escribe.Properties.Resources.Calle1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(339, 661);
+            this.ControlBox = false;
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -139,8 +140,9 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "JCarro";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "JCarro";
+            this.Text = "Vocales en la Calle";
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.JCarro_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.carro1)).EndInit();
             this.panel2.ResumeLayout(false);

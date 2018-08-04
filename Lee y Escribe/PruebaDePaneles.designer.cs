@@ -184,10 +184,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(805, 540);
+            this.ControlBox = false;
             this.Controls.Add(this.PanelVocales);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "PruebaDePaneles";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PruebaDePaneles";
+            this.Text = "Aprende a Leer y Escribir con Tatty";
             this.PanelVocales.ResumeLayout(false);
             this.PanelVocales.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).EndInit();

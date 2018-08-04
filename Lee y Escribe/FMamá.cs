@@ -19,17 +19,6 @@ namespace Lee_y_Escribe
         public FMamá()
         {
             InitializeComponent();
-            Velocidad.Visible = false;
-            MA.Visible = false;
-            ME.Visible = false;
-            MI.Visible = false;
-            MO.Visible = false;
-            MU.Visible = false;
-            Mami.Visible = false;
-            Mamá.Visible = false;
-            Ama.Visible = false;
-            Mima.Visible = false;
-            BRepMama.Enabled = false;
         }
         private void Narrador(object texto)
         {
@@ -108,7 +97,7 @@ namespace Lee_y_Escribe
             {
                 Ama.Visible = true;
             }
-            if (Time1 == 29)
+            if (Time1 == 30)
             {
                 Mima.Visible = true;
                 BRepMama.Enabled = true;
@@ -118,9 +107,8 @@ namespace Lee_y_Escribe
         }
         private void BAtrasLeccionM_Click(object sender, EventArgs e)
         {
-            Principal vocales = new Principal();
-            this.Hide();
-            vocales.Visible = true;
+            voz.Pause();
+            this.Close();
         }
 
         private void BRepMama_Click(object sender, EventArgs e)
@@ -135,41 +123,10 @@ namespace Lee_y_Escribe
             Mamá.Visible = false;
             Ama.Visible = false;
             Mima.Visible = false;
-            Time1 = 1;
+
+            BRepMama.Enabled = false;
+            Time1 = 0;
             Tiempo1.Start();
-            Thread tarea = new Thread(new ParameterizedThreadStart(Narrador));
-            tarea.Start("Ya hemos aprendido como suena una vocal con una consonante, "
-                        + System.Environment.NewLine
-                        + "que juntas se forma una silaba,"
-                        + System.Environment.NewLine
-                        + "ahora aprenderemos a formar palabras, "
-                        + System.Environment.NewLine
-                        + "y las silabas, "
-                        + System.Environment.NewLine
-                        + "ma, "
-                        + System.Environment.NewLine
-                        + "me"
-                        + System.Environment.NewLine
-                        + "mi"
-                        + System.Environment.NewLine
-                        + "mo"
-                        + System.Environment.NewLine
-                        + "mu"
-                         + System.Environment.NewLine
-                        + "forman las siguientes palabras"
-                        + System.Environment.NewLine
-                        + "mami, "
-                        + System.Environment.NewLine
-                        + "mamá"
-                        + System.Environment.NewLine
-                        + "ama"
-                        + System.Environment.NewLine
-                        + "mima");
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

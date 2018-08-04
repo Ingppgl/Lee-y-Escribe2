@@ -63,8 +63,6 @@ namespace Lee_y_Escribe
 
         private void BJuegos_Click(object sender, EventArgs e)
         {
-            Thread Game = new Thread(new ParameterizedThreadStart(Narrador));
-            Game.Start("Haz Elegido Juego");
             Jcar.Visible = true;
             Jmen.Visible = true;
         }
@@ -93,8 +91,6 @@ namespace Lee_y_Escribe
 
         private void LVocales_Click(object sender, EventArgs e)
         {
-            Thread Lect = new Thread(new ParameterizedThreadStart(Narrador));
-            Lect.Start("Haz Elegido Lecciones");
             LVocal.Visible = true;
             LConsM.Visible = true;
         }

@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LetraM));
             this.PVocaleE = new System.Windows.Forms.Panel();
-            this.Velocidad = new System.Windows.Forms.TrackBar();
-            this.Tiempo1 = new System.Windows.Forms.Timer(this.components);
             this.BatrasM = new System.Windows.Forms.Button();
             this.SiguienteM = new System.Windows.Forms.Button();
             this.ConsMu = new System.Windows.Forms.PictureBox();
@@ -41,19 +39,21 @@
             this.ConsMi = new System.Windows.Forms.PictureBox();
             this.ConsMe = new System.Windows.Forms.PictureBox();
             this.ConsMa = new System.Windows.Forms.PictureBox();
+            this.Velocidad = new System.Windows.Forms.TrackBar();
             this.LtraA = new System.Windows.Forms.PictureBox();
             this.LtraE = new System.Windows.Forms.PictureBox();
             this.LtraI = new System.Windows.Forms.PictureBox();
             this.LtraO = new System.Windows.Forms.PictureBox();
             this.LtraU = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.Tiempo1 = new System.Windows.Forms.Timer(this.components);
             this.PVocaleE.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsMu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsMo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsMi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsMe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsMa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LtraA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LtraE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LtraI)).BeginInit();
@@ -88,21 +88,6 @@
             this.PVocaleE.Size = new System.Drawing.Size(805, 540);
             this.PVocaleE.TabIndex = 11;
             // 
-            // Velocidad
-            // 
-            this.Velocidad.Location = new System.Drawing.Point(41, 483);
-            this.Velocidad.Minimum = -10;
-            this.Velocidad.Name = "Velocidad";
-            this.Velocidad.Size = new System.Drawing.Size(171, 45);
-            this.Velocidad.TabIndex = 10;
-            this.Velocidad.Value = -2;
-            // 
-            // Tiempo1
-            // 
-            this.Tiempo1.Enabled = true;
-            this.Tiempo1.Interval = 1000;
-            this.Tiempo1.Tick += new System.EventHandler(this.Tiempo1_Tick);
-            // 
             // BatrasM
             // 
             this.BatrasM.BackColor = System.Drawing.Color.SteelBlue;
@@ -110,7 +95,7 @@
             this.BatrasM.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BatrasM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BatrasM.Image = ((System.Drawing.Image)(resources.GetObject("BatrasM.Image")));
-            this.BatrasM.Location = new System.Drawing.Point(46, 458);
+            this.BatrasM.Location = new System.Drawing.Point(12, 458);
             this.BatrasM.Name = "BatrasM";
             this.BatrasM.Size = new System.Drawing.Size(166, 70);
             this.BatrasM.TabIndex = 13;
@@ -122,11 +107,12 @@
             // SiguienteM
             // 
             this.SiguienteM.BackColor = System.Drawing.Color.SteelBlue;
+            this.SiguienteM.Enabled = false;
             this.SiguienteM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SiguienteM.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SiguienteM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.SiguienteM.Image = ((System.Drawing.Image)(resources.GetObject("SiguienteM.Image")));
-            this.SiguienteM.Location = new System.Drawing.Point(314, 447);
+            this.SiguienteM.Location = new System.Drawing.Point(311, 458);
             this.SiguienteM.Name = "SiguienteM";
             this.SiguienteM.Size = new System.Drawing.Size(183, 70);
             this.SiguienteM.TabIndex = 24;
@@ -145,6 +131,7 @@
             this.ConsMu.Size = new System.Drawing.Size(103, 99);
             this.ConsMu.TabIndex = 18;
             this.ConsMu.TabStop = false;
+            this.ConsMu.Visible = false;
             // 
             // BRepM
             // 
@@ -153,7 +140,7 @@
             this.BRepM.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BRepM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BRepM.Image = ((System.Drawing.Image)(resources.GetObject("BRepM.Image")));
-            this.BRepM.Location = new System.Drawing.Point(597, 447);
+            this.BRepM.Location = new System.Drawing.Point(627, 458);
             this.BRepM.Name = "BRepM";
             this.BRepM.Size = new System.Drawing.Size(166, 70);
             this.BRepM.TabIndex = 11;
@@ -172,6 +159,7 @@
             this.ConsMo.Size = new System.Drawing.Size(103, 99);
             this.ConsMo.TabIndex = 17;
             this.ConsMo.TabStop = false;
+            this.ConsMo.Visible = false;
             // 
             // ConsMi
             // 
@@ -183,6 +171,7 @@
             this.ConsMi.Size = new System.Drawing.Size(103, 99);
             this.ConsMi.TabIndex = 16;
             this.ConsMi.TabStop = false;
+            this.ConsMi.Visible = false;
             // 
             // ConsMe
             // 
@@ -194,6 +183,7 @@
             this.ConsMe.Size = new System.Drawing.Size(103, 99);
             this.ConsMe.TabIndex = 15;
             this.ConsMe.TabStop = false;
+            this.ConsMe.Visible = false;
             // 
             // ConsMa
             // 
@@ -205,6 +195,17 @@
             this.ConsMa.Size = new System.Drawing.Size(103, 99);
             this.ConsMa.TabIndex = 14;
             this.ConsMa.TabStop = false;
+            this.ConsMa.Visible = false;
+            // 
+            // Velocidad
+            // 
+            this.Velocidad.Location = new System.Drawing.Point(41, 483);
+            this.Velocidad.Minimum = -10;
+            this.Velocidad.Name = "Velocidad";
+            this.Velocidad.Size = new System.Drawing.Size(171, 45);
+            this.Velocidad.TabIndex = 10;
+            this.Velocidad.Value = -2;
+            this.Velocidad.Visible = false;
             // 
             // LtraA
             // 
@@ -212,22 +213,24 @@
             this.LtraA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LtraA.BackgroundImage")));
             this.LtraA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.LtraA.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.LtraA.Location = new System.Drawing.Point(166, 35);
+            this.LtraA.Location = new System.Drawing.Point(169, 45);
             this.LtraA.Name = "LtraA";
-            this.LtraA.Size = new System.Drawing.Size(96, 99);
+            this.LtraA.Size = new System.Drawing.Size(95, 87);
             this.LtraA.TabIndex = 19;
             this.LtraA.TabStop = false;
+            this.LtraA.Visible = false;
             // 
             // LtraE
             // 
             this.LtraE.BackColor = System.Drawing.Color.SteelBlue;
             this.LtraE.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LtraE.BackgroundImage")));
             this.LtraE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LtraE.Location = new System.Drawing.Point(160, 251);
+            this.LtraE.Location = new System.Drawing.Point(166, 266);
             this.LtraE.Name = "LtraE";
-            this.LtraE.Size = new System.Drawing.Size(103, 99);
+            this.LtraE.Size = new System.Drawing.Size(94, 83);
             this.LtraE.TabIndex = 20;
             this.LtraE.TabStop = false;
+            this.LtraE.Visible = false;
             // 
             // LtraI
             // 
@@ -235,23 +238,25 @@
             this.LtraI.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LtraI.BackgroundImage")));
             this.LtraI.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.LtraI.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.LtraI.Location = new System.Drawing.Point(623, 23);
+            this.LtraI.Location = new System.Drawing.Point(628, 52);
             this.LtraI.Name = "LtraI";
-            this.LtraI.Size = new System.Drawing.Size(103, 99);
+            this.LtraI.Size = new System.Drawing.Size(85, 66);
             this.LtraI.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.LtraI.TabIndex = 21;
             this.LtraI.TabStop = false;
+            this.LtraI.Visible = false;
             // 
             // LtraO
             // 
             this.LtraO.BackColor = System.Drawing.Color.SteelBlue;
             this.LtraO.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LtraO.BackgroundImage")));
             this.LtraO.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LtraO.Location = new System.Drawing.Point(638, 251);
+            this.LtraO.Location = new System.Drawing.Point(640, 255);
             this.LtraO.Name = "LtraO";
-            this.LtraO.Size = new System.Drawing.Size(103, 99);
+            this.LtraO.Size = new System.Drawing.Size(103, 95);
             this.LtraO.TabIndex = 22;
             this.LtraO.TabStop = false;
+            this.LtraO.Visible = false;
             // 
             // LtraU
             // 
@@ -259,11 +264,12 @@
             this.LtraU.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LtraU.BackgroundImage")));
             this.LtraU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.LtraU.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.LtraU.Location = new System.Drawing.Point(403, 331);
+            this.LtraU.Location = new System.Drawing.Point(403, 337);
             this.LtraU.Name = "LtraU";
-            this.LtraU.Size = new System.Drawing.Size(103, 99);
+            this.LtraU.Size = new System.Drawing.Size(103, 90);
             this.LtraU.TabIndex = 23;
             this.LtraU.TabStop = false;
+            this.LtraU.Visible = false;
             // 
             // pictureBox14
             // 
@@ -276,22 +282,33 @@
             this.pictureBox14.TabIndex = 0;
             this.pictureBox14.TabStop = false;
             // 
+            // Tiempo1
+            // 
+            this.Tiempo1.Enabled = true;
+            this.Tiempo1.Interval = 1000;
+            this.Tiempo1.Tick += new System.EventHandler(this.Tiempo1_Tick);
+            // 
             // LetraM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(805, 540);
+            this.ControlBox = false;
             this.Controls.Add(this.PVocaleE);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "LetraM";
-            this.Text = "LetraM";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Sílabas con M";
             this.PVocaleE.ResumeLayout(false);
             this.PVocaleE.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsMu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsMo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsMi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsMe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsMa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LtraA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LtraE)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LtraI)).EndInit();
