@@ -39,11 +39,9 @@ namespace Lee_y_Escribe
             voz.SetOutputToDefaultAudioDevice();
             voz.Speak(texto.ToString());
         }
-
         private void BAtrasLeccionP_Click(object sender, EventArgs e)
         {
             Principal vocales = new Principal();
-            voz.Pause();
             this.Hide();
             vocales.Visible = true;
         }

@@ -67,7 +67,7 @@
             this.panel1.Controls.Add(this.Pa);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.Velocidad);
-            this.panel1.Location = new System.Drawing.Point(-2, -2);
+            this.panel1.Location = new System.Drawing.Point(-10, -22);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(808, 545);
             this.panel1.TabIndex = 4;
@@ -271,13 +271,12 @@
             // 
             this.Tiempo1.Enabled = true;
             this.Tiempo1.Interval = 1000;
-            this.Tiempo1.Tick += new System.EventHandler(this.Tiempo1_Tick);
             // 
             // FPapá
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(805, 543);
+            this.ClientSize = new System.Drawing.Size(789, 501);
             this.Controls.Add(this.panel1);
             this.Name = "FPapá";
             this.Text = "FPapá";

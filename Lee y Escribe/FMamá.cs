@@ -19,6 +19,7 @@ namespace Lee_y_Escribe
         public FMamá()
         {
             InitializeComponent();
+            Velocidad.Visible = false;
             MA.Visible = false;
             ME.Visible = false;
             MI.Visible = false;
@@ -113,11 +114,11 @@ namespace Lee_y_Escribe
                 BRepMama.Enabled = true;
                 Tiempo1.Stop();
             }
+
         }
         private void BAtrasLeccionM_Click(object sender, EventArgs e)
         {
             Principal vocales = new Principal();
-            voz.Pause();
             this.Hide();
             vocales.Visible = true;
         }
