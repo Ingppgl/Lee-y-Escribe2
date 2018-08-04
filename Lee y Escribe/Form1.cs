@@ -21,8 +21,7 @@ namespace Lee_y_Escribe
         public Portada()
         {
             InitializeComponent();
-            TVelocidad.Visible = false;
-            PFlechaR.Visible = false;
+           
 
         }
 

@@ -91,6 +91,7 @@
             this.TVelocidad.Size = new System.Drawing.Size(104, 45);
             this.TVelocidad.TabIndex = 2;
             this.TVelocidad.Value = -2;
+            this.TVelocidad.Visible = false;
             // 
             // PFlechaR
             // 
@@ -102,6 +103,7 @@
             this.PFlechaR.Size = new System.Drawing.Size(86, 57);
             this.PFlechaR.TabIndex = 9;
             this.PFlechaR.TabStop = false;
+            this.PFlechaR.Visible = false;
             // 
             // Portada
             // 
