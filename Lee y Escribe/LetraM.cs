@@ -40,7 +40,7 @@ namespace Lee_y_Escribe
                         + System.Environment.NewLine
                         + "la letra eme al igual que las demas consonantes al combinarla con las vocales forman silabas, "
                         + System.Environment.NewLine
-                        + "entonces aprendamos como suena la letra eme seguida de una vocal, osea, primero la eme y luego la combinamos con cada una de las vocales "
+                        + "entonces aprendamos como suena la letra eme seguida de una vocal, osea primero la eme y luego la combinamos con cada una de las vocales "
                         + System.Environment.NewLine
                         + "la eme combinada con la, a, suena Ma"
                         + System.Environment.NewLine

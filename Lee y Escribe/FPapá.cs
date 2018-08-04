@@ -19,17 +19,6 @@ namespace Lee_y_Escribe
         public FPapá()
         {
             InitializeComponent();
-            Velocidad.Visible = false;
-            Pa.Visible = false;
-            Pe.Visible = false;
-            Pi.Visible = false;
-            Po.Visible = false;
-            Pu.Visible = false;
-            Papá.Visible = false;
-            Puma.Visible = false;
-            Pipa.Visible = false;
-            Mapa.Visible = false;
-            BRepPapá.Enabled = false;
         }
         private void Narrador(object texto)
         {
@@ -41,9 +30,8 @@ namespace Lee_y_Escribe
         }
         private void BAtrasLeccionP_Click(object sender, EventArgs e)
         {
-            Principal vocales = new Principal();
-            this.Hide();
-            vocales.Visible = true;
+            voz.Pause();
+            this.Close();
         }
 
         private void Tiempo1_Tick(object sender, EventArgs e)
@@ -54,11 +42,11 @@ namespace Lee_y_Escribe
                 Thread tarea = new Thread(new ParameterizedThreadStart(Narrador));
                 tarea.Start("Ya hemos aprendido como suena una vocal con una consonante, "
                         + System.Environment.NewLine
-                        + "que juntas se forma una silaba,"
+                        + "que juntas se forma una sílabas,"
                         + System.Environment.NewLine
                         + "ahora aprenderemos a formar palabras, "
                         + System.Environment.NewLine
-                        + "y las silabas, "
+                        + "y las sílabas, "
                         + System.Environment.NewLine
                         + "Pa, "
                         + System.Environment.NewLine
@@ -117,6 +105,9 @@ namespace Lee_y_Escribe
             if (Time1 == 29)
             {
                 Mapa.Visible = true;
+            }
+            if (Time1 == 33)
+            {
                 BRepPapá.Enabled = true;
                 Tiempo1.Stop();
             }
@@ -133,36 +124,8 @@ namespace Lee_y_Escribe
             Puma.Visible = false;
             Pipa.Visible = false;
             Mapa.Visible = false;
-            Time1 = 1;
+            Time1 = 0;
             Tiempo1.Start();
-            Thread tarea = new Thread(new ParameterizedThreadStart(Narrador));
-            tarea.Start("Ya hemos aprendido como suena una vocal con una consonante, "
-                       + System.Environment.NewLine
-                       + "que juntas se forma una silaba,"
-                       + System.Environment.NewLine
-                       + "ahora aprenderemos a formar palabras, "
-                       + System.Environment.NewLine
-                       + "y las silabas, "
-                       + System.Environment.NewLine
-                       + "Pa, "
-                       + System.Environment.NewLine
-                       + "Pe"
-                       + System.Environment.NewLine
-                       + "Pi"
-                       + System.Environment.NewLine
-                       + "Po"
-                       + System.Environment.NewLine
-                       + "Pu"
-                        + System.Environment.NewLine
-                       + "forman las siguientes palabras"
-                       + System.Environment.NewLine
-                       + "Papá, "
-                       + System.Environment.NewLine
-                       + "puma"
-                       + System.Environment.NewLine
-                       + "pipa"
-                       + System.Environment.NewLine
-                       + "mapa");
         }
     }
 }

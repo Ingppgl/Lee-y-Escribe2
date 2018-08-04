@@ -296,6 +296,7 @@
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Name = "FMamá";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lección Mamá";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

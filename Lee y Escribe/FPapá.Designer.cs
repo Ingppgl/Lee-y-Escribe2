@@ -53,6 +53,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel1.Controls.Add(this.Velocidad);
             this.panel1.Controls.Add(this.BAtrasA);
             this.panel1.Controls.Add(this.Mapa);
             this.panel1.Controls.Add(this.Puma);
@@ -66,10 +67,10 @@
             this.panel1.Controls.Add(this.Pe);
             this.panel1.Controls.Add(this.Pa);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.Velocidad);
-            this.panel1.Location = new System.Drawing.Point(-10, -22);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(808, 545);
+            this.panel1.Size = new System.Drawing.Size(805, 540);
             this.panel1.TabIndex = 4;
             // 
             // BAtrasA
@@ -78,9 +79,9 @@
             this.BAtrasA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BAtrasA.Font = new System.Drawing.Font("Berlin Sans FB Demi", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BAtrasA.ForeColor = System.Drawing.Color.Navy;
-            this.BAtrasA.Location = new System.Drawing.Point(390, 14);
+            this.BAtrasA.Location = new System.Drawing.Point(419, 12);
             this.BAtrasA.Name = "BAtrasA";
-            this.BAtrasA.Size = new System.Drawing.Size(216, 97);
+            this.BAtrasA.Size = new System.Drawing.Size(216, 85);
             this.BAtrasA.TabIndex = 14;
             this.BAtrasA.Text = " papá";
             this.BAtrasA.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -93,13 +94,14 @@
             this.Mapa.Font = new System.Drawing.Font("Berlin Sans FB Demi", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Mapa.ForeColor = System.Drawing.Color.Black;
             this.Mapa.Image = ((System.Drawing.Image)(resources.GetObject("Mapa.Image")));
-            this.Mapa.Location = new System.Drawing.Point(546, 325);
+            this.Mapa.Location = new System.Drawing.Point(578, 325);
             this.Mapa.Name = "Mapa";
             this.Mapa.Size = new System.Drawing.Size(195, 71);
             this.Mapa.TabIndex = 28;
             this.Mapa.Text = "mapa";
             this.Mapa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Mapa.UseVisualStyleBackColor = false;
+            this.Mapa.Visible = false;
             // 
             // Puma
             // 
@@ -108,13 +110,14 @@
             this.Puma.Font = new System.Drawing.Font("Berlin Sans FB Demi", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Puma.ForeColor = System.Drawing.Color.Black;
             this.Puma.Image = ((System.Drawing.Image)(resources.GetObject("Puma.Image")));
-            this.Puma.Location = new System.Drawing.Point(286, 321);
+            this.Puma.Location = new System.Drawing.Point(269, 325);
             this.Puma.Name = "Puma";
             this.Puma.Size = new System.Drawing.Size(187, 71);
             this.Puma.TabIndex = 27;
             this.Puma.Text = "puma";
             this.Puma.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Puma.UseVisualStyleBackColor = false;
+            this.Puma.Visible = false;
             // 
             // Pipa
             // 
@@ -123,13 +126,14 @@
             this.Pipa.Font = new System.Drawing.Font("Berlin Sans FB Demi", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pipa.ForeColor = System.Drawing.Color.Black;
             this.Pipa.Image = ((System.Drawing.Image)(resources.GetObject("Pipa.Image")));
-            this.Pipa.Location = new System.Drawing.Point(546, 227);
+            this.Pipa.Location = new System.Drawing.Point(578, 227);
             this.Pipa.Name = "Pipa";
             this.Pipa.Size = new System.Drawing.Size(195, 71);
             this.Pipa.TabIndex = 26;
             this.Pipa.Text = "pipa";
             this.Pipa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Pipa.UseVisualStyleBackColor = false;
+            this.Pipa.Visible = false;
             // 
             // Papá
             // 
@@ -138,21 +142,23 @@
             this.Papá.Font = new System.Drawing.Font("Berlin Sans FB Demi", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Papá.ForeColor = System.Drawing.Color.Black;
             this.Papá.Image = ((System.Drawing.Image)(resources.GetObject("Papá.Image")));
-            this.Papá.Location = new System.Drawing.Point(286, 227);
+            this.Papá.Location = new System.Drawing.Point(269, 227);
             this.Papá.Name = "Papá";
             this.Papá.Size = new System.Drawing.Size(187, 71);
             this.Papá.TabIndex = 25;
             this.Papá.Text = "papá";
             this.Papá.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Papá.UseVisualStyleBackColor = false;
+            this.Papá.Visible = false;
             // 
             // BRepPapá
             // 
+            this.BRepPapá.Enabled = false;
             this.BRepPapá.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BRepPapá.Font = new System.Drawing.Font("Berlin Sans FB Demi", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BRepPapá.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BRepPapá.Image = ((System.Drawing.Image)(resources.GetObject("BRepPapá.Image")));
-            this.BRepPapá.Location = new System.Drawing.Point(556, 448);
+            this.BRepPapá.Location = new System.Drawing.Point(608, 458);
             this.BRepPapá.Name = "BRepPapá";
             this.BRepPapá.Size = new System.Drawing.Size(185, 70);
             this.BRepPapá.TabIndex = 24;
@@ -168,7 +174,7 @@
             this.BAtrasLeccionP.Font = new System.Drawing.Font("Berlin Sans FB Demi", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BAtrasLeccionP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BAtrasLeccionP.Image = ((System.Drawing.Image)(resources.GetObject("BAtrasLeccionP.Image")));
-            this.BAtrasLeccionP.Location = new System.Drawing.Point(269, 448);
+            this.BAtrasLeccionP.Location = new System.Drawing.Point(250, 458);
             this.BAtrasLeccionP.Name = "BAtrasLeccionP";
             this.BAtrasLeccionP.Size = new System.Drawing.Size(176, 70);
             this.BAtrasLeccionP.TabIndex = 23;
@@ -183,13 +189,14 @@
             this.Pu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Pu.Font = new System.Drawing.Font("Berlin Sans FB Demi", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pu.ForeColor = System.Drawing.Color.Black;
-            this.Pu.Location = new System.Drawing.Point(625, 42);
+            this.Pu.Location = new System.Drawing.Point(679, 12);
             this.Pu.Name = "Pu";
             this.Pu.Size = new System.Drawing.Size(108, 69);
             this.Pu.TabIndex = 21;
             this.Pu.Text = " pu";
             this.Pu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Pu.UseVisualStyleBackColor = false;
+            this.Pu.Visible = false;
             // 
             // Po
             // 
@@ -197,13 +204,14 @@
             this.Po.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Po.Font = new System.Drawing.Font("Berlin Sans FB Demi", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Po.ForeColor = System.Drawing.Color.Black;
-            this.Po.Location = new System.Drawing.Point(561, 127);
+            this.Po.Location = new System.Drawing.Point(602, 114);
             this.Po.Name = "Po";
             this.Po.Size = new System.Drawing.Size(107, 76);
             this.Po.TabIndex = 20;
             this.Po.Text = " po";
             this.Po.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Po.UseVisualStyleBackColor = false;
+            this.Po.Visible = false;
             // 
             // Pi
             // 
@@ -211,13 +219,14 @@
             this.Pi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Pi.Font = new System.Drawing.Font("Berlin Sans FB Demi", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pi.ForeColor = System.Drawing.Color.Black;
-            this.Pi.Location = new System.Drawing.Point(441, 127);
+            this.Pi.Location = new System.Drawing.Point(480, 114);
             this.Pi.Name = "Pi";
             this.Pi.Size = new System.Drawing.Size(103, 76);
             this.Pi.TabIndex = 19;
             this.Pi.Text = " pi";
             this.Pi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Pi.UseVisualStyleBackColor = false;
+            this.Pi.Visible = false;
             // 
             // Pe
             // 
@@ -225,13 +234,14 @@
             this.Pe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Pe.Font = new System.Drawing.Font("Berlin Sans FB Demi", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pe.ForeColor = System.Drawing.Color.Black;
-            this.Pe.Location = new System.Drawing.Point(314, 127);
+            this.Pe.Location = new System.Drawing.Point(354, 114);
             this.Pe.Name = "Pe";
             this.Pe.Size = new System.Drawing.Size(107, 76);
             this.Pe.TabIndex = 18;
             this.Pe.Text = " pe";
             this.Pe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Pe.UseVisualStyleBackColor = false;
+            this.Pe.Visible = false;
             // 
             // Pa
             // 
@@ -239,13 +249,14 @@
             this.Pa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Pa.Font = new System.Drawing.Font("Berlin Sans FB Demi", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pa.ForeColor = System.Drawing.Color.Black;
-            this.Pa.Location = new System.Drawing.Point(269, 42);
+            this.Pa.Location = new System.Drawing.Point(269, 12);
             this.Pa.Name = "Pa";
             this.Pa.Size = new System.Drawing.Size(106, 69);
             this.Pa.TabIndex = 16;
             this.Pa.Text = " pa";
             this.Pa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Pa.UseVisualStyleBackColor = false;
+            this.Pa.Visible = false;
             // 
             // panel2
             // 
@@ -255,17 +266,18 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(244, 545);
+            this.panel2.Size = new System.Drawing.Size(244, 540);
             this.panel2.TabIndex = 15;
             // 
             // Velocidad
             // 
-            this.Velocidad.Location = new System.Drawing.Point(269, 485);
+            this.Velocidad.Location = new System.Drawing.Point(419, 407);
             this.Velocidad.Minimum = -10;
             this.Velocidad.Name = "Velocidad";
             this.Velocidad.Size = new System.Drawing.Size(171, 45);
-            this.Velocidad.TabIndex = 14;
+            this.Velocidad.TabIndex = 10;
             this.Velocidad.Value = -2;
+            this.Velocidad.Visible = false;
             // 
             // Tiempo1
             // 
@@ -277,10 +289,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(789, 501);
+            this.ClientSize = new System.Drawing.Size(805, 540);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Name = "FPapá";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lección Papá";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

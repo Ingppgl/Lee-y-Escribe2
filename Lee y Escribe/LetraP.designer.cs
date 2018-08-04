@@ -91,6 +91,7 @@
             // SiguienteP
             // 
             this.SiguienteP.BackColor = System.Drawing.Color.SteelBlue;
+            this.SiguienteP.Enabled = false;
             this.SiguienteP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SiguienteP.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SiguienteP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -148,7 +149,7 @@
             // 
             this.ConsPa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ConsPa.BackgroundImage")));
             this.ConsPa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ConsPa.Location = new System.Drawing.Point(64, 29);
+            this.ConsPa.Location = new System.Drawing.Point(68, 29);
             this.ConsPa.Name = "ConsPa";
             this.ConsPa.Size = new System.Drawing.Size(103, 99);
             this.ConsPa.TabIndex = 14;
@@ -161,7 +162,7 @@
             this.BatrasP.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BatrasP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BatrasP.Image = ((System.Drawing.Image)(resources.GetObject("BatrasP.Image")));
-            this.BatrasP.Location = new System.Drawing.Point(17, 458);
+            this.BatrasP.Location = new System.Drawing.Point(11, 458);
             this.BatrasP.Name = "BatrasP";
             this.BatrasP.Size = new System.Drawing.Size(166, 70);
             this.BatrasP.TabIndex = 13;
@@ -187,7 +188,7 @@
             // 
             // Velocidad
             // 
-            this.Velocidad.Location = new System.Drawing.Point(12, 483);
+            this.Velocidad.Location = new System.Drawing.Point(598, 382);
             this.Velocidad.Minimum = -10;
             this.Velocidad.Name = "Velocidad";
             this.Velocidad.Size = new System.Drawing.Size(171, 45);
@@ -222,7 +223,7 @@
             this.LtraPI.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LtraPI.BackgroundImage")));
             this.LtraPI.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.LtraPI.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.LtraPI.Location = new System.Drawing.Point(614, 29);
+            this.LtraPI.Location = new System.Drawing.Point(618, 29);
             this.LtraPI.Name = "LtraPI";
             this.LtraPI.Size = new System.Drawing.Size(103, 99);
             this.LtraPI.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -233,7 +234,7 @@
             // 
             this.LtraPO.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LtraPO.BackgroundImage")));
             this.LtraPO.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LtraPO.Location = new System.Drawing.Point(634, 245);
+            this.LtraPO.Location = new System.Drawing.Point(638, 245);
             this.LtraPO.Name = "LtraPO";
             this.LtraPO.Size = new System.Drawing.Size(103, 99);
             this.LtraPO.TabIndex = 22;
@@ -245,7 +246,7 @@
             this.LtraPU.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LtraPU.BackgroundImage")));
             this.LtraPU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.LtraPU.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.LtraPU.Location = new System.Drawing.Point(399, 345);
+            this.LtraPU.Location = new System.Drawing.Point(400, 345);
             this.LtraPU.Name = "LtraPU";
             this.LtraPU.Size = new System.Drawing.Size(103, 99);
             this.LtraPU.TabIndex = 23;

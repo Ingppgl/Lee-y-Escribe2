@@ -34,12 +34,10 @@ namespace Lee_y_Escribe
         }
         private void Narrador(object texto)
         {
-
             voz.SelectVoiceByHints(VoiceGender.Female);
             voz.Rate = Velocidad.Value;
             voz.SetOutputToDefaultAudioDevice();
             voz.Speak(texto.ToString());
-
         }
         private void Tiempo1_Tick(object sender, EventArgs e)
         {
@@ -47,67 +45,71 @@ namespace Lee_y_Escribe
             if (Time1 == 1)
             {
                 Thread tarea = new Thread(new ParameterizedThreadStart(Narrador));
-                tarea.Start("Esta es la pe, no es un vocal, "
+                tarea.Start("Esta es la pe, también es una consonante, "
                         + System.Environment.NewLine
-                        + "esta se llama consonante,"
+                        + "para escribirla haces una linea y al lado derecho una media luna,"
                         + System.Environment.NewLine
-                        + "y para escribirla parece como dos vocales unidas, y se llama pe, "
+                        + "la letra pe al igual que las demas consonantes al juntarlas con las vocales forman sílabas, "
                         + System.Environment.NewLine
-                        + "la letra pe al igual que las demas consonantes al juntarlas con las vocales forman silabas, "
+                        + "entonces aprendamos como suena la letra pe seguida de una vocal, osea primero la pe y luego la combinamos con cada una de las vocales "
                         + System.Environment.NewLine
-                        + "entonces aprendamos como suena la letra pe unida con las vocales, "
+                        + "con la a suena, pa"
                         + System.Environment.NewLine
-                        + "primero la pe y luego la vocal a suena pa"
+                        + "con la e suena, pe"
                         + System.Environment.NewLine
-                        + "primero la pe y luego la vocal e suena pe"
+                        + "con la i, pi"
                         + System.Environment.NewLine
-                        + "primero la pe y luego la vocal i suena pI"
+                        + "con la o, po"
                         + System.Environment.NewLine
-                        + "primero la pe y luego la vocal o suena po"
-                         + System.Environment.NewLine
-                        + "primero la pe y luego la vocal u suena pu");
+                        + "y con la u suena, pu"
+                        +System.Environment.NewLine
+                        + "si miras las silabas y las repites, pa, pe, pi, po, y pu,"
+                        + System.Environment.NewLine
+                        + "entonces podrás formar palabras igual que hicimos con la eme combinada con las vocales");
             }
-            if (Time1 == 29)
+            if (Time1 == 28)
             {
                 ConsPa.Visible = true;
             }
-
-            if (Time1 == 30)
+            if (Time1 == 29)
             {
                 LtraPA.Visible = true;
             }
-
-            if (Time1 == 32)
+            if (Time1 == 31)
             {
                 ConsPe.Visible = true;
             }
-            if (Time1 == 33)
+            if (Time1 == 32)
             {
                 LtraPE.Visible = true;
             }
-            if (Time1 == 35)
+            if (Time1 == 33)
             {
                 ConsPi.Visible = true;
             }
-            if (Time1 == 36)
+            if (Time1 == 34)
             {
                 LtraPI.Visible = true;
             }
-            if (Time1 == 38)
+            if (Time1 == 35)
             {
                 ConsPo.Visible = true;
             }
-            if (Time1 == 39)
+            if (Time1 == 36)
             {
                 LtraPO.Visible = true;
             }
-            if (Time1 == 41)
+            if (Time1 == 37)
             {
                 ConsPu.Visible = true;
             }
-            if (Time1 == 42)
+            if(Time1 == 38)
             {
                 LtraPU.Visible = true;
+            }
+            if (Time1 == 45)
+            {
+                SiguienteP.Enabled = true;
                 BRepP.Enabled = true;
                 Tiempo1.Stop();
             }
@@ -115,7 +117,8 @@ namespace Lee_y_Escribe
 
         private void BatrasP_Click(object sender, EventArgs e)
         {
-
+            voz.Pause();
+            this.Close();
         }
 
         private void BRepP_Click(object sender, EventArgs e)
@@ -131,35 +134,14 @@ namespace Lee_y_Escribe
             ConsPu.Visible = false;
             LtraPU.Visible = false;
             BRepP.Enabled = false;
-            Time1 = 1;
+            Time1 = 0;
             Tiempo1.Start();
-            Thread tarea = new Thread(new ParameterizedThreadStart(Narrador));
-            tarea.Start("Esta es la pe, no es un vocal, "
-                        + System.Environment.NewLine
-                        + "esta se llama consonante,"
-                        + System.Environment.NewLine
-                        + "y para escribirla parece como dos vocales unidas, y se llama pe, "
-                        + System.Environment.NewLine
-                        + "la letra pe al igual que las demas consonantes al juntarlas con las vocales forman silabas, "
-                        + System.Environment.NewLine
-                        + "entonces aprendamos como suena la letra pe unida con las vocales, "
-                        + System.Environment.NewLine
-                         + "primero la pe y luego la vocal a suena pa"
-                        + System.Environment.NewLine
-                        + "primero la pe y luego la vocal e suena pe"
-                        + System.Environment.NewLine
-                        + "primero la pe y luego la vocal i suena pI"
-                        + System.Environment.NewLine
-                        + "primero la pe y luego la vocal o suena po"
-                         + System.Environment.NewLine
-                        + "primero la pe y luego la vocal u suena pu");
         }
 
         private void SiguienteP_Click(object sender, EventArgs e)
         {
             FPapá consonantep = new FPapá();
             voz.Pause();
-            this.Hide();
             consonantep.Visible = true;
         }
     }

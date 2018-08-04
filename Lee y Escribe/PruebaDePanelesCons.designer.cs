@@ -57,6 +57,7 @@
             this.Velocidad = new System.Windows.Forms.TrackBar();
             this.ConsB = new System.Windows.Forms.PictureBox();
             this.Tiempo1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelConsonantes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoZ)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoQ)).BeginInit();
@@ -81,15 +82,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.ConsC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelConsonantes
             // 
             this.PanelConsonantes.BackColor = System.Drawing.Color.SteelBlue;
+            this.PanelConsonantes.Controls.Add(this.ConsoK);
             this.PanelConsonantes.Controls.Add(this.BatrasPanelCon);
+            this.PanelConsonantes.Controls.Add(this.ConsoQ);
+            this.PanelConsonantes.Controls.Add(this.pictureBox1);
             this.PanelConsonantes.Controls.Add(this.BRepPanelC);
             this.PanelConsonantes.Controls.Add(this.ConsoZ);
-            this.PanelConsonantes.Controls.Add(this.ConsoQ);
             this.PanelConsonantes.Controls.Add(this.ConsoT);
             this.PanelConsonantes.Controls.Add(this.ConsP);
             this.PanelConsonantes.Controls.Add(this.ConsoY);
@@ -102,7 +106,6 @@
             this.PanelConsonantes.Controls.Add(this.ConsoN);
             this.PanelConsonantes.Controls.Add(this.ConsM);
             this.PanelConsonantes.Controls.Add(this.ConsoL);
-            this.PanelConsonantes.Controls.Add(this.ConsoK);
             this.PanelConsonantes.Controls.Add(this.ConsoJ);
             this.PanelConsonantes.Controls.Add(this.ConsoH);
             this.PanelConsonantes.Controls.Add(this.ConsoG);
@@ -119,12 +122,12 @@
             // 
             // BatrasPanelCon
             // 
-            this.BatrasPanelCon.BackColor = System.Drawing.Color.SteelBlue;
+            this.BatrasPanelCon.BackColor = System.Drawing.Color.Transparent;
             this.BatrasPanelCon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BatrasPanelCon.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BatrasPanelCon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BatrasPanelCon.Image = ((System.Drawing.Image)(resources.GetObject("BatrasPanelCon.Image")));
-            this.BatrasPanelCon.Location = new System.Drawing.Point(28, 464);
+            this.BatrasPanelCon.Location = new System.Drawing.Point(12, 464);
             this.BatrasPanelCon.Name = "BatrasPanelCon";
             this.BatrasPanelCon.Size = new System.Drawing.Size(166, 66);
             this.BatrasPanelCon.TabIndex = 14;
@@ -140,7 +143,7 @@
             this.BRepPanelC.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BRepPanelC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BRepPanelC.Image = ((System.Drawing.Image)(resources.GetObject("BRepPanelC.Image")));
-            this.BRepPanelC.Location = new System.Drawing.Point(610, 464);
+            this.BRepPanelC.Location = new System.Drawing.Point(627, 464);
             this.BRepPanelC.Name = "BRepPanelC";
             this.BRepPanelC.Size = new System.Drawing.Size(166, 64);
             this.BRepPanelC.TabIndex = 43;
@@ -151,7 +154,7 @@
             // ConsoZ
             // 
             this.ConsoZ.Image = ((System.Drawing.Image)(resources.GetObject("ConsoZ.Image")));
-            this.ConsoZ.Location = new System.Drawing.Point(30, 367);
+            this.ConsoZ.Location = new System.Drawing.Point(668, 343);
             this.ConsoZ.Name = "ConsoZ";
             this.ConsoZ.Size = new System.Drawing.Size(114, 97);
             this.ConsoZ.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -162,7 +165,7 @@
             // ConsoQ
             // 
             this.ConsoQ.Image = ((System.Drawing.Image)(resources.GetObject("ConsoQ.Image")));
-            this.ConsoQ.Location = new System.Drawing.Point(664, 147);
+            this.ConsoQ.Location = new System.Drawing.Point(242, 240);
             this.ConsoQ.Name = "ConsoQ";
             this.ConsoQ.Size = new System.Drawing.Size(114, 97);
             this.ConsoQ.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -173,7 +176,7 @@
             // ConsoT
             // 
             this.ConsoT.Image = ((System.Drawing.Image)(resources.GetObject("ConsoT.Image")));
-            this.ConsoT.Location = new System.Drawing.Point(246, 273);
+            this.ConsoT.Location = new System.Drawing.Point(564, 240);
             this.ConsoT.Name = "ConsoT";
             this.ConsoT.Size = new System.Drawing.Size(114, 97);
             this.ConsoT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -184,7 +187,7 @@
             // ConsP
             // 
             this.ConsP.Image = ((System.Drawing.Image)(resources.GetObject("ConsP.Image")));
-            this.ConsP.Location = new System.Drawing.Point(560, 147);
+            this.ConsP.Location = new System.Drawing.Point(665, 130);
             this.ConsP.Name = "ConsP";
             this.ConsP.Size = new System.Drawing.Size(114, 97);
             this.ConsP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -195,7 +198,7 @@
             // ConsoY
             // 
             this.ConsoY.Image = ((System.Drawing.Image)(resources.GetObject("ConsoY.Image")));
-            this.ConsoY.Location = new System.Drawing.Point(664, 273);
+            this.ConsoY.Location = new System.Drawing.Point(560, 343);
             this.ConsoY.Name = "ConsoY";
             this.ConsoY.Size = new System.Drawing.Size(114, 97);
             this.ConsoY.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -206,7 +209,7 @@
             // ConsoX
             // 
             this.ConsoX.Image = ((System.Drawing.Image)(resources.GetObject("ConsoX.Image")));
-            this.ConsoX.Location = new System.Drawing.Point(560, 273);
+            this.ConsoX.Location = new System.Drawing.Point(456, 343);
             this.ConsoX.Name = "ConsoX";
             this.ConsoX.Size = new System.Drawing.Size(114, 97);
             this.ConsoX.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -217,7 +220,7 @@
             // ConsoW
             // 
             this.ConsoW.Image = ((System.Drawing.Image)(resources.GetObject("ConsoW.Image")));
-            this.ConsoW.Location = new System.Drawing.Point(456, 273);
+            this.ConsoW.Location = new System.Drawing.Point(351, 343);
             this.ConsoW.Name = "ConsoW";
             this.ConsoW.Size = new System.Drawing.Size(114, 97);
             this.ConsoW.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -228,7 +231,7 @@
             // ConsoV
             // 
             this.ConsoV.Image = ((System.Drawing.Image)(resources.GetObject("ConsoV.Image")));
-            this.ConsoV.Location = new System.Drawing.Point(350, 273);
+            this.ConsoV.Location = new System.Drawing.Point(668, 240);
             this.ConsoV.Name = "ConsoV";
             this.ConsoV.Size = new System.Drawing.Size(114, 97);
             this.ConsoV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -239,7 +242,7 @@
             // ConsoS
             // 
             this.ConsoS.Image = ((System.Drawing.Image)(resources.GetObject("ConsoS.Image")));
-            this.ConsoS.Location = new System.Drawing.Point(138, 273);
+            this.ConsoS.Location = new System.Drawing.Point(456, 240);
             this.ConsoS.Name = "ConsoS";
             this.ConsoS.Size = new System.Drawing.Size(114, 97);
             this.ConsoS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -250,7 +253,7 @@
             // ConsoR
             // 
             this.ConsoR.Image = ((System.Drawing.Image)(resources.GetObject("ConsoR.Image")));
-            this.ConsoR.Location = new System.Drawing.Point(30, 273);
+            this.ConsoR.Location = new System.Drawing.Point(348, 240);
             this.ConsoR.Name = "ConsoR";
             this.ConsoR.Size = new System.Drawing.Size(114, 97);
             this.ConsoR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -261,7 +264,7 @@
             // Consoñ
             // 
             this.Consoñ.Image = ((System.Drawing.Image)(resources.GetObject("Consoñ.Image")));
-            this.Consoñ.Location = new System.Drawing.Point(456, 147);
+            this.Consoñ.Location = new System.Drawing.Point(561, 130);
             this.Consoñ.Name = "Consoñ";
             this.Consoñ.Size = new System.Drawing.Size(114, 97);
             this.Consoñ.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -272,7 +275,7 @@
             // ConsoN
             // 
             this.ConsoN.Image = ((System.Drawing.Image)(resources.GetObject("ConsoN.Image")));
-            this.ConsoN.Location = new System.Drawing.Point(352, 147);
+            this.ConsoN.Location = new System.Drawing.Point(457, 130);
             this.ConsoN.Name = "ConsoN";
             this.ConsoN.Size = new System.Drawing.Size(114, 97);
             this.ConsoN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -283,7 +286,7 @@
             // ConsM
             // 
             this.ConsM.Image = ((System.Drawing.Image)(resources.GetObject("ConsM.Image")));
-            this.ConsM.Location = new System.Drawing.Point(246, 147);
+            this.ConsM.Location = new System.Drawing.Point(351, 130);
             this.ConsM.Name = "ConsM";
             this.ConsM.Size = new System.Drawing.Size(114, 97);
             this.ConsM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -294,7 +297,7 @@
             // ConsoL
             // 
             this.ConsoL.Image = ((System.Drawing.Image)(resources.GetObject("ConsoL.Image")));
-            this.ConsoL.Location = new System.Drawing.Point(138, 147);
+            this.ConsoL.Location = new System.Drawing.Point(243, 130);
             this.ConsoL.Name = "ConsoL";
             this.ConsoL.Size = new System.Drawing.Size(114, 97);
             this.ConsoL.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -305,7 +308,7 @@
             // ConsoK
             // 
             this.ConsoK.Image = ((System.Drawing.Image)(resources.GetObject("ConsoK.Image")));
-            this.ConsoK.Location = new System.Drawing.Point(30, 147);
+            this.ConsoK.Location = new System.Drawing.Point(138, 130);
             this.ConsoK.Name = "ConsoK";
             this.ConsoK.Size = new System.Drawing.Size(114, 97);
             this.ConsoK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -405,6 +408,16 @@
             this.Tiempo1.Interval = 1000;
             this.Tiempo1.Tick += new System.EventHandler(this.Tiempo1_Tick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Lee_y_Escribe.Properties.Resources.Libros;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 226);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(240, 235);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 44;
+            this.pictureBox1.TabStop = false;
+            // 
             // PruebaDePanelesCons
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -417,7 +430,7 @@
             this.Name = "PruebaDePanelesCons";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PruebaDePanelesCons";
+            this.Text = "Aprende a Leer y Escribir con Tatty";
             this.PanelConsonantes.ResumeLayout(false);
             this.PanelConsonantes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoZ)).EndInit();
@@ -443,6 +456,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ConsC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -476,5 +490,6 @@
         private System.Windows.Forms.TrackBar Velocidad;
         private System.Windows.Forms.PictureBox ConsB;
         private System.Windows.Forms.Timer Tiempo1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
