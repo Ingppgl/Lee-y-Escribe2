@@ -40,7 +40,7 @@ namespace Lee_y_Escribe
             if (Time1 == 1)
             {
                 Thread tarea = new Thread(new ParameterizedThreadStart(Narrador));
-                tarea.Start("Aquí está la ultima vocal, "
+                tarea.Start("Aquí está la última vocal, "
                         + System.Environment.NewLine
                         + "esta se llama, u, si tedas cuenta,"
                         + System.Environment.NewLine
@@ -54,7 +54,7 @@ namespace Lee_y_Escribe
                         + System.Environment.NewLine
                         + "Uva"
                         + System.Environment.NewLine
-                        + "Ulises");
+                        + "Unicornio");
             }
 
             if (Time1 == 25)
@@ -76,10 +76,8 @@ namespace Lee_y_Escribe
         }
              private void BatrasU_Click_1(object sender, EventArgs e)
         {
-            PruebaDePaneles vocales = new PruebaDePaneles();
             voz.Pause();
-            this.Hide();
-            vocales.Visible = true;
+            this.Close();
         }
 
         private void BRepU_Click_1(object sender, EventArgs e)
@@ -87,24 +85,32 @@ namespace Lee_y_Escribe
             PUlises.Visible = false;
             PUña.Visible = false;
             PUva.Visible = false;
-            Time1 = 1;
+            Time1 = 0;
             Tiempo1.Start();
+        }
+
+        private void PUlises_Click(object sender, EventArgs e)
+        {
             Thread tarea = new Thread(new ParameterizedThreadStart(Narrador));
-            tarea.Start("Aquí está la Ultima vocal, "
-                    + System.Environment.NewLine
-                    + "esta se llama, u, si tedas cuenta,"
-                    + System.Environment.NewLine
-                    + " tiene una forma redonda y una pequeña raya a un lado, "
-                    + System.Environment.NewLine
-                    + "para pronunciar el nombre de esta letra lo hacemos con la boca abierta grande y decimos, u, "
-                    + System.Environment.NewLine
-                    + "al hablar pronunciamos muchas palabras que empiezan con la letra, u, como por ejemplo"
-                    + System.Environment.NewLine
-                    + "Uña"
-                    + System.Environment.NewLine
-                    + "Uva"
-                    + System.Environment.NewLine
-                    + "Ulises");
+            tarea.Start("Unicornio");
+        }
+
+        private void PUña_Click(object sender, EventArgs e)
+        {
+            Thread tarea = new Thread(new ParameterizedThreadStart(Narrador));
+            tarea.Start("Uña");
+        }
+
+        private void PUva_Click(object sender, EventArgs e)
+        {
+            Thread tarea = new Thread(new ParameterizedThreadStart(Narrador));
+            tarea.Start("Uva");
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Thread U = new Thread(new ParameterizedThreadStart(Narrador));
+            U.Start("U ");
         }
     }
 }

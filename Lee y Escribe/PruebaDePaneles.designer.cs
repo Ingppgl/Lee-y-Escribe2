@@ -40,6 +40,7 @@
             this.LVocalE = new System.Windows.Forms.PictureBox();
             this.LVocalA = new System.Windows.Forms.PictureBox();
             this.Tiempo1 = new System.Windows.Forms.Timer(this.components);
+            this.Tiempo2 = new System.Windows.Forms.Timer(this.components);
             this.PanelVocales.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LVocalU)).BeginInit();
@@ -68,6 +69,7 @@
             // 
             // BRepPanelVocal
             // 
+            this.BRepPanelVocal.Enabled = false;
             this.BRepPanelVocal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BRepPanelVocal.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BRepPanelVocal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -79,6 +81,7 @@
             this.BRepPanelVocal.Text = "   Repetir";
             this.BRepPanelVocal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BRepPanelVocal.UseVisualStyleBackColor = true;
+            this.BRepPanelVocal.Click += new System.EventHandler(this.BRepPanelVocal_Click);
             // 
             // BatrasPanelVocal
             // 
@@ -121,7 +124,7 @@
             // LVocalO
             // 
             this.LVocalO.Image = ((System.Drawing.Image)(resources.GetObject("LVocalO.Image")));
-            this.LVocalO.Location = new System.Drawing.Point(163, 246);
+            this.LVocalO.Location = new System.Drawing.Point(189, 246);
             this.LVocalO.Name = "LVocalO";
             this.LVocalO.Size = new System.Drawing.Size(171, 166);
             this.LVocalO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -133,7 +136,7 @@
             // LVocalI
             // 
             this.LVocalI.Image = ((System.Drawing.Image)(resources.GetObject("LVocalI.Image")));
-            this.LVocalI.Location = new System.Drawing.Point(558, 29);
+            this.LVocalI.Location = new System.Drawing.Point(560, 46);
             this.LVocalI.Name = "LVocalI";
             this.LVocalI.Size = new System.Drawing.Size(171, 166);
             this.LVocalI.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -145,7 +148,7 @@
             // LVocalE
             // 
             this.LVocalE.Image = ((System.Drawing.Image)(resources.GetObject("LVocalE.Image")));
-            this.LVocalE.Location = new System.Drawing.Point(307, 29);
+            this.LVocalE.Location = new System.Drawing.Point(323, 46);
             this.LVocalE.Name = "LVocalE";
             this.LVocalE.Size = new System.Drawing.Size(171, 166);
             this.LVocalE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -157,7 +160,7 @@
             // LVocalA
             // 
             this.LVocalA.Image = ((System.Drawing.Image)(resources.GetObject("LVocalA.Image")));
-            this.LVocalA.Location = new System.Drawing.Point(55, 29);
+            this.LVocalA.Location = new System.Drawing.Point(86, 46);
             this.LVocalA.Name = "LVocalA";
             this.LVocalA.Size = new System.Drawing.Size(171, 166);
             this.LVocalA.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -172,6 +175,10 @@
             this.Tiempo1.Interval = 1000;
             this.Tiempo1.Tick += new System.EventHandler(this.Tiempo1_Tick_1);
             // 
+            // Tiempo2
+            // 
+            this.Tiempo2.Interval = 1000;
+            // 
             // PruebaDePaneles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -179,6 +186,7 @@
             this.ClientSize = new System.Drawing.Size(805, 540);
             this.Controls.Add(this.PanelVocales);
             this.Name = "PruebaDePaneles";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PruebaDePaneles";
             this.PanelVocales.ResumeLayout(false);
             this.PanelVocales.PerformLayout();
@@ -204,5 +212,6 @@
         private System.Windows.Forms.PictureBox LVocalE;
         private System.Windows.Forms.PictureBox LVocalA;
         private System.Windows.Forms.Timer Tiempo1;
+        private System.Windows.Forms.Timer Tiempo2;
     }
 }

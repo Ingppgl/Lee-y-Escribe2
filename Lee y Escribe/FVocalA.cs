@@ -40,7 +40,7 @@ namespace Lee_y_Escribe
             if (Time1 == 1)
             {
                 Thread tarea = new Thread(new ParameterizedThreadStart(Narrador));
-                tarea.Start("Excelente, "
+                tarea.Start("Maravilloso, "
                         + System.Environment.NewLine
                         + "Aquí está la primera vocal, "
                         + System.Environment.NewLine
@@ -56,19 +56,19 @@ namespace Lee_y_Escribe
                         + System.Environment.NewLine
                         + "Avión"
                         + System.Environment.NewLine
-                        + "Anillo");
+                        + "Anillo."
+                        + System.Environment.NewLine
+                        + "Hay muchas palabras que inician con la letra, a, puedes practicar junto a un adulto y veras que no es dificil");
             }
 
             if (Time1 == 29)
             {
                 PAbeja.Visible = true;
             }
-
             if (Time1 == 31)
             {
                 PAvion.Visible = true;
             }
-
             if (Time1 == 33)
             {
                 PAnillo.Visible = true;
@@ -82,33 +82,37 @@ namespace Lee_y_Escribe
             PAnillo.Visible = false;
             PAbeja.Visible = false;
             PAvion.Visible = false;
-            Time1 = 1;
+            Time1 = -1;
             Tiempo1.Start();
-            Thread tarea = new Thread(new ParameterizedThreadStart(Narrador));
-            tarea.Start("Excelente, "
-                    + System.Environment.NewLine
-                    + "Aquí está la primera vocal, "
-                    + System.Environment.NewLine
-                    + "esta se llama, a, si tedas cuenta,"
-                    + System.Environment.NewLine
-                    + " tiene una forma redonda y una pequeña raya a un lado, "
-                    + System.Environment.NewLine
-                    + "para pronunciar el nombre de esta letra lo hacemos con la boca abierta grande y decimos, a, "
-                    + System.Environment.NewLine
-                    + "al hablar pronunciamos muchas palabras que empiezan con la letra, a, como por ejemplo"
-                    + System.Environment.NewLine
-                    + "Abeja"
-                    + System.Environment.NewLine
-                    + "Avión"
-                    + System.Environment.NewLine
-                    + "Anillo");
         }
         private void BAtrasA_Click_1(object sender, EventArgs e)
         {
-            PruebaDePaneles vocales = new PruebaDePaneles();
             voz.Pause();
-            this.Hide();
-            vocales.Visible = true;
+            this.Close();
+        }
+
+        private void PAbeja_Click(object sender, EventArgs e)
+        {
+            Thread Abe = new Thread(new ParameterizedThreadStart(Narrador));
+            Abe.Start("Abeja ");
+        }
+
+        private void PAvion_Click(object sender, EventArgs e)
+        {
+            Thread Plane = new Thread(new ParameterizedThreadStart(Narrador));
+            Plane.Start("Avión ");
+        }
+
+        private void PAnillo_Click(object sender, EventArgs e)
+        {
+            Thread Anil = new Thread(new ParameterizedThreadStart(Narrador));
+            Anil.Start("Anillo ");
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Thread A = new Thread(new ParameterizedThreadStart(Narrador));
+            A.Start("A ");
         }
     }
 }

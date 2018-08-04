@@ -185,9 +185,7 @@ namespace Lee_y_Escribe
 
         private void label2_Click_1(object sender, EventArgs e)
         {
-            Principal principal = new Principal();
-            this.Hide();
-            principal.Visible = true;
+            this.Close();
         }
 
         private void label3_Click(object sender, EventArgs e)

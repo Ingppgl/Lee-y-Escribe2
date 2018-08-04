@@ -85,7 +85,7 @@
             // 
             // TVelocidad
             // 
-            this.TVelocidad.Location = new System.Drawing.Point(585, 127);
+            this.TVelocidad.Location = new System.Drawing.Point(12, 96);
             this.TVelocidad.Minimum = -5;
             this.TVelocidad.Name = "TVelocidad";
             this.TVelocidad.Size = new System.Drawing.Size(104, 45);

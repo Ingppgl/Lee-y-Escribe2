@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using System.Speech.Synthesis;
 using System.Threading;
 
-
 namespace Lee_y_Escribe
 {
     public partial class FVocalI : Form
@@ -20,19 +19,14 @@ namespace Lee_y_Escribe
         public FVocalI()
         {
             InitializeComponent();
-            PIsla.Visible = false;
-            PIman.Visible = false;
-            //PIglesia.Visible = false;
             BRepI.Enabled = false;
     }
         private void Narrador(object texto)
         {
-
             voz.SelectVoiceByHints(VoiceGender.Female);
-            //voz.Rate = Velocidad.Value;
+            voz.Rate = Velocidad.Value;
             voz.SetOutputToDefaultAudioDevice();
             voz.Speak(texto.ToString());
-
         }
         private void Tiempo1_Tick(object sender, EventArgs e)
         {
@@ -42,33 +36,34 @@ namespace Lee_y_Escribe
                 Thread tarea = new Thread(new ParameterizedThreadStart(Narrador));
                 tarea.Start("Aquí está la tercera vocal, "
                         + System.Environment.NewLine
-                        + "esta se llama, i, si tedas cuenta,"
+                        + "esta se llama, i, muy diferente a las dos anteriores,"
                         + System.Environment.NewLine
-                        + " tiene una forma redonda y una pequeña raya a un lado, "
+                        + " tiene forma de una pequeña raya con un punto sobre ella, "
                         + System.Environment.NewLine
-                        + "para pronunciar el nombre de esta letra lo hacemos con la boca abierta grande y decimos, i, "
+                        + " para pronunciar el nombre de esta letra lo hacemos con la boca casi cerrada y decimos, i, con esta, "
+                        + " también pronunciamos muchas palabras que al inicio tienen la letra, i, como por ejemplo, "
                         + System.Environment.NewLine
-                        + "al hablar pronunciamos muchas palabras que empiezan con la letra, i, como por ejemplo"
+                        + "Iglesia ,"
                         + System.Environment.NewLine
-                        + "Iglesia"
+                        + "Isla ,"
                         + System.Environment.NewLine
-                        + "Isla"
+                        + "India"
                         + System.Environment.NewLine
-                        + "Iman");
+                        + " ¿Sabes otras palabras que inicien con la letra, i,?  ");
 
             }
 
-            if (Time1 == 29)
+            if (Time1 == 28)
             {
                 PIglesia.Visible = true;
             }
 
-            if (Time1 == 31)
+            if (Time1 == 30)
             {
                 PIsla.Visible = true;
             }
 
-            if (Time1 == 33)
+            if (Time1 == 32)
             {
                 PIman.Visible = true;
                 BRepI.Enabled = true;
@@ -81,31 +76,31 @@ namespace Lee_y_Escribe
             PIman.Visible = false;
             PIglesia.Visible = false;
             PIsla.Visible = false;
-            Time1 = 1;
+            Time1 = 0;
             Tiempo1.Start();
-            Thread tarea = new Thread(new ParameterizedThreadStart(Narrador));
-            tarea.Start("Aquí está la tercera vocal, "
-                    + System.Environment.NewLine
-                    + "esta se llama, i, si tedas cuenta,"
-                    + System.Environment.NewLine
-                    + " tiene una forma redonda y una pequeña raya a un lado, "
-                    + System.Environment.NewLine
-                    + "para pronunciar el nombre de esta letra lo hacemos con la boca abierta grande y decimos, i, "
-                    + System.Environment.NewLine
-                    + "al hablar pronunciamos muchas palabras que empiezan con la letra, i, como por ejemplo"
-                    + System.Environment.NewLine
-                    + "Iglesia"
-                    + System.Environment.NewLine
-                    + "Isla"
-                    + System.Environment.NewLine
-                    + "Iman");
         }
         private void BatrasI_Click(object sender, EventArgs e)
         {
-            PruebaDePaneles vocales = new PruebaDePaneles();
             voz.Pause();
             this.Hide();
-            vocales.Visible = true;
+        }
+
+        private void PIman_Click(object sender, EventArgs e)
+        {
+            Thread Decir = new Thread(new ParameterizedThreadStart(Narrador));
+            Decir.Start("India ");
+        }
+
+        private void PIglesia_Click(object sender, EventArgs e)
+        {
+            Thread Decir = new Thread(new ParameterizedThreadStart(Narrador));
+            Decir.Start("Iglesia ");
+        }
+
+        private void PIsla_Click_1(object sender, EventArgs e)
+        {
+            Thread Decir = new Thread(new ParameterizedThreadStart(Narrador));
+            Decir.Start("Isla ");
         }
     }
 }

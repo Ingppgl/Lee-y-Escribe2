@@ -60,7 +60,7 @@
             this.PVocalI.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PVocalI.Location = new System.Drawing.Point(0, 0);
             this.PVocalI.Name = "PVocalI";
-            this.PVocalI.Size = new System.Drawing.Size(789, 501);
+            this.PVocalI.Size = new System.Drawing.Size(805, 540);
             this.PVocalI.TabIndex = 14;
             // 
             // BatrasI
@@ -70,7 +70,7 @@
             this.BatrasI.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BatrasI.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BatrasI.Image = ((System.Drawing.Image)(resources.GetObject("BatrasI.Image")));
-            this.BatrasI.Location = new System.Drawing.Point(17, 419);
+            this.BatrasI.Location = new System.Drawing.Point(12, 458);
             this.BatrasI.Name = "BatrasI";
             this.BatrasI.Size = new System.Drawing.Size(166, 70);
             this.BatrasI.TabIndex = 12;
@@ -81,46 +81,53 @@
             // 
             // Velocidad
             // 
-            this.Velocidad.Location = new System.Drawing.Point(12, 444);
+            this.Velocidad.Location = new System.Drawing.Point(12, 474);
             this.Velocidad.Minimum = -10;
             this.Velocidad.Name = "Velocidad";
             this.Velocidad.Size = new System.Drawing.Size(171, 45);
-            this.Velocidad.TabIndex = 15;
+            this.Velocidad.TabIndex = 10;
             this.Velocidad.Value = -2;
+            this.Velocidad.Visible = false;
             // 
             // PIglesia
             // 
             this.PIglesia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.PIglesia.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PIglesia.BackgroundImage")));
             this.PIglesia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PIglesia.Location = new System.Drawing.Point(113, 12);
+            this.PIglesia.Location = new System.Drawing.Point(70, 43);
             this.PIglesia.Name = "PIglesia";
-            this.PIglesia.Size = new System.Drawing.Size(211, 186);
+            this.PIglesia.Size = new System.Drawing.Size(153, 186);
             this.PIglesia.TabIndex = 14;
             this.PIglesia.TabStop = false;
             this.PIglesia.Visible = false;
+            this.PIglesia.Click += new System.EventHandler(this.PIglesia_Click);
             // 
             // PIsla
             // 
             this.PIsla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.PIsla.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PIsla.BackgroundImage")));
             this.PIsla.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PIsla.Location = new System.Drawing.Point(512, 12);
+            this.PIsla.Location = new System.Drawing.Point(501, 12);
             this.PIsla.Name = "PIsla";
-            this.PIsla.Size = new System.Drawing.Size(198, 172);
+            this.PIsla.Size = new System.Drawing.Size(235, 145);
             this.PIsla.TabIndex = 13;
             this.PIsla.TabStop = false;
+            this.PIsla.Visible = false;
+            this.PIsla.Click += new System.EventHandler(this.PIsla_Click_1);
             // 
             // PIman
             // 
             this.PIman.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.PIman.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PIman.BackgroundImage")));
             this.PIman.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PIman.Location = new System.Drawing.Point(113, 235);
+            this.PIman.Image = global::Lee_y_Escribe.Properties.Resources.Imag4;
+            this.PIman.Location = new System.Drawing.Point(449, 268);
             this.PIman.Name = "PIman";
-            this.PIman.Size = new System.Drawing.Size(153, 178);
+            this.PIman.Size = new System.Drawing.Size(156, 198);
+            this.PIman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PIman.TabIndex = 2;
             this.PIman.TabStop = false;
+            this.PIman.Visible = false;
+            this.PIman.Click += new System.EventHandler(this.PIman_Click);
             // 
             // BRepI
             // 
@@ -129,7 +136,7 @@
             this.BRepI.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BRepI.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BRepI.Image = ((System.Drawing.Image)(resources.GetObject("BRepI.Image")));
-            this.BRepI.Location = new System.Drawing.Point(611, 419);
+            this.BRepI.Location = new System.Drawing.Point(627, 458);
             this.BRepI.Name = "BRepI";
             this.BRepI.Size = new System.Drawing.Size(166, 70);
             this.BRepI.TabIndex = 11;
@@ -161,9 +168,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(789, 501);
+            this.ClientSize = new System.Drawing.Size(805, 540);
             this.Controls.Add(this.PVocalI);
             this.Name = "FVocalI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FVocalI";
             this.PVocalI.ResumeLayout(false);
             this.PVocalI.PerformLayout();

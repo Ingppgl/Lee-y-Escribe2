@@ -31,14 +31,14 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FVocalA));
             this.PVocalA = new System.Windows.Forms.Panel();
-            this.Velocidad = new System.Windows.Forms.TrackBar();
-            this.Tiempo1 = new System.Windows.Forms.Timer(this.components);
             this.BAtrasA = new System.Windows.Forms.Button();
+            this.Velocidad = new System.Windows.Forms.TrackBar();
             this.PAnillo = new System.Windows.Forms.PictureBox();
             this.PAvion = new System.Windows.Forms.PictureBox();
             this.PAbeja = new System.Windows.Forms.PictureBox();
             this.BRepA = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Tiempo1 = new System.Windows.Forms.Timer(this.components);
             this.PVocalA.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PAnillo)).BeginInit();
@@ -63,21 +63,6 @@
             this.PVocalA.Size = new System.Drawing.Size(805, 540);
             this.PVocalA.TabIndex = 8;
             // 
-            // Velocidad
-            // 
-            this.Velocidad.Location = new System.Drawing.Point(12, 495);
-            this.Velocidad.Minimum = -10;
-            this.Velocidad.Name = "Velocidad";
-            this.Velocidad.Size = new System.Drawing.Size(171, 45);
-            this.Velocidad.TabIndex = 9;
-            this.Velocidad.Value = -2;
-            // 
-            // Tiempo1
-            // 
-            this.Tiempo1.Enabled = true;
-            this.Tiempo1.Interval = 1000;
-            this.Tiempo1.Tick += new System.EventHandler(this.Tiempo1_Tick);
-            // 
             // BAtrasA
             // 
             this.BAtrasA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -95,38 +80,51 @@
             this.BAtrasA.AutoSizeChanged += new System.EventHandler(this.BAtrasA_Click_1);
             this.BAtrasA.Click += new System.EventHandler(this.BAtrasA_Click_1);
             // 
+            // Velocidad
+            // 
+            this.Velocidad.Location = new System.Drawing.Point(12, 495);
+            this.Velocidad.Minimum = -10;
+            this.Velocidad.Name = "Velocidad";
+            this.Velocidad.Size = new System.Drawing.Size(171, 45);
+            this.Velocidad.TabIndex = 9;
+            this.Velocidad.Value = -2;
+            // 
             // PAnillo
             // 
             this.PAnillo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PAnillo.BackgroundImage")));
             this.PAnillo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PAnillo.Location = new System.Drawing.Point(105, 274);
+            this.PAnillo.Location = new System.Drawing.Point(183, 322);
             this.PAnillo.Name = "PAnillo";
-            this.PAnillo.Size = new System.Drawing.Size(153, 178);
+            this.PAnillo.Size = new System.Drawing.Size(90, 130);
             this.PAnillo.TabIndex = 6;
             this.PAnillo.TabStop = false;
+            this.PAnillo.Click += new System.EventHandler(this.PAnillo_Click);
             // 
             // PAvion
             // 
             this.PAvion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PAvion.BackgroundImage")));
             this.PAvion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PAvion.Location = new System.Drawing.Point(539, 40);
+            this.PAvion.Location = new System.Drawing.Point(541, 52);
             this.PAvion.Name = "PAvion";
-            this.PAvion.Size = new System.Drawing.Size(198, 172);
+            this.PAvion.Size = new System.Drawing.Size(204, 121);
             this.PAvion.TabIndex = 5;
             this.PAvion.TabStop = false;
+            this.PAvion.Click += new System.EventHandler(this.PAvion_Click);
             // 
             // PAbeja
             // 
             this.PAbeja.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PAbeja.BackgroundImage")));
             this.PAbeja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PAbeja.Location = new System.Drawing.Point(47, 40);
+            this.PAbeja.Location = new System.Drawing.Point(82, 26);
             this.PAbeja.Name = "PAbeja";
-            this.PAbeja.Size = new System.Drawing.Size(211, 186);
+            this.PAbeja.Size = new System.Drawing.Size(157, 197);
             this.PAbeja.TabIndex = 4;
             this.PAbeja.TabStop = false;
+            this.PAbeja.Click += new System.EventHandler(this.PAbeja_Click);
             // 
             // BRepA
             // 
+            this.BRepA.Enabled = false;
             this.BRepA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BRepA.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BRepA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -146,12 +144,19 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pictureBox1.Location = new System.Drawing.Point(224, 108);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(345, 320);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // Tiempo1
+            // 
+            this.Tiempo1.Enabled = true;
+            this.Tiempo1.Interval = 1000;
+            this.Tiempo1.Tick += new System.EventHandler(this.Tiempo1_Tick);
             // 
             // FVocalA
             // 
@@ -160,6 +165,7 @@
             this.ClientSize = new System.Drawing.Size(805, 540);
             this.Controls.Add(this.PVocalA);
             this.Name = "FVocalA";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FVocalA";
             this.PVocalA.ResumeLayout(false);
             this.PVocalA.PerformLayout();

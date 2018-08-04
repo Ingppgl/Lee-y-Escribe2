@@ -31,14 +31,14 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FVocalU));
             this.PVocalU = new System.Windows.Forms.Panel();
-            this.Velocidad = new System.Windows.Forms.TrackBar();
-            this.Tiempo1 = new System.Windows.Forms.Timer(this.components);
             this.BatrasU = new System.Windows.Forms.Button();
+            this.Velocidad = new System.Windows.Forms.TrackBar();
             this.PUlises = new System.Windows.Forms.PictureBox();
             this.PUva = new System.Windows.Forms.PictureBox();
             this.PUña = new System.Windows.Forms.PictureBox();
             this.BRepU = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Tiempo1 = new System.Windows.Forms.Timer(this.components);
             this.PVocalU.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PUlises)).BeginInit();
@@ -63,21 +63,6 @@
             this.PVocalU.Size = new System.Drawing.Size(805, 540);
             this.PVocalU.TabIndex = 9;
             // 
-            // Velocidad
-            // 
-            this.Velocidad.Location = new System.Drawing.Point(12, 453);
-            this.Velocidad.Minimum = -10;
-            this.Velocidad.Name = "Velocidad";
-            this.Velocidad.Size = new System.Drawing.Size(171, 45);
-            this.Velocidad.TabIndex = 9;
-            this.Velocidad.Value = -2;
-            // 
-            // Tiempo1
-            // 
-            this.Tiempo1.Enabled = true;
-            this.Tiempo1.Interval = 1000;
-            this.Tiempo1.Tick += new System.EventHandler(this.Tiempo1_Tick);
-            // 
             // BatrasU
             // 
             this.BatrasU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -94,35 +79,48 @@
             this.BatrasU.UseVisualStyleBackColor = false;
             this.BatrasU.Click += new System.EventHandler(this.BatrasU_Click_1);
             // 
+            // Velocidad
+            // 
+            this.Velocidad.Location = new System.Drawing.Point(12, 453);
+            this.Velocidad.Minimum = -10;
+            this.Velocidad.Name = "Velocidad";
+            this.Velocidad.Size = new System.Drawing.Size(171, 45);
+            this.Velocidad.TabIndex = 9;
+            this.Velocidad.Value = -2;
+            // 
             // PUlises
             // 
-            this.PUlises.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PUlises.BackgroundImage")));
             this.PUlises.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PUlises.Location = new System.Drawing.Point(105, 232);
+            this.PUlises.Image = global::Lee_y_Escribe.Properties.Resources.Imag21;
+            this.PUlises.Location = new System.Drawing.Point(546, 33);
             this.PUlises.Name = "PUlises";
-            this.PUlises.Size = new System.Drawing.Size(153, 178);
+            this.PUlises.Size = new System.Drawing.Size(197, 178);
+            this.PUlises.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PUlises.TabIndex = 6;
             this.PUlises.TabStop = false;
+            this.PUlises.Click += new System.EventHandler(this.PUlises_Click);
             // 
             // PUva
             // 
             this.PUva.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PUva.BackgroundImage")));
             this.PUva.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PUva.Location = new System.Drawing.Point(530, 25);
+            this.PUva.Location = new System.Drawing.Point(305, 387);
             this.PUva.Name = "PUva";
-            this.PUva.Size = new System.Drawing.Size(198, 172);
+            this.PUva.Size = new System.Drawing.Size(247, 127);
             this.PUva.TabIndex = 5;
             this.PUva.TabStop = false;
+            this.PUva.Click += new System.EventHandler(this.PUva_Click);
             // 
             // PUña
             // 
             this.PUña.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PUña.BackgroundImage")));
             this.PUña.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PUña.Location = new System.Drawing.Point(61, 25);
+            this.PUña.Location = new System.Drawing.Point(61, 47);
             this.PUña.Name = "PUña";
-            this.PUña.Size = new System.Drawing.Size(211, 186);
+            this.PUña.Size = new System.Drawing.Size(157, 164);
             this.PUña.TabIndex = 4;
             this.PUña.TabStop = false;
+            this.PUña.Click += new System.EventHandler(this.PUña_Click);
             // 
             // BRepU
             // 
@@ -144,12 +142,19 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pictureBox1.Location = new System.Drawing.Point(224, 108);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(345, 320);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // Tiempo1
+            // 
+            this.Tiempo1.Enabled = true;
+            this.Tiempo1.Interval = 1000;
+            this.Tiempo1.Tick += new System.EventHandler(this.Tiempo1_Tick);
             // 
             // FVocalU
             // 
@@ -157,8 +162,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(805, 540);
             this.Controls.Add(this.PVocalU);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FVocalU";
-            this.Text = "FVocalU";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Vocal U";
             this.PVocalU.ResumeLayout(false);
             this.PVocalU.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).EndInit();

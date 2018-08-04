@@ -19,11 +19,6 @@ namespace Lee_y_Escribe
         public Instrucciones()
         {
             InitializeComponent();
-            TVelocidad.Visible = false;
-            PFlechaL.Visible = false;
-            PFlechaL1.Visible = false;
-            PFlechaR.Visible = false;
-            PAtras.Visible = false;
         }
         private void Narrador(object texto)
         {
@@ -38,6 +33,7 @@ namespace Lee_y_Escribe
             Thread tarea = new Thread(new ParameterizedThreadStart(Narrador));
             if (Time == 1)
             {
+                Salto.Visible = true;
                 try
                 {
                     tarea.Start ("Muy bien, Ahora te mostraré lo que debes hacer para las lecciones"
@@ -46,7 +42,7 @@ namespace Lee_y_Escribe
                         + System.Environment.NewLine
                         + "Este sirve para repetir la instrucción, en caso de no haber entendido lo que dije debes precionarlo"
                         + System.Environment.NewLine
-                        + "Estos para seleccionar la leccion, o el juego dentro de este panel"
+                        + "Estos para seleccionar la leccion, o el juego, dentro de este panel"
                         + System.Environment.NewLine
                         + "y este sirve para regresar a esta pantalla"
                         );
@@ -96,7 +92,7 @@ namespace Lee_y_Escribe
             voz.Pause();
             Time = 33;
             Principal principal = new Principal();
-            this.Hide();
+            Salto.Visible = false;
             principal.Visible = true;
         }
 

@@ -38,7 +38,6 @@ namespace Lee_y_Escribe
             Time1 += 1;
             if (Time1 == 1)
             {
-
                 tarea.Start("Excelente, "
                     + System.Environment.NewLine
                     + "Hemos llegado a la primera lección, "
@@ -51,8 +50,12 @@ namespace Lee_y_Escribe
                     + System.Environment.NewLine
                     + "Ahora vamos con la primera vocal, ");
             }
-
-
+            if(Time1 == 23)
+            {
+                LVocalA.Size = new Size(178,  173);
+                Tiempo1.Stop();
+                BRepPanelVocal.Enabled = true;
+            }
         }
 
         private void LVocalA_Click(object sender, EventArgs e)
@@ -67,7 +70,6 @@ namespace Lee_y_Escribe
         {
             FVocalE vocale = new FVocalE();
             voz.Pause();
-            this.Hide();
             vocale.Visible = true;
         }
 
@@ -75,40 +77,37 @@ namespace Lee_y_Escribe
         {
             FVocalI vocali = new FVocalI();
             voz.Pause();
-            this.Hide();
             vocali.Visible = true;
         }
-
         private void LVocalO_Click(object sender, EventArgs e)
         {
             FVocalO vocalo = new FVocalO();
             voz.Pause();
-            this.Hide();
             vocalo.Visible = true;
         }
-
         private void LVocalU_Click(object sender, EventArgs e)
         {
             FVocalU vocalu = new FVocalU();
             voz.Pause();
-            this.Hide();
             vocalu.Visible = true;
         }
-
         private void BatrasPanelVocal_Click(object sender, EventArgs e)
         {
-            Principal consonante = new Principal();
             voz.Pause();
-            this.Hide();
-            consonante.Visible = true;
+            this.Close();
         }
-
         private void LVocalA_Click_1(object sender, EventArgs e)
         {
             FVocalA vocala = new FVocalA();
             voz.Pause();
-            this.Hide();
             vocala.Visible = true;
+        }
+        private void BRepPanelVocal_Click(object sender, EventArgs e)
+        {
+            LVocalA.Size = new Size(171, 166);
+            BRepPanelVocal.Enabled = false;
+            Time1 = -1;
+            Tiempo1.Start();
         }
     }
 }

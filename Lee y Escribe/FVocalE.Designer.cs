@@ -31,14 +31,14 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FVocalE));
             this.PVocaleE = new System.Windows.Forms.Panel();
-            this.Velocidad = new System.Windows.Forms.TrackBar();
-            this.Tiempo1 = new System.Windows.Forms.Timer(this.components);
             this.BatrasE = new System.Windows.Forms.Button();
             this.BRepE = new System.Windows.Forms.Button();
+            this.Velocidad = new System.Windows.Forms.TrackBar();
             this.PEspada = new System.Windows.Forms.PictureBox();
             this.PEstrella = new System.Windows.Forms.PictureBox();
             this.PElefante = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.Tiempo1 = new System.Windows.Forms.Timer(this.components);
             this.PVocaleE.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PEspada)).BeginInit();
@@ -65,21 +65,6 @@
             this.PVocaleE.Size = new System.Drawing.Size(805, 540);
             this.PVocaleE.TabIndex = 9;
             // 
-            // Velocidad
-            // 
-            this.Velocidad.Location = new System.Drawing.Point(12, 483);
-            this.Velocidad.Minimum = -10;
-            this.Velocidad.Name = "Velocidad";
-            this.Velocidad.Size = new System.Drawing.Size(171, 45);
-            this.Velocidad.TabIndex = 10;
-            this.Velocidad.Value = -2;
-            // 
-            // Tiempo1
-            // 
-            this.Tiempo1.Enabled = true;
-            this.Tiempo1.Interval = 1000;
-            this.Tiempo1.Tick += new System.EventHandler(this.Tiempo1_Tick);
-            // 
             // BatrasE
             // 
             this.BatrasE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -99,6 +84,7 @@
             // 
             // BRepE
             // 
+            this.BRepE.Enabled = false;
             this.BRepE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BRepE.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BRepE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -113,38 +99,53 @@
             this.BRepE.AutoSizeChanged += new System.EventHandler(this.BRepE_Click);
             this.BRepE.Click += new System.EventHandler(this.BRepE_Click);
             // 
+            // Velocidad
+            // 
+            this.Velocidad.Location = new System.Drawing.Point(12, 483);
+            this.Velocidad.Minimum = -10;
+            this.Velocidad.Name = "Velocidad";
+            this.Velocidad.Size = new System.Drawing.Size(171, 45);
+            this.Velocidad.TabIndex = 10;
+            this.Velocidad.Value = -2;
+            // 
             // PEspada
             // 
             this.PEspada.BackColor = System.Drawing.Color.Transparent;
             this.PEspada.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PEspada.BackgroundImage")));
             this.PEspada.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PEspada.Location = new System.Drawing.Point(100, 274);
+            this.PEspada.Location = new System.Drawing.Point(189, 373);
             this.PEspada.Name = "PEspada";
-            this.PEspada.Size = new System.Drawing.Size(153, 178);
+            this.PEspada.Size = new System.Drawing.Size(157, 133);
             this.PEspada.TabIndex = 3;
             this.PEspada.TabStop = false;
+            this.PEspada.Visible = false;
+            this.PEspada.Click += new System.EventHandler(this.PEspada_Click);
             // 
             // PEstrella
             // 
             this.PEstrella.BackColor = System.Drawing.Color.Transparent;
             this.PEstrella.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PEstrella.BackgroundImage")));
             this.PEstrella.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PEstrella.Location = new System.Drawing.Point(73, 25);
+            this.PEstrella.Location = new System.Drawing.Point(100, 21);
             this.PEstrella.Name = "PEstrella";
-            this.PEstrella.Size = new System.Drawing.Size(211, 186);
+            this.PEstrella.Size = new System.Drawing.Size(157, 159);
             this.PEstrella.TabIndex = 2;
             this.PEstrella.TabStop = false;
+            this.PEstrella.Visible = false;
+            this.PEstrella.Click += new System.EventHandler(this.PEstrella_Click);
             // 
             // PElefante
             // 
             this.PElefante.BackColor = System.Drawing.Color.Transparent;
             this.PElefante.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PElefante.BackgroundImage")));
             this.PElefante.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PElefante.Location = new System.Drawing.Point(521, 25);
+            this.PElefante.Location = new System.Drawing.Point(549, 188);
             this.PElefante.Name = "PElefante";
-            this.PElefante.Size = new System.Drawing.Size(198, 172);
+            this.PElefante.Size = new System.Drawing.Size(223, 140);
             this.PElefante.TabIndex = 1;
             this.PElefante.TabStop = false;
+            this.PElefante.Visible = false;
+            this.PElefante.Click += new System.EventHandler(this.PElefante_Click);
             // 
             // pictureBox14
             // 
@@ -155,6 +156,13 @@
             this.pictureBox14.Size = new System.Drawing.Size(345, 320);
             this.pictureBox14.TabIndex = 0;
             this.pictureBox14.TabStop = false;
+            this.pictureBox14.Click += new System.EventHandler(this.pictureBox14_Click);
+            // 
+            // Tiempo1
+            // 
+            this.Tiempo1.Enabled = true;
+            this.Tiempo1.Interval = 1000;
+            this.Tiempo1.Tick += new System.EventHandler(this.Tiempo1_Tick);
             // 
             // FVocalE
             // 
@@ -162,8 +170,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(805, 540);
             this.Controls.Add(this.PVocaleE);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FVocalE";
-            this.Text = "FVocalE";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Vocal E";
             this.PVocaleE.ResumeLayout(false);
             this.PVocaleE.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).EndInit();

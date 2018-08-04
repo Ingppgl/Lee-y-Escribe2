@@ -20,10 +20,6 @@ namespace Lee_y_Escribe
         {
             InitializeComponent();
             Velocidad.Visible = false;
-            BRepE.Enabled = false;
-            PElefante.Visible = false;
-            PEspada.Visible = false;
-            PEstrella.Visible = false;
         }
         private void Narrador(object texto)
         {
@@ -32,7 +28,6 @@ namespace Lee_y_Escribe
             voz.Rate = Velocidad.Value;
             voz.SetOutputToDefaultAudioDevice();
             voz.Speak(texto.ToString());
-
         }
         private void Tiempo1_Tick(object sender, EventArgs e)
         {
@@ -40,17 +35,16 @@ namespace Lee_y_Escribe
             if (Time1 == 1)
             {
                 Thread tarea = new Thread(new ParameterizedThreadStart(Narrador));
-                tarea.Start("Excelente, si estás en este nivel, ya aprendiste la letra, a, y"
+                tarea.Start("Excelente, si estás en este nivel, ya aprendiste la letra, a, y estás listo para esta lección"
                         + System.Environment.NewLine
                         + "Aquí está la segunda vocal, "
                         + System.Environment.NewLine
-                        + "esta se llama, e, si tedas cuenta,"
+                        + "esta se llama, e, y es diferente a la vocal, a, pues,"
                         + System.Environment.NewLine
                         + "tiene una forma media redonda, "
                         + System.Environment.NewLine
-                        + "para pronunciar el nombre de esta letra lo hacemos sin  abrir la boca tanto y decimos, e, con esta tambien "
-                        + System.Environment.NewLine
-                        + "al hablar pronunciamos muchas palabras que empiezan con la letra, e, como por ejemplo"
+                        + "para pronunciar el nombre de esta letra lo hacemos con la boca casi cerrada y decimos, e, con "
+                        +"esta tambien pronunciamos muchas palabras que al inicio tienen la letra, e, como por ejemplo, "
                         + System.Environment.NewLine
                         + "Elefante"
                         + System.Environment.NewLine
@@ -59,17 +53,17 @@ namespace Lee_y_Escribe
                         + "Espada");
             }
 
-            if (Time1 == 35)
+            if (Time1 == 37)
             {
                 PElefante.Visible = true;
             }
 
-            if (Time1 == 37)
+            if (Time1 == 39)
             {
                 PEstrella.Visible = true;
             }
 
-            if (Time1 == 39)
+            if (Time1 == 41)
             {
                 PEspada.Visible = true;
                 BRepE.Enabled = true;
@@ -81,32 +75,37 @@ namespace Lee_y_Escribe
             PElefante.Visible = false;
             PEspada.Visible = false;
             PEstrella.Visible = false;
-            Time1 = 1;
+            Time1 = 0;
             Tiempo1.Start();
-            Thread tarea = new Thread(new ParameterizedThreadStart(Narrador));
-            tarea.Start("Aquí está la segunda vocal, "
-                        + System.Environment.NewLine
-                        + "esta se llama, e, si tedas cuenta,"
-                        + System.Environment.NewLine
-                        + "tiene una forma media redonda, "
-                        + System.Environment.NewLine
-                        + "para pronunciar el nombre de esta letra lo hacemos sin  abrir la boca tanto y decimos, e, con esta tambien "
-                        + System.Environment.NewLine
-                        + "al hablar pronunciamos muchas palabras que empiezan con la letra, e, como por ejemplo"
-                        + System.Environment.NewLine
-                        + "Elefante"
-                        + System.Environment.NewLine
-                        + "Estrella"
-                        + System.Environment.NewLine
-                        + "Espada");
-
         }
         private void BatrasE_Click(object sender, EventArgs e)
         {
-            PruebaDePaneles vocales = new PruebaDePaneles();
             voz.Pause();
             this.Hide();
-            vocales.Visible = true;
+        }
+
+        private void PElefante_Click(object sender, EventArgs e)
+        {
+            Thread Elef = new Thread(new ParameterizedThreadStart(Narrador));
+            Elef.Start("Elefante ");
+        }
+
+        private void PEspada_Click(object sender, EventArgs e)
+        {
+            Thread Esp = new Thread(new ParameterizedThreadStart(Narrador));
+            Esp.Start("Espada ");
+        }
+
+        private void PEstrella_Click(object sender, EventArgs e)
+        {
+            Thread Star= new Thread(new ParameterizedThreadStart(Narrador));
+            Star.Start("Estrella ");
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+            Thread E = new Thread(new ParameterizedThreadStart(Narrador));
+            E.Start("E ");
         }
     }
 }

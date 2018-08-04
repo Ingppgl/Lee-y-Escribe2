@@ -19,10 +19,10 @@ namespace Lee_y_Escribe
         public Principal()
         {
             InitializeComponent();
+            WindowState = FormWindowState.Maximized;
             TVelocidad.Visible = false;
             LVocal.Visible = false;
             LConsM.Visible = false;
-            BRepetir.Enabled = false;
             Jmen.Visible = false;
             Jcar.Visible = false;
         }
@@ -49,7 +49,9 @@ namespace Lee_y_Escribe
             {
                 try
                 {
-                    tarea.Start("Elige una actividad"); 
+                    tarea.Start("Elige una actividad");
+                    LVocales.Enabled = true;
+                    BJuegos.Enabled = true;
                 }
                 catch (Exception)
                 {
@@ -61,6 +63,8 @@ namespace Lee_y_Escribe
 
         private void BJuegos_Click(object sender, EventArgs e)
         {
+            Thread Game = new Thread(new ParameterizedThreadStart(Narrador));
+            Game.Start("Haz Elegido Juego");
             Jcar.Visible = true;
             Jmen.Visible = true;
         }
@@ -68,7 +72,11 @@ namespace Lee_y_Escribe
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             JCarro jcarro = new JCarro();
-            this.Close();
+            voz.Pause();
+            LVocal.Visible = false;
+            LConsM.Visible = false;
+            Jcar.Visible = false;
+            Jmen.Visible = false;
             jcarro.Visible = true;
         }
 
@@ -76,13 +84,17 @@ namespace Lee_y_Escribe
         {
             JMemoriA memoria = new JMemoriA();
             voz.Pause();
-            this.Close();
+            LVocal.Visible = false;
+            LConsM.Visible = false;
+            Jcar.Visible = false;
+            Jmen.Visible = false;
             memoria.Visible = true;
         }
 
         private void LVocales_Click(object sender, EventArgs e)
         {
-            voz.Pause();
+            Thread Lect = new Thread(new ParameterizedThreadStart(Narrador));
+            Lect.Start("Haz Elegido Lecciones");
             LVocal.Visible = true;
             LConsM.Visible = true;
         }
@@ -91,7 +103,10 @@ namespace Lee_y_Escribe
         {
             PruebaDePaneles pruebapaneles = new PruebaDePaneles();
             voz.Pause();
-            this.Hide();
+            LVocal.Visible = false;
+            LConsM.Visible = false;
+            Jcar.Visible = false;
+            Jmen.Visible = false;
             pruebapaneles.Visible = true;
         }
 
@@ -99,14 +114,16 @@ namespace Lee_y_Escribe
         {
             PruebaDePanelesCons pruebapanelesC = new PruebaDePanelesCons();
             voz.Pause();
-            this.Hide();
+            LVocal.Visible = false;
+            LConsM.Visible = false;
+            Jcar.Visible = false;
+            Jmen.Visible = false;
             pruebapanelesC.Visible = true;
         }
 
         private void JCar_Click(object sender, EventArgs e)
         {
             JCarro jcarro = new JCarro();
-            this.Close();
             jcarro.Visible = true;
         }
     }

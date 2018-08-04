@@ -136,6 +136,8 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.carro1);
             this.DoubleBuffered = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "JCarro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "JCarro";

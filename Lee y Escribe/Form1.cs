@@ -16,6 +16,8 @@ namespace Lee_y_Escribe
     {
         SpeechSynthesizer voz = new SpeechSynthesizer();
         int Time1 = 0;
+        Thread tarea;
+
         public Portada()
         {
             InitializeComponent();
@@ -25,39 +27,37 @@ namespace Lee_y_Escribe
         }
 
         private void Narrador(object texto)
-        {           
-                voz.Rate = TVelocidad.Value;
-                voz.SelectVoiceByHints(VoiceGender.Female);
-                voz.SetOutputToDefaultAudioDevice();
-                voz.Speak(texto.ToString());
+        {
+            voz.Rate = TVelocidad.Value;
+            voz.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Child);
+            voz.SetOutputToDefaultAudioDevice();
+            voz.Speak(texto.ToString());
         }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
-            voz.Pause() ;
-            Application.Exit();           
+            Application.Exit();
+            //this.Close();             
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Instrucciones instrucciones = new Instrucciones();
             voz.Pause();
-            this.Hide();
             instrucciones.Visible = true;
         }
+
         private void Tiempo_Tick(object sender, EventArgs e)
         {
-            Thread tarea = new Thread(new ParameterizedThreadStart(Narrador));
+            tarea = new Thread(new ParameterizedThreadStart(Narrador));
             Time1 += 1;
             if (Time1 == 1)
             {
-                try
-                {
                     tarea.Start("Hola,"
                     + System.Environment.NewLine
                     + "Bienvenido a nuestro espacio aprende a leer y a escribir con tatty,"
                     + System.Environment.NewLine
-                    + "Desde ahora, tienes un nuevo amigo quien te mosstrará la manera de leer,"
+                    + "Desde ahora, tienes un nuevo amigo quien te mostrará la manera de leer,"
                     + System.Environment.NewLine
                     + "Para ayudarte debes seguir mi voz y hacer lo que te indique,"
                     + System.Environment.NewLine
@@ -65,14 +65,9 @@ namespace Lee_y_Escribe
                     + System.Environment.NewLine
                     + "Entonces iniciemos, vamos a las lecciones "
                     + System.Environment.NewLine
-                    + "Para ir a la pantalla de lecciones presiona aquí,");
-                }
-                catch (Exception es)
-                {
-                    MessageBox.Show("Vaz Muy Rapido");                  
-                }
+                    + "Para ir a la pantalla de lecciones presiona aquí,");                   
             }
-            
+
             if (Time1 >= 30 && Time1 % 2 == 0)
             {
                 PFlechaR.Visible = true;

@@ -31,41 +31,76 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Jmen = new System.Windows.Forms.Button();
+            this.Jcar = new System.Windows.Forms.Button();
             this.LConsM = new System.Windows.Forms.Button();
             this.LVocal = new System.Windows.Forms.Button();
             this.LVocales = new System.Windows.Forms.Button();
-            this.Jmen = new System.Windows.Forms.PictureBox();
             this.BJuegos = new System.Windows.Forms.Button();
             this.Salir = new System.Windows.Forms.Button();
             this.Inicio = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.BRepetir = new System.Windows.Forms.Button();
             this.TVelocidad = new System.Windows.Forms.TrackBar();
             this.Tiempo = new System.Windows.Forms.Timer(this.components);
-            this.Jcar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Jmen)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TVelocidad)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Jcar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Green;
+            this.panel1.Controls.Add(this.Jmen);
             this.panel1.Controls.Add(this.Jcar);
             this.panel1.Controls.Add(this.LConsM);
             this.panel1.Controls.Add(this.LVocal);
             this.panel1.Controls.Add(this.LVocales);
-            this.panel1.Controls.Add(this.Jmen);
             this.panel1.Controls.Add(this.BJuegos);
             this.panel1.Controls.Add(this.Salir);
             this.panel1.Controls.Add(this.Inicio);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(213, 544);
+            this.panel1.Size = new System.Drawing.Size(213, 628);
             this.panel1.TabIndex = 1;
+            // 
+            // Jmen
+            // 
+            this.Jmen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Jmen.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Jmen.FlatAppearance.BorderSize = 0;
+            this.Jmen.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
+            this.Jmen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.Jmen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Jmen.Font = new System.Drawing.Font("Berlin Sans FB Demi", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Jmen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Jmen.Location = new System.Drawing.Point(18, 385);
+            this.Jmen.Name = "Jmen";
+            this.Jmen.Size = new System.Drawing.Size(181, 41);
+            this.Jmen.TabIndex = 12;
+            this.Jmen.Text = "Memoria";
+            this.Jmen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Jmen.UseVisualStyleBackColor = true;
+            this.Jmen.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // Jcar
+            // 
+            this.Jcar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Jcar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Jcar.FlatAppearance.BorderSize = 0;
+            this.Jcar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
+            this.Jcar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.Jcar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Jcar.Font = new System.Drawing.Font("Berlin Sans FB Demi", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Jcar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Jcar.Location = new System.Drawing.Point(18, 338);
+            this.Jcar.Name = "Jcar";
+            this.Jcar.Size = new System.Drawing.Size(181, 41);
+            this.Jcar.TabIndex = 11;
+            this.Jcar.Text = "Carro";
+            this.Jcar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Jcar.UseVisualStyleBackColor = true;
+            this.Jcar.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // LConsM
             // 
@@ -77,9 +112,9 @@
             this.LConsM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LConsM.Font = new System.Drawing.Font("Berlin Sans FB Demi", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LConsM.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LConsM.Location = new System.Drawing.Point(9, 211);
+            this.LConsM.Location = new System.Drawing.Point(3, 199);
             this.LConsM.Name = "LConsM";
-            this.LConsM.Size = new System.Drawing.Size(198, 37);
+            this.LConsM.Size = new System.Drawing.Size(210, 37);
             this.LConsM.TabIndex = 10;
             this.LConsM.Text = " Consonantes";
             this.LConsM.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -96,9 +131,9 @@
             this.LVocal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LVocal.Font = new System.Drawing.Font("Berlin Sans FB Demi", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LVocal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LVocal.Location = new System.Drawing.Point(3, 164);
+            this.LVocal.Location = new System.Drawing.Point(18, 152);
             this.LVocal.Name = "LVocal";
-            this.LVocal.Size = new System.Drawing.Size(157, 41);
+            this.LVocal.Size = new System.Drawing.Size(181, 41);
             this.LVocal.TabIndex = 9;
             this.LVocal.Text = "Vocales";
             this.LVocal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -107,6 +142,7 @@
             // 
             // LVocales
             // 
+            this.LVocales.Enabled = false;
             this.LVocales.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.LVocales.FlatAppearance.BorderSize = 0;
             this.LVocales.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
@@ -117,26 +153,16 @@
             this.LVocales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LVocales.Location = new System.Drawing.Point(0, 69);
             this.LVocales.Name = "LVocales";
-            this.LVocales.Size = new System.Drawing.Size(213, 90);
+            this.LVocales.Size = new System.Drawing.Size(207, 77);
             this.LVocales.TabIndex = 8;
             this.LVocales.Text = " Lecciones";
             this.LVocales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.LVocales.UseVisualStyleBackColor = true;
             this.LVocales.Click += new System.EventHandler(this.LVocales_Click);
             // 
-            // Jmen
-            // 
-            this.Jmen.BackgroundImage = global::Lee_y_Escribe.Properties.Resources.Im8;
-            this.Jmen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Jmen.Location = new System.Drawing.Point(22, 364);
-            this.Jmen.Name = "Jmen";
-            this.Jmen.Size = new System.Drawing.Size(70, 97);
-            this.Jmen.TabIndex = 6;
-            this.Jmen.TabStop = false;
-            this.Jmen.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // BJuegos
             // 
+            this.BJuegos.Enabled = false;
             this.BJuegos.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.BJuegos.FlatAppearance.BorderSize = 0;
             this.BJuegos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
@@ -145,9 +171,9 @@
             this.BJuegos.Font = new System.Drawing.Font("Berlin Sans FB Demi", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BJuegos.Image = ((System.Drawing.Image)(resources.GetObject("BJuegos.Image")));
             this.BJuegos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BJuegos.Location = new System.Drawing.Point(3, 269);
+            this.BJuegos.Location = new System.Drawing.Point(6, 255);
             this.BJuegos.Name = "BJuegos";
-            this.BJuegos.Size = new System.Drawing.Size(207, 66);
+            this.BJuegos.Size = new System.Drawing.Size(207, 77);
             this.BJuegos.TabIndex = 5;
             this.BJuegos.Text = "   Juegos";
             this.BJuegos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -163,8 +189,9 @@
             this.Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Salir.Font = new System.Drawing.Font("Berlin Sans FB Demi", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Salir.Image = ((System.Drawing.Image)(resources.GetObject("Salir.Image")));
-            this.Salir.Location = new System.Drawing.Point(3, 467);
+            this.Salir.Location = new System.Drawing.Point(6, 550);
             this.Salir.Name = "Salir";
+            this.Salir.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.Salir.Size = new System.Drawing.Size(204, 66);
             this.Salir.TabIndex = 4;
             this.Salir.Text = "   Salir";
@@ -196,31 +223,12 @@
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.BRepetir);
             this.panel2.Controls.Add(this.TVelocidad);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(213, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(661, 544);
+            this.panel2.Size = new System.Drawing.Size(743, 628);
             this.panel2.TabIndex = 2;
-            // 
-            // BRepetir
-            // 
-            this.BRepetir.BackColor = System.Drawing.Color.Transparent;
-            this.BRepetir.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.BRepetir.FlatAppearance.BorderSize = 0;
-            this.BRepetir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.BRepetir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.BRepetir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BRepetir.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BRepetir.Image = ((System.Drawing.Image)(resources.GetObject("BRepetir.Image")));
-            this.BRepetir.Location = new System.Drawing.Point(507, 474);
-            this.BRepetir.Name = "BRepetir";
-            this.BRepetir.Size = new System.Drawing.Size(141, 57);
-            this.BRepetir.TabIndex = 6;
-            this.BRepetir.Text = "Repetir";
-            this.BRepetir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BRepetir.UseVisualStyleBackColor = false;
             // 
             // TVelocidad
             // 
@@ -237,35 +245,21 @@
             this.Tiempo.Interval = 1000;
             this.Tiempo.Tick += new System.EventHandler(this.Tiempo_Tick);
             // 
-            // Jcar
-            // 
-            this.Jcar.BackgroundImage = global::Lee_y_Escribe.Properties.Resources.Im8;
-            this.Jcar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Jcar.Image = global::Lee_y_Escribe.Properties.Resources.Carro;
-            this.Jcar.Location = new System.Drawing.Point(109, 364);
-            this.Jcar.Name = "Jcar";
-            this.Jcar.Size = new System.Drawing.Size(70, 97);
-            this.Jcar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Jcar.TabIndex = 11;
-            this.Jcar.TabStop = false;
-            this.Jcar.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(874, 544);
+            this.ClientSize = new System.Drawing.Size(956, 628);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Principal";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Principal";
+            this.Text = "Aprende a Leer y Escribir con Tatty";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Jmen)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TVelocidad)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Jcar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -278,12 +272,11 @@
         private System.Windows.Forms.Button Inicio;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TrackBar TVelocidad;
-        private System.Windows.Forms.Button BRepetir;
         private System.Windows.Forms.Timer Tiempo;
-        private System.Windows.Forms.PictureBox Jmen;
         private System.Windows.Forms.Button LConsM;
         private System.Windows.Forms.Button LVocal;
         private System.Windows.Forms.Button LVocales;
-        private System.Windows.Forms.PictureBox Jcar;
+        private System.Windows.Forms.Button Jmen;
+        private System.Windows.Forms.Button Jcar;
     }
 }
