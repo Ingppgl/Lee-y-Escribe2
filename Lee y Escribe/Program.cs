@@ -16,7 +16,7 @@ namespace Lee_y_Escribe
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false); 
-            Application.Run(new Portada());
+            Application.Run(new Instrucciones());
         }
     }
 } 

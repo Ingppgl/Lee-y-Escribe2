@@ -53,18 +53,18 @@ namespace Lee_y_Escribe
             Time1 += 1;
             if (Time1 == 1)
             {
-                    tarea.Start("Hola,"
-                    + System.Environment.NewLine
-                    + "Bienvenido a nuestro espacio aprende a leer y a escribir con tatty,"
-                    + System.Environment.NewLine
-                    + "Desde ahora, tienes un nuevo amigo quien te mostrará la manera de leer,"
-                    + System.Environment.NewLine
-                    + "Para ayudarte debes seguir mi voz y hacer lo que te indique,"
-                    + System.Environment.NewLine
-                    + "Durante el proceso te mostraré lo que debes hacer para completar la lección,"
-                    + System.Environment.NewLine
-                    + "Entonces iniciemos, vamos a las lecciones "
-                    + System.Environment.NewLine
+                tarea.Start("Hola,"
+                + System.Environment.NewLine
+                + "Bienvenido a nuestro espacio aprende a leer y a escribir con tatty,"
+                + System.Environment.NewLine
+                + "Desde ahora, tienes un nuevo amigo quien te mostrará la manera de leer,"
+                + System.Environment.NewLine
+                + "Para ayudarte debes seguir mi voz y hacer lo que te indique,"
+                + System.Environment.NewLine
+                + "Durante el proceso te mostraré lo que debes hacer para completar la lección,"
+                + System.Environment.NewLine
+                + "Entonces iniciemos, vamos a las lecciones "
+                + System.Environment.NewLine
                     + "Para ir a la pantalla de lecciones presiona aquí,");                   
             }
 
