@@ -114,5 +114,45 @@ namespace Lee_y_Escribe
             Thread A = new Thread(new ParameterizedThreadStart(Narrador));
             A.Start("A ");
         }
+
+        private void PAbeja_MouseHover(object sender, EventArgs e)
+        {
+            PAbeja.Size = new Size(167, 207);
+        }
+
+        private void PAbeja_MouseLeave(object sender, EventArgs e)
+        {
+            PAbeja.Size = new Size(157, 197);
+        }
+
+        private void PAvion_MouseHover(object sender, EventArgs e)
+        {
+            PAvion.Size = new Size(214, 131);
+        }
+
+        private void PAvion_MouseLeave(object sender, EventArgs e)
+        {
+            PAvion.Size = new Size(204, 121);
+        }
+
+        private void PAnillo_MouseHover(object sender, EventArgs e)
+        {
+            PAnillo.Size = new Size(100, 140);
+        }
+
+        private void PAnillo_MouseLeave(object sender, EventArgs e)
+        {
+            PAnillo.Size = new Size(90, 130);
+        }
+
+        private void pictureBox1_MouseHover(object sender, EventArgs e)
+        {
+            pictureBox1.Size = new Size(355, 330);
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox1.Size = new Size(345, 320);
+        }
     }
 }

@@ -117,8 +117,10 @@ namespace Lee_y_Escribe
 
         private void BatrasP_Click(object sender, EventArgs e)
         {
+            PruebaDePanelesCons consonante = new PruebaDePanelesCons();
             voz.Pause();
             this.Close();
+            consonante.Visible = true;
         }
 
         private void BRepP_Click(object sender, EventArgs e)

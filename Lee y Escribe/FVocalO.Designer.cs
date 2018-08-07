@@ -49,7 +49,7 @@
             // 
             // PVocalO
             // 
-            this.PVocalO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.PVocalO.BackColor = System.Drawing.Color.SteelBlue;
             this.PVocalO.Controls.Add(this.BTRAS);
             this.PVocalO.Controls.Add(this.BRepO);
             this.PVocalO.Controls.Add(this.Velocidad);
@@ -57,7 +57,7 @@
             this.PVocalO.Controls.Add(this.POjo);
             this.PVocalO.Controls.Add(this.POlla);
             this.PVocalO.Controls.Add(this.pictureBox1);
-            this.PVocalO.Cursor = System.Windows.Forms.Cursors.Default;
+            this.PVocalO.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PVocalO.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PVocalO.Location = new System.Drawing.Point(0, 0);
             this.PVocalO.Name = "PVocalO";
@@ -66,7 +66,7 @@
             // 
             // BTRAS
             // 
-            this.BTRAS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BTRAS.BackColor = System.Drawing.Color.SteelBlue;
             this.BTRAS.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTRAS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTRAS.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -84,8 +84,9 @@
             // 
             // BRepO
             // 
-            this.BRepO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BRepO.BackColor = System.Drawing.Color.SteelBlue;
             this.BRepO.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BRepO.Enabled = false;
             this.BRepO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BRepO.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BRepO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));

@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FLupa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLupa.Designer.cs">
+      <DependentUpon>FLupa.cs</DependentUpon>
+    </Compile>
     <Compile Include="FMamá.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,12 @@
     <Compile Include="JMemoriA.Designer.cs">
       <DependentUpon>JMemoriA.cs</DependentUpon>
     </Compile>
+    <Compile Include="LetraL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LetraL.Designer.cs">
+      <DependentUpon>LetraL.cs</DependentUpon>
+    </Compile>
     <Compile Include="LetraM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +157,9 @@
     <Compile Include="PruebaDePanelesCons.designer.cs">
       <DependentUpon>PruebaDePanelesCons.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FLupa.resx">
+      <DependentUpon>FLupa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FMamá.resx">
       <DependentUpon>FMamá.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="JMemoriA.resx">
       <DependentUpon>JMemoriA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LetraL.resx">
+      <DependentUpon>LetraL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LetraM.resx">
       <DependentUpon>LetraM.cs</DependentUpon>

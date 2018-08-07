@@ -81,6 +81,7 @@
             this.PVocaleE.Controls.Add(this.LtraO);
             this.PVocaleE.Controls.Add(this.LtraU);
             this.PVocaleE.Controls.Add(this.pictureBox14);
+            this.PVocaleE.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PVocaleE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PVocaleE.ForeColor = System.Drawing.SystemColors.Highlight;
             this.PVocaleE.Location = new System.Drawing.Point(0, 0);
@@ -212,7 +213,7 @@
             this.LtraA.BackColor = System.Drawing.Color.SteelBlue;
             this.LtraA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LtraA.BackgroundImage")));
             this.LtraA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LtraA.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.LtraA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LtraA.Location = new System.Drawing.Point(169, 45);
             this.LtraA.Name = "LtraA";
             this.LtraA.Size = new System.Drawing.Size(95, 87);
@@ -237,7 +238,7 @@
             this.LtraI.BackColor = System.Drawing.Color.SteelBlue;
             this.LtraI.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LtraI.BackgroundImage")));
             this.LtraI.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LtraI.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.LtraI.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LtraI.Location = new System.Drawing.Point(628, 52);
             this.LtraI.Name = "LtraI";
             this.LtraI.Size = new System.Drawing.Size(85, 66);
@@ -263,7 +264,7 @@
             this.LtraU.BackColor = System.Drawing.Color.SteelBlue;
             this.LtraU.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LtraU.BackgroundImage")));
             this.LtraU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LtraU.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.LtraU.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LtraU.Location = new System.Drawing.Point(403, 337);
             this.LtraU.Name = "LtraU";
             this.LtraU.Size = new System.Drawing.Size(103, 90);
@@ -295,6 +296,7 @@
             this.ClientSize = new System.Drawing.Size(805, 540);
             this.ControlBox = false;
             this.Controls.Add(this.PVocaleE);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LetraM";

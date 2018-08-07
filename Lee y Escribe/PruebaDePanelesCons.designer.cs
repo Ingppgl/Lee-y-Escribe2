@@ -31,10 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PruebaDePanelesCons));
             this.PanelConsonantes = new System.Windows.Forms.Panel();
+            this.ConsoK = new System.Windows.Forms.PictureBox();
             this.BatrasPanelCon = new System.Windows.Forms.Button();
+            this.ConsoQ = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BRepPanelC = new System.Windows.Forms.Button();
             this.ConsoZ = new System.Windows.Forms.PictureBox();
-            this.ConsoQ = new System.Windows.Forms.PictureBox();
             this.ConsoT = new System.Windows.Forms.PictureBox();
             this.ConsP = new System.Windows.Forms.PictureBox();
             this.ConsoY = new System.Windows.Forms.PictureBox();
@@ -47,7 +49,6 @@
             this.ConsoN = new System.Windows.Forms.PictureBox();
             this.ConsM = new System.Windows.Forms.PictureBox();
             this.ConsoL = new System.Windows.Forms.PictureBox();
-            this.ConsoK = new System.Windows.Forms.PictureBox();
             this.ConsoJ = new System.Windows.Forms.PictureBox();
             this.ConsoH = new System.Windows.Forms.PictureBox();
             this.ConsoG = new System.Windows.Forms.PictureBox();
@@ -57,10 +58,11 @@
             this.Velocidad = new System.Windows.Forms.TrackBar();
             this.ConsB = new System.Windows.Forms.PictureBox();
             this.Tiempo1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelConsonantes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConsoZ)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConsoK)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoQ)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConsoZ)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoY)).BeginInit();
@@ -73,7 +75,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ConsoN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoL)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ConsoK)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoJ)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoG)).BeginInit();
@@ -82,7 +83,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ConsC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelConsonantes
@@ -120,6 +120,17 @@
             this.PanelConsonantes.Size = new System.Drawing.Size(805, 540);
             this.PanelConsonantes.TabIndex = 7;
             // 
+            // ConsoK
+            // 
+            this.ConsoK.Image = ((System.Drawing.Image)(resources.GetObject("ConsoK.Image")));
+            this.ConsoK.Location = new System.Drawing.Point(138, 130);
+            this.ConsoK.Name = "ConsoK";
+            this.ConsoK.Size = new System.Drawing.Size(114, 97);
+            this.ConsoK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ConsoK.TabIndex = 27;
+            this.ConsoK.TabStop = false;
+            this.ConsoK.Click += new System.EventHandler(this.ConsoK_Click);
+            // 
             // BatrasPanelCon
             // 
             this.BatrasPanelCon.BackColor = System.Drawing.Color.Transparent;
@@ -137,8 +148,30 @@
             this.BatrasPanelCon.AutoSizeChanged += new System.EventHandler(this.BatrasPanelCon_Click);
             this.BatrasPanelCon.Click += new System.EventHandler(this.BatrasPanelCon_Click);
             // 
+            // ConsoQ
+            // 
+            this.ConsoQ.Image = ((System.Drawing.Image)(resources.GetObject("ConsoQ.Image")));
+            this.ConsoQ.Location = new System.Drawing.Point(242, 240);
+            this.ConsoQ.Name = "ConsoQ";
+            this.ConsoQ.Size = new System.Drawing.Size(114, 97);
+            this.ConsoQ.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ConsoQ.TabIndex = 40;
+            this.ConsoQ.TabStop = false;
+            this.ConsoQ.Click += new System.EventHandler(this.ConsoQ_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Lee_y_Escribe.Properties.Resources.Libros;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 226);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(240, 235);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 44;
+            this.pictureBox1.TabStop = false;
+            // 
             // BRepPanelC
             // 
+            this.BRepPanelC.Enabled = false;
             this.BRepPanelC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BRepPanelC.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BRepPanelC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -162,17 +195,6 @@
             this.ConsoZ.TabStop = false;
             this.ConsoZ.Click += new System.EventHandler(this.ConsoZ_Click);
             // 
-            // ConsoQ
-            // 
-            this.ConsoQ.Image = ((System.Drawing.Image)(resources.GetObject("ConsoQ.Image")));
-            this.ConsoQ.Location = new System.Drawing.Point(242, 240);
-            this.ConsoQ.Name = "ConsoQ";
-            this.ConsoQ.Size = new System.Drawing.Size(114, 97);
-            this.ConsoQ.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ConsoQ.TabIndex = 40;
-            this.ConsoQ.TabStop = false;
-            this.ConsoQ.Click += new System.EventHandler(this.ConsoQ_Click);
-            // 
             // ConsoT
             // 
             this.ConsoT.Image = ((System.Drawing.Image)(resources.GetObject("ConsoT.Image")));
@@ -194,6 +216,8 @@
             this.ConsP.TabIndex = 38;
             this.ConsP.TabStop = false;
             this.ConsP.Click += new System.EventHandler(this.ConsP_Click);
+            this.ConsP.MouseLeave += new System.EventHandler(this.ConsP_MouseLeave);
+            this.ConsP.MouseHover += new System.EventHandler(this.ConsP_MouseHover);
             // 
             // ConsoY
             // 
@@ -293,6 +317,8 @@
             this.ConsM.TabIndex = 29;
             this.ConsM.TabStop = false;
             this.ConsM.Click += new System.EventHandler(this.ConsM_Click);
+            this.ConsM.MouseLeave += new System.EventHandler(this.ConsM_MouseLeave);
+            this.ConsM.MouseHover += new System.EventHandler(this.ConsM_MouseHover);
             // 
             // ConsoL
             // 
@@ -304,17 +330,8 @@
             this.ConsoL.TabIndex = 28;
             this.ConsoL.TabStop = false;
             this.ConsoL.Click += new System.EventHandler(this.ConsoL_Click);
-            // 
-            // ConsoK
-            // 
-            this.ConsoK.Image = ((System.Drawing.Image)(resources.GetObject("ConsoK.Image")));
-            this.ConsoK.Location = new System.Drawing.Point(138, 130);
-            this.ConsoK.Name = "ConsoK";
-            this.ConsoK.Size = new System.Drawing.Size(114, 97);
-            this.ConsoK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ConsoK.TabIndex = 27;
-            this.ConsoK.TabStop = false;
-            this.ConsoK.Click += new System.EventHandler(this.ConsoK_Click);
+            this.ConsoL.MouseLeave += new System.EventHandler(this.ConsoL_MouseLeave);
+            this.ConsoL.MouseHover += new System.EventHandler(this.ConsoL_MouseHover);
             // 
             // ConsoJ
             // 
@@ -408,16 +425,6 @@
             this.Tiempo1.Interval = 1000;
             this.Tiempo1.Tick += new System.EventHandler(this.Tiempo1_Tick);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Lee_y_Escribe.Properties.Resources.Libros;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 226);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(240, 235);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 44;
-            this.pictureBox1.TabStop = false;
-            // 
             // PruebaDePanelesCons
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -425,6 +432,7 @@
             this.ClientSize = new System.Drawing.Size(805, 540);
             this.ControlBox = false;
             this.Controls.Add(this.PanelConsonantes);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "PruebaDePanelesCons";
@@ -433,8 +441,10 @@
             this.Text = "Aprende a Leer y Escribir con Tatty";
             this.PanelConsonantes.ResumeLayout(false);
             this.PanelConsonantes.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConsoZ)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConsoK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoQ)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConsoZ)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoY)).EndInit();
@@ -447,7 +457,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ConsoN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoL)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ConsoK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoJ)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoH)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsoG)).EndInit();
@@ -456,7 +465,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ConsC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConsB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

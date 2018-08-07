@@ -112,5 +112,45 @@ namespace Lee_y_Escribe
             Thread U = new Thread(new ParameterizedThreadStart(Narrador));
             U.Start("U ");
         }
+
+        private void PUlises_MouseHover(object sender, EventArgs e)
+        {
+            PUlises.Size = new Size(207, 188);
+        }
+
+        private void PUlises_MouseLeave(object sender, EventArgs e)
+        {
+            PUlises.Size = new Size(197, 178);
+        }
+
+        private void PUña_MouseHover(object sender, EventArgs e)
+        {
+            PUña.Size = new Size(167, 174);
+        }
+
+        private void PUña_MouseLeave(object sender, EventArgs e)
+        {
+            PUña.Size = new Size(157, 164);
+        }
+
+        private void PUva_MouseHover(object sender, EventArgs e)
+        {
+            PUva.Size = new Size(257, 137);
+        }
+
+        private void PUva_MouseLeave(object sender, EventArgs e)
+        {
+            PUva.Size = new Size(247, 127);
+        }
+
+        private void pictureBox1_MouseHover(object sender, EventArgs e)
+        {
+            pictureBox1.Size = new Size(355, 330);
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox1.Size = new Size(345, 320);
+        }
     }
 }

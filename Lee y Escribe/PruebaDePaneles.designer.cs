@@ -31,16 +31,16 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PruebaDePaneles));
             this.PanelVocales = new System.Windows.Forms.Panel();
+            this.Velocidad = new System.Windows.Forms.TrackBar();
+            this.Tiempo1 = new System.Windows.Forms.Timer(this.components);
+            this.Tiempo2 = new System.Windows.Forms.Timer(this.components);
             this.BRepPanelVocal = new System.Windows.Forms.Button();
             this.BatrasPanelVocal = new System.Windows.Forms.Button();
-            this.Velocidad = new System.Windows.Forms.TrackBar();
             this.LVocalU = new System.Windows.Forms.PictureBox();
             this.LVocalO = new System.Windows.Forms.PictureBox();
             this.LVocalI = new System.Windows.Forms.PictureBox();
             this.LVocalE = new System.Windows.Forms.PictureBox();
             this.LVocalA = new System.Windows.Forms.PictureBox();
-            this.Tiempo1 = new System.Windows.Forms.Timer(this.components);
-            this.Tiempo2 = new System.Windows.Forms.Timer(this.components);
             this.PanelVocales.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LVocalU)).BeginInit();
@@ -66,6 +66,25 @@
             this.PanelVocales.Name = "PanelVocales";
             this.PanelVocales.Size = new System.Drawing.Size(805, 540);
             this.PanelVocales.TabIndex = 6;
+            // 
+            // Velocidad
+            // 
+            this.Velocidad.Location = new System.Drawing.Point(17, 495);
+            this.Velocidad.Minimum = -10;
+            this.Velocidad.Name = "Velocidad";
+            this.Velocidad.Size = new System.Drawing.Size(171, 45);
+            this.Velocidad.TabIndex = 8;
+            this.Velocidad.Value = -2;
+            // 
+            // Tiempo1
+            // 
+            this.Tiempo1.Enabled = true;
+            this.Tiempo1.Interval = 1000;
+            this.Tiempo1.Tick += new System.EventHandler(this.Tiempo1_Tick_1);
+            // 
+            // Tiempo2
+            // 
+            this.Tiempo2.Interval = 1000;
             // 
             // BRepPanelVocal
             // 
@@ -100,15 +119,6 @@
             this.BatrasPanelVocal.AutoSizeChanged += new System.EventHandler(this.BatrasPanelVocal_Click);
             this.BatrasPanelVocal.Click += new System.EventHandler(this.BatrasPanelVocal_Click);
             // 
-            // Velocidad
-            // 
-            this.Velocidad.Location = new System.Drawing.Point(17, 495);
-            this.Velocidad.Minimum = -10;
-            this.Velocidad.Name = "Velocidad";
-            this.Velocidad.Size = new System.Drawing.Size(171, 45);
-            this.Velocidad.TabIndex = 8;
-            this.Velocidad.Value = -2;
-            // 
             // LVocalU
             // 
             this.LVocalU.Image = ((System.Drawing.Image)(resources.GetObject("LVocalU.Image")));
@@ -120,6 +130,8 @@
             this.LVocalU.TabStop = false;
             this.LVocalU.BackColorChanged += new System.EventHandler(this.LVocalU_Click);
             this.LVocalU.Click += new System.EventHandler(this.LVocalU_Click);
+            this.LVocalU.MouseLeave += new System.EventHandler(this.LVocalU_MouseLeave);
+            this.LVocalU.MouseHover += new System.EventHandler(this.LVocalU_MouseHover);
             // 
             // LVocalO
             // 
@@ -132,6 +144,8 @@
             this.LVocalO.TabStop = false;
             this.LVocalO.BackColorChanged += new System.EventHandler(this.LVocalO_Click);
             this.LVocalO.Click += new System.EventHandler(this.LVocalO_Click);
+            this.LVocalO.MouseLeave += new System.EventHandler(this.LVocalO_MouseLeave);
+            this.LVocalO.MouseHover += new System.EventHandler(this.LVocalO_MouseHover);
             // 
             // LVocalI
             // 
@@ -144,6 +158,8 @@
             this.LVocalI.TabStop = false;
             this.LVocalI.BackColorChanged += new System.EventHandler(this.LVocalI_Click);
             this.LVocalI.Click += new System.EventHandler(this.LVocalI_Click);
+            this.LVocalI.MouseLeave += new System.EventHandler(this.LVocalI_MouseLeave);
+            this.LVocalI.MouseHover += new System.EventHandler(this.LVocalI_MouseHover);
             // 
             // LVocalE
             // 
@@ -156,6 +172,8 @@
             this.LVocalE.TabStop = false;
             this.LVocalE.BackColorChanged += new System.EventHandler(this.LVocalE_Click);
             this.LVocalE.Click += new System.EventHandler(this.LVocalE_Click);
+            this.LVocalE.MouseLeave += new System.EventHandler(this.LVocalE_MouseLeave);
+            this.LVocalE.MouseHover += new System.EventHandler(this.LVocalE_MouseHover);
             // 
             // LVocalA
             // 
@@ -168,16 +186,8 @@
             this.LVocalA.TabStop = false;
             this.LVocalA.BackColorChanged += new System.EventHandler(this.LVocalA_Click);
             this.LVocalA.Click += new System.EventHandler(this.LVocalA_Click_1);
-            // 
-            // Tiempo1
-            // 
-            this.Tiempo1.Enabled = true;
-            this.Tiempo1.Interval = 1000;
-            this.Tiempo1.Tick += new System.EventHandler(this.Tiempo1_Tick_1);
-            // 
-            // Tiempo2
-            // 
-            this.Tiempo2.Interval = 1000;
+            this.LVocalA.MouseLeave += new System.EventHandler(this.LVocalA_MouseLeave);
+            this.LVocalA.MouseHover += new System.EventHandler(this.LVocalA_MouseHover);
             // 
             // PruebaDePaneles
             // 
@@ -186,6 +196,7 @@
             this.ClientSize = new System.Drawing.Size(805, 540);
             this.ControlBox = false;
             this.Controls.Add(this.PanelVocales);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "PruebaDePaneles";

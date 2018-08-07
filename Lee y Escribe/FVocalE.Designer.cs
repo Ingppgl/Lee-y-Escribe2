@@ -49,7 +49,7 @@
             // 
             // PVocaleE
             // 
-            this.PVocaleE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.PVocaleE.BackColor = System.Drawing.Color.SteelBlue;
             this.PVocaleE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PVocaleE.Controls.Add(this.BatrasE);
             this.PVocaleE.Controls.Add(this.BRepE);
@@ -67,7 +67,8 @@
             // 
             // BatrasE
             // 
-            this.BatrasE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BatrasE.BackColor = System.Drawing.Color.SteelBlue;
+            this.BatrasE.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BatrasE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BatrasE.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BatrasE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -84,6 +85,7 @@
             // 
             // BRepE
             // 
+            this.BRepE.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BRepE.Enabled = false;
             this.BRepE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BRepE.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -113,6 +115,7 @@
             this.PEspada.BackColor = System.Drawing.Color.Transparent;
             this.PEspada.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PEspada.BackgroundImage")));
             this.PEspada.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PEspada.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PEspada.Location = new System.Drawing.Point(189, 373);
             this.PEspada.Name = "PEspada";
             this.PEspada.Size = new System.Drawing.Size(157, 133);
@@ -120,12 +123,15 @@
             this.PEspada.TabStop = false;
             this.PEspada.Visible = false;
             this.PEspada.Click += new System.EventHandler(this.PEspada_Click);
+            this.PEspada.MouseLeave += new System.EventHandler(this.PEspada_MouseLeave);
+            this.PEspada.MouseHover += new System.EventHandler(this.PEspada_MouseHover);
             // 
             // PEstrella
             // 
             this.PEstrella.BackColor = System.Drawing.Color.Transparent;
             this.PEstrella.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PEstrella.BackgroundImage")));
             this.PEstrella.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PEstrella.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PEstrella.Location = new System.Drawing.Point(100, 21);
             this.PEstrella.Name = "PEstrella";
             this.PEstrella.Size = new System.Drawing.Size(157, 159);
@@ -133,12 +139,15 @@
             this.PEstrella.TabStop = false;
             this.PEstrella.Visible = false;
             this.PEstrella.Click += new System.EventHandler(this.PEstrella_Click);
+            this.PEstrella.MouseLeave += new System.EventHandler(this.PEstrella_MouseLeave);
+            this.PEstrella.MouseHover += new System.EventHandler(this.PEstrella_MouseHover);
             // 
             // PElefante
             // 
             this.PElefante.BackColor = System.Drawing.Color.Transparent;
             this.PElefante.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PElefante.BackgroundImage")));
             this.PElefante.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PElefante.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PElefante.Location = new System.Drawing.Point(549, 188);
             this.PElefante.Name = "PElefante";
             this.PElefante.Size = new System.Drawing.Size(223, 140);
@@ -146,17 +155,22 @@
             this.PElefante.TabStop = false;
             this.PElefante.Visible = false;
             this.PElefante.Click += new System.EventHandler(this.PElefante_Click);
+            this.PElefante.MouseLeave += new System.EventHandler(this.PElefante_MouseLeave);
+            this.PElefante.MouseHover += new System.EventHandler(this.PElefante_MouseHover);
             // 
             // pictureBox14
             // 
             this.pictureBox14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox14.BackgroundImage")));
             this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox14.Location = new System.Drawing.Point(215, 108);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(345, 320);
             this.pictureBox14.TabIndex = 0;
             this.pictureBox14.TabStop = false;
             this.pictureBox14.Click += new System.EventHandler(this.pictureBox14_Click);
+            this.pictureBox14.MouseLeave += new System.EventHandler(this.pictureBox14_MouseLeave);
+            this.pictureBox14.MouseHover += new System.EventHandler(this.pictureBox14_MouseHover);
             // 
             // Tiempo1
             // 

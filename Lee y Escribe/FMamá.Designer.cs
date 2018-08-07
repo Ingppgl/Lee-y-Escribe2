@@ -46,6 +46,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.Velocidad = new System.Windows.Forms.TrackBar();
             this.Tiempo1 = new System.Windows.Forms.Timer(this.components);
+            this.MiO = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).BeginInit();
             this.SuspendLayout();
@@ -54,6 +55,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel1.Controls.Add(this.MiO);
             this.panel1.Controls.Add(this.Mamá);
             this.panel1.Controls.Add(this.Mima);
             this.panel1.Controls.Add(this.Mami);
@@ -64,13 +66,13 @@
             this.panel1.Controls.Add(this.MU);
             this.panel1.Controls.Add(this.MO);
             this.panel1.Controls.Add(this.MI);
-            this.panel1.Controls.Add(this.ME);
             this.panel1.Controls.Add(this.MA);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.Velocidad);
+            this.panel1.Controls.Add(this.ME);
             this.panel1.Location = new System.Drawing.Point(-3, -4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(811, 549);
+            this.panel1.Size = new System.Drawing.Size(838, 556);
             this.panel1.TabIndex = 3;
             // 
             // Mamá
@@ -80,7 +82,7 @@
             this.Mamá.Font = new System.Drawing.Font("Berlin Sans FB Demi", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Mamá.ForeColor = System.Drawing.Color.Black;
             this.Mamá.Image = ((System.Drawing.Image)(resources.GetObject("Mamá.Image")));
-            this.Mamá.Location = new System.Drawing.Point(270, 357);
+            this.Mamá.Location = new System.Drawing.Point(270, 316);
             this.Mamá.Name = "Mamá";
             this.Mamá.Size = new System.Drawing.Size(187, 71);
             this.Mamá.TabIndex = 27;
@@ -96,7 +98,7 @@
             this.Mima.Font = new System.Drawing.Font("Berlin Sans FB Demi", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Mima.ForeColor = System.Drawing.Color.Black;
             this.Mima.Image = ((System.Drawing.Image)(resources.GetObject("Mima.Image")));
-            this.Mima.Location = new System.Drawing.Point(559, 357);
+            this.Mima.Location = new System.Drawing.Point(559, 316);
             this.Mima.Name = "Mima";
             this.Mima.Size = new System.Drawing.Size(187, 71);
             this.Mima.TabIndex = 26;
@@ -112,7 +114,7 @@
             this.Mami.Font = new System.Drawing.Font("Berlin Sans FB Demi", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Mami.ForeColor = System.Drawing.Color.Black;
             this.Mami.Image = ((System.Drawing.Image)(resources.GetObject("Mami.Image")));
-            this.Mami.Location = new System.Drawing.Point(270, 235);
+            this.Mami.Location = new System.Drawing.Point(270, 205);
             this.Mami.Name = "Mami";
             this.Mami.Size = new System.Drawing.Size(187, 71);
             this.Mami.TabIndex = 25;
@@ -128,7 +130,7 @@
             this.Ama.Font = new System.Drawing.Font("Berlin Sans FB Demi", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ama.ForeColor = System.Drawing.Color.Black;
             this.Ama.Image = ((System.Drawing.Image)(resources.GetObject("Ama.Image")));
-            this.Ama.Location = new System.Drawing.Point(559, 235);
+            this.Ama.Location = new System.Drawing.Point(559, 205);
             this.Ama.Name = "Ama";
             this.Ama.Size = new System.Drawing.Size(187, 71);
             this.Ama.TabIndex = 24;
@@ -144,7 +146,7 @@
             this.BRepMama.Font = new System.Drawing.Font("Berlin Sans FB Demi", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BRepMama.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BRepMama.Image = ((System.Drawing.Image)(resources.GetObject("BRepMama.Image")));
-            this.BRepMama.Location = new System.Drawing.Point(613, 462);
+            this.BRepMama.Location = new System.Drawing.Point(626, 473);
             this.BRepMama.Name = "BRepMama";
             this.BRepMama.Size = new System.Drawing.Size(183, 70);
             this.BRepMama.TabIndex = 23;
@@ -160,7 +162,7 @@
             this.BAtrasLeccionM.Font = new System.Drawing.Font("Berlin Sans FB Demi", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BAtrasLeccionM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BAtrasLeccionM.Image = ((System.Drawing.Image)(resources.GetObject("BAtrasLeccionM.Image")));
-            this.BAtrasLeccionM.Location = new System.Drawing.Point(250, 462);
+            this.BAtrasLeccionM.Location = new System.Drawing.Point(270, 473);
             this.BAtrasLeccionM.Name = "BAtrasLeccionM";
             this.BAtrasLeccionM.Size = new System.Drawing.Size(180, 70);
             this.BAtrasLeccionM.TabIndex = 22;
@@ -237,9 +239,9 @@
             this.ME.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ME.Font = new System.Drawing.Font("Berlin Sans FB Demi", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ME.ForeColor = System.Drawing.Color.Black;
-            this.ME.Location = new System.Drawing.Point(299, 108);
+            this.ME.Location = new System.Drawing.Point(286, 112);
             this.ME.Name = "ME";
-            this.ME.Size = new System.Drawing.Size(114, 76);
+            this.ME.Size = new System.Drawing.Size(114, 72);
             this.ME.TabIndex = 17;
             this.ME.Text = " me";
             this.ME.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -269,7 +271,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(244, 549);
+            this.panel2.Size = new System.Drawing.Size(244, 556);
             this.panel2.TabIndex = 15;
             // 
             // Velocidad
@@ -288,13 +290,29 @@
             this.Tiempo1.Interval = 1000;
             this.Tiempo1.Tick += new System.EventHandler(this.Tiempo1_Tick);
             // 
+            // MiO
+            // 
+            this.MiO.BackColor = System.Drawing.Color.SteelBlue;
+            this.MiO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MiO.Font = new System.Drawing.Font("Berlin Sans FB Demi", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MiO.ForeColor = System.Drawing.Color.Red;
+            this.MiO.Location = new System.Drawing.Point(270, 396);
+            this.MiO.Name = "MiO";
+            this.MiO.Size = new System.Drawing.Size(502, 71);
+            this.MiO.TabIndex = 28;
+            this.MiO.Text = "mi mamá me ama";
+            this.MiO.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.MiO.UseVisualStyleBackColor = false;
+            this.MiO.Visible = false;
+            // 
             // FMamá
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(805, 540);
+            this.ClientSize = new System.Drawing.Size(834, 551);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "FMamá";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lección Mamá";
@@ -323,5 +341,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TrackBar Velocidad;
         private System.Windows.Forms.Timer Tiempo1;
+        private System.Windows.Forms.Button MiO;
     }
 }

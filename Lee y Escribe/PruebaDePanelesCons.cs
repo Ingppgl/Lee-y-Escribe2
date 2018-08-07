@@ -76,7 +76,7 @@ namespace Lee_y_Escribe
         {
             Principal consonante = new Principal();
             voz.Pause();
-            this.Hide();
+            this.Close();
             consonante.Visible = true;
         }
 
@@ -122,7 +122,10 @@ namespace Lee_y_Escribe
 
         private void ConsoL_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Esta letra no esta activada");
+            LetraL consonanteL = new LetraL();
+            voz.Pause();
+            this.Hide();
+            consonanteL.Visible = true;
         }
 
         private void ConsoN_Click(object sender, EventArgs e)
@@ -178,6 +181,36 @@ namespace Lee_y_Escribe
         private void ConsoZ_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Esta letra no esta activada");
+        }
+
+        private void ConsoL_MouseHover(object sender, EventArgs e)
+        {
+            ConsoL.Size = new Size(124, 207);
+        }
+
+        private void ConsoL_MouseLeave(object sender, EventArgs e)
+        {
+            ConsoL.Size = new Size(114, 97);
+        }
+
+        private void ConsM_MouseHover(object sender, EventArgs e)
+        {
+            ConsM.Size = new Size(124, 207);
+        }
+
+        private void ConsM_MouseLeave(object sender, EventArgs e)
+        {
+            ConsM.Size = new Size(114, 97);
+        }
+
+        private void ConsP_MouseHover(object sender, EventArgs e)
+        {
+            ConsP.Size = new Size(124, 207);
+        }
+
+        private void ConsP_MouseLeave(object sender, EventArgs e)
+        {
+            ConsP.Size = new Size(114, 97);
         }
     }
 }

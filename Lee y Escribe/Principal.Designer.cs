@@ -49,7 +49,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkGray;
+            this.panel1.BackColor = System.Drawing.Color.Gray;
             this.panel1.Controls.Add(this.Jmen);
             this.panel1.Controls.Add(this.Jcar);
             this.panel1.Controls.Add(this.LConsM);
@@ -61,7 +61,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(213, 628);
+            this.panel1.Size = new System.Drawing.Size(252, 628);
             this.panel1.TabIndex = 1;
             // 
             // Jmen
@@ -219,15 +219,15 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel2.BackColor = System.Drawing.Color.SteelBlue;
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.TVelocidad);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(213, 0);
+            this.panel2.Location = new System.Drawing.Point(252, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(743, 628);
+            this.panel2.Size = new System.Drawing.Size(704, 628);
             this.panel2.TabIndex = 2;
             // 
             // TVelocidad
@@ -253,6 +253,7 @@
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Principal";
