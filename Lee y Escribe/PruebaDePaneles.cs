@@ -109,5 +109,55 @@ namespace Lee_y_Escribe
             Time1 = -1;
             Tiempo1.Start();
         }
+
+        private void LVocalA_MouseHover(object sender, EventArgs e)
+        {
+            LVocalA.Size = new Size(181, 176);
+        }
+
+        private void LVocalA_MouseLeave(object sender, EventArgs e)
+        {
+            LVocalA.Size = new Size(171, 166);
+        }
+
+        private void LVocalE_MouseHover(object sender, EventArgs e)
+        {
+            LVocalE.Size = new Size(181, 176);
+        }
+
+        private void LVocalE_MouseLeave(object sender, EventArgs e)
+        {
+            LVocalE.Size = new Size(171, 166);
+        }
+
+        private void LVocalI_MouseHover(object sender, EventArgs e)
+        {
+            LVocalI.Size = new Size(181, 176);
+        }
+
+        private void LVocalI_MouseLeave(object sender, EventArgs e)
+        {
+            LVocalI.Size = new Size(171, 166);
+        }
+
+        private void LVocalO_MouseHover(object sender, EventArgs e)
+        {
+            LVocalO.Size = new Size(181, 176);
+        }
+
+        private void LVocalO_MouseLeave(object sender, EventArgs e)
+        {
+            LVocalO.Size = new Size(171, 166);
+        }
+
+        private void LVocalU_MouseHover(object sender, EventArgs e)
+        {
+            LVocalU.Size = new Size(181, 176);
+        }
+
+        private void LVocalU_MouseLeave(object sender, EventArgs e)
+        {
+            LVocalU.Size = new Size(171, 166);
+        }
     }
 }

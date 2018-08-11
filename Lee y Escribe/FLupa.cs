@@ -10,15 +10,17 @@ using System.Windows.Forms;
 using System.Speech.Synthesis;
 using System.Threading;
 
+
 namespace Lee_y_Escribe
 {
-    public partial class FPapá : Form
+    public partial class FLupa : Form
     {
         SpeechSynthesizer voz = new SpeechSynthesizer();
         int Time1 = 0;
-        public FPapá()
+        public FLupa()
         {
             InitializeComponent();
+
         }
         private void Narrador(object texto)
         {
@@ -27,13 +29,8 @@ namespace Lee_y_Escribe
             voz.Rate = Velocidad.Value;
             voz.SetOutputToDefaultAudioDevice();
             voz.Speak(texto.ToString());
-        }
-        private void BAtrasLeccionP_Click(object sender, EventArgs e)
-        {
-            voz.Pause();
-            this.Close();
-        }
 
+        }
         private void Tiempo1_Tick(object sender, EventArgs e)
         {
             Time1 += 1;
@@ -42,99 +39,108 @@ namespace Lee_y_Escribe
                 Thread tarea = new Thread(new ParameterizedThreadStart(Narrador));
                 tarea.Start("Ya hemos aprendido como suena una vocal con una consonante, "
                         + System.Environment.NewLine
-                        + "que juntas se forma una sílabas,"
+                        + "que juntas se forma una silaba,"
                         + System.Environment.NewLine
                         + "ahora aprenderemos a formar palabras, "
                         + System.Environment.NewLine
-                        + "y las sílabas, "
+                        + "y las silabas, "
                         + System.Environment.NewLine
-                        + "Pa, "
+                        + "La, "
                         + System.Environment.NewLine
-                        + "Pe"
+                        + "Le"
                         + System.Environment.NewLine
-                        + "Pi"
+                        + "Li"
                         + System.Environment.NewLine
-                        + "Po"
+                        + "Lo"
                         + System.Environment.NewLine
-                        + "Pu"
+                        + "Lu"
                          + System.Environment.NewLine
                         + "forman las siguientes palabras"
                         + System.Environment.NewLine
-                        + "Papá, "
+                        + "lupa, "
                         + System.Environment.NewLine
-                        + "puma"
+                        + "mula"
                         + System.Environment.NewLine
-                        + "pipa"
+                        + "pala"
                         + System.Environment.NewLine
-                        + "mapa"
+                        + "pila"
                         + System.Environment.NewLine
-                        + "y con la convinación de las sílabas y las palabras podemos formar oracion"
+                        + "y con la convinación de las sílabas y las palabras podemos formar oración"
                          + System.Environment.NewLine
                         + "como por ejemlo"
                          + System.Environment.NewLine
-                        + "papá ama a mamá");
+                        + "lola leia la ele");
             }
             if (Time1 == 15)
             {
-                Pa.Visible = true;
+                LA.Visible = true;
             }
 
             if (Time1 == 16)
             {
-                Pe.Visible = true;
+                LE.Visible = true;
             }
 
             if (Time1 == 17)
             {
-                Pi.Visible = true;
+                LI.Visible = true;
             }
             if (Time1 == 18)
             {
-                Po.Visible = true;
+                LO.Visible = true;
             }
             if (Time1 == 19)
             {
-                Pu.Visible = true;
+                LU.Visible = true;
             }
             if (Time1 == 25)
             {
-                Papá.Visible = true;
+                Lupa.Visible = true;
             }
             if (Time1 == 27)
             {
-                Puma.Visible = true;
+                Mula.Visible = true;
             }
             if (Time1 == 28)
             {
-                Pipa.Visible = true;
+                Pala.Visible = true;
             }
-            if (Time1 == 29)
+            if (Time1 == 30)
             {
-                Mapa.Visible = true;
+                Pila.Visible = true;
+
             }
             if (Time1 == 39)
             {
-                PapáO.Visible = true;
-            }
-            if (Time1 == 42)
-            {
-                BRepPapá.Enabled = true;
+                LiO.Visible = true;
+                BRepL.Enabled = true;
                 Tiempo1.Stop();
             }
+
+        }
+        private void BAtrasLeccionL_Click(object sender, EventArgs e)
+        {
+            LetraM consonante = new LetraM();
+            voz.Pause();
+            this.Close();
+            consonante.Visible = true;
         }
 
-        private void BRepPapá_Click(object sender, EventArgs e)
+        private void BRepL_Click(object sender, EventArgs e)
         {
-            Pa.Visible = false;
-            Pe.Visible = false;
-            Pi.Visible = false;
-            Po.Visible = false;
-            Pu.Visible = false;
-            Papá.Visible = false;
-            Puma.Visible = false;
-            Pipa.Visible = false;
-            Mapa.Visible = false;
-            PapáO.Visible = false;
+            Velocidad.Visible = false;
+            LA.Visible = false;
+            LE.Visible = false;
+            LI.Visible = false;
+            LO.Visible = false;
+            LU.Visible = false;
+            Lupa.Visible = false;
+            Mula.Visible = false;
+            Pala.Visible = false;
+            Pila.Visible = false;
+            LiO.Visible = false;
+
+            BRepL.Enabled = false;
             Time1 = 0;
             Tiempo1.Start();
         }

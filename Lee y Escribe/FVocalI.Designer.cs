@@ -49,7 +49,7 @@
             // 
             // PVocalI
             // 
-            this.PVocalI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.PVocalI.BackColor = System.Drawing.Color.SteelBlue;
             this.PVocalI.Controls.Add(this.BatrasI);
             this.PVocalI.Controls.Add(this.Velocidad);
             this.PVocalI.Controls.Add(this.PIglesia);
@@ -65,7 +65,8 @@
             // 
             // BatrasI
             // 
-            this.BatrasI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BatrasI.BackColor = System.Drawing.Color.SteelBlue;
+            this.BatrasI.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BatrasI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BatrasI.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BatrasI.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -91,9 +92,10 @@
             // 
             // PIglesia
             // 
-            this.PIglesia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.PIglesia.BackColor = System.Drawing.Color.SteelBlue;
             this.PIglesia.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PIglesia.BackgroundImage")));
             this.PIglesia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PIglesia.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PIglesia.Location = new System.Drawing.Point(70, 43);
             this.PIglesia.Name = "PIglesia";
             this.PIglesia.Size = new System.Drawing.Size(153, 186);
@@ -101,12 +103,15 @@
             this.PIglesia.TabStop = false;
             this.PIglesia.Visible = false;
             this.PIglesia.Click += new System.EventHandler(this.PIglesia_Click);
+            this.PIglesia.MouseLeave += new System.EventHandler(this.PIglesia_MouseLeave);
+            this.PIglesia.MouseHover += new System.EventHandler(this.PIglesia_MouseHover);
             // 
             // PIsla
             // 
-            this.PIsla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.PIsla.BackColor = System.Drawing.Color.SteelBlue;
             this.PIsla.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PIsla.BackgroundImage")));
             this.PIsla.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PIsla.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PIsla.Location = new System.Drawing.Point(501, 12);
             this.PIsla.Name = "PIsla";
             this.PIsla.Size = new System.Drawing.Size(235, 145);
@@ -114,11 +119,14 @@
             this.PIsla.TabStop = false;
             this.PIsla.Visible = false;
             this.PIsla.Click += new System.EventHandler(this.PIsla_Click_1);
+            this.PIsla.MouseLeave += new System.EventHandler(this.PIsla_MouseLeave);
+            this.PIsla.MouseHover += new System.EventHandler(this.PIsla_MouseHover);
             // 
             // PIman
             // 
-            this.PIman.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.PIman.BackColor = System.Drawing.Color.SteelBlue;
             this.PIman.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PIman.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PIman.Image = global::Lee_y_Escribe.Properties.Resources.Imag4;
             this.PIman.Location = new System.Drawing.Point(449, 268);
             this.PIman.Name = "PIman";
@@ -128,10 +136,13 @@
             this.PIman.TabStop = false;
             this.PIman.Visible = false;
             this.PIman.Click += new System.EventHandler(this.PIman_Click);
+            this.PIman.MouseLeave += new System.EventHandler(this.PIman_MouseLeave);
+            this.PIman.MouseHover += new System.EventHandler(this.PIman_MouseHover);
             // 
             // BRepI
             // 
-            this.BRepI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BRepI.BackColor = System.Drawing.Color.SteelBlue;
+            this.BRepI.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BRepI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BRepI.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BRepI.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -147,16 +158,18 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.pictureBox1.BackColor = System.Drawing.Color.SteelBlue;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Location = new System.Drawing.Point(214, 65);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(345, 320);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
+            this.pictureBox1.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
             // 
             // Tiempo1
             // 
@@ -174,6 +187,7 @@
             this.Name = "FVocalI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vocal I";
+            this.Load += new System.EventHandler(this.FVocalI_Load);
             this.PVocalI.ResumeLayout(false);
             this.PVocalI.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).EndInit();

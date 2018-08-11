@@ -61,7 +61,13 @@ namespace Lee_y_Escribe
                         + System.Environment.NewLine
                         + "ama"
                         + System.Environment.NewLine
-                        + "mima");
+                        + "mima"
+                        + System.Environment.NewLine
+                        + "y con la convinación de las sílabas y las palabras podemos formar oracion"
+                         + System.Environment.NewLine
+                        + "como por ejemlo"
+                         + System.Environment.NewLine
+                        + "mi mamá me ama");
             }
             if (Time1 == 15)
             {
@@ -100,6 +106,11 @@ namespace Lee_y_Escribe
             if (Time1 == 30)
             {
                 Mima.Visible = true;
+               
+            }
+            if (Time1 == 39)
+            {
+                MiO.Visible = true;
                 BRepMama.Enabled = true;
                 Tiempo1.Stop();
             }
@@ -107,8 +118,10 @@ namespace Lee_y_Escribe
         }
         private void BAtrasLeccionM_Click(object sender, EventArgs e)
         {
+            LetraM consonante = new LetraM();
             voz.Pause();
             this.Close();
+            consonante.Visible = true;
         }
 
         private void BRepMama_Click(object sender, EventArgs e)
@@ -123,10 +136,16 @@ namespace Lee_y_Escribe
             Mamá.Visible = false;
             Ama.Visible = false;
             Mima.Visible = false;
+            MiO.Visible = false;
 
             BRepMama.Enabled = false;
             Time1 = 0;
             Tiempo1.Start();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

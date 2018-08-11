@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FPapá));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Velocidad = new System.Windows.Forms.TrackBar();
             this.BAtrasA = new System.Windows.Forms.Button();
             this.Mapa = new System.Windows.Forms.Button();
             this.Puma = new System.Windows.Forms.Button();
@@ -44,8 +45,8 @@
             this.Pe = new System.Windows.Forms.Button();
             this.Pa = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.Velocidad = new System.Windows.Forms.TrackBar();
             this.Tiempo1 = new System.Windows.Forms.Timer(this.components);
+            this.PapáO = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Velocidad)).BeginInit();
             this.SuspendLayout();
@@ -53,13 +54,14 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel1.Controls.Add(this.PapáO);
+            this.panel1.Controls.Add(this.BRepPapá);
             this.panel1.Controls.Add(this.Velocidad);
             this.panel1.Controls.Add(this.BAtrasA);
             this.panel1.Controls.Add(this.Mapa);
             this.panel1.Controls.Add(this.Puma);
             this.panel1.Controls.Add(this.Pipa);
             this.panel1.Controls.Add(this.Papá);
-            this.panel1.Controls.Add(this.BRepPapá);
             this.panel1.Controls.Add(this.BAtrasLeccionP);
             this.panel1.Controls.Add(this.Pu);
             this.panel1.Controls.Add(this.Po);
@@ -67,11 +69,22 @@
             this.panel1.Controls.Add(this.Pe);
             this.panel1.Controls.Add(this.Pa);
             this.panel1.Controls.Add(this.panel2);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(805, 540);
+            this.panel1.Size = new System.Drawing.Size(834, 551);
             this.panel1.TabIndex = 4;
+            // 
+            // Velocidad
+            // 
+            this.Velocidad.Location = new System.Drawing.Point(432, 494);
+            this.Velocidad.Minimum = -10;
+            this.Velocidad.Name = "Velocidad";
+            this.Velocidad.Size = new System.Drawing.Size(171, 45);
+            this.Velocidad.TabIndex = 10;
+            this.Velocidad.Value = -2;
+            this.Velocidad.Visible = false;
             // 
             // BAtrasA
             // 
@@ -94,7 +107,7 @@
             this.Mapa.Font = new System.Drawing.Font("Berlin Sans FB Demi", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Mapa.ForeColor = System.Drawing.Color.Black;
             this.Mapa.Image = ((System.Drawing.Image)(resources.GetObject("Mapa.Image")));
-            this.Mapa.Location = new System.Drawing.Point(578, 325);
+            this.Mapa.Location = new System.Drawing.Point(578, 314);
             this.Mapa.Name = "Mapa";
             this.Mapa.Size = new System.Drawing.Size(195, 71);
             this.Mapa.TabIndex = 28;
@@ -110,7 +123,7 @@
             this.Puma.Font = new System.Drawing.Font("Berlin Sans FB Demi", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Puma.ForeColor = System.Drawing.Color.Black;
             this.Puma.Image = ((System.Drawing.Image)(resources.GetObject("Puma.Image")));
-            this.Puma.Location = new System.Drawing.Point(269, 325);
+            this.Puma.Location = new System.Drawing.Point(269, 314);
             this.Puma.Name = "Puma";
             this.Puma.Size = new System.Drawing.Size(187, 71);
             this.Puma.TabIndex = 27;
@@ -126,7 +139,7 @@
             this.Pipa.Font = new System.Drawing.Font("Berlin Sans FB Demi", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pipa.ForeColor = System.Drawing.Color.Black;
             this.Pipa.Image = ((System.Drawing.Image)(resources.GetObject("Pipa.Image")));
-            this.Pipa.Location = new System.Drawing.Point(578, 227);
+            this.Pipa.Location = new System.Drawing.Point(578, 214);
             this.Pipa.Name = "Pipa";
             this.Pipa.Size = new System.Drawing.Size(195, 71);
             this.Pipa.TabIndex = 26;
@@ -142,7 +155,7 @@
             this.Papá.Font = new System.Drawing.Font("Berlin Sans FB Demi", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Papá.ForeColor = System.Drawing.Color.Black;
             this.Papá.Image = ((System.Drawing.Image)(resources.GetObject("Papá.Image")));
-            this.Papá.Location = new System.Drawing.Point(269, 227);
+            this.Papá.Location = new System.Drawing.Point(269, 214);
             this.Papá.Name = "Papá";
             this.Papá.Size = new System.Drawing.Size(187, 71);
             this.Papá.TabIndex = 25;
@@ -158,7 +171,7 @@
             this.BRepPapá.Font = new System.Drawing.Font("Berlin Sans FB Demi", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BRepPapá.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BRepPapá.Image = ((System.Drawing.Image)(resources.GetObject("BRepPapá.Image")));
-            this.BRepPapá.Location = new System.Drawing.Point(608, 458);
+            this.BRepPapá.Location = new System.Drawing.Point(602, 469);
             this.BRepPapá.Name = "BRepPapá";
             this.BRepPapá.Size = new System.Drawing.Size(185, 70);
             this.BRepPapá.TabIndex = 24;
@@ -174,7 +187,7 @@
             this.BAtrasLeccionP.Font = new System.Drawing.Font("Berlin Sans FB Demi", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BAtrasLeccionP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BAtrasLeccionP.Image = ((System.Drawing.Image)(resources.GetObject("BAtrasLeccionP.Image")));
-            this.BAtrasLeccionP.Location = new System.Drawing.Point(250, 458);
+            this.BAtrasLeccionP.Location = new System.Drawing.Point(250, 469);
             this.BAtrasLeccionP.Name = "BAtrasLeccionP";
             this.BAtrasLeccionP.Size = new System.Drawing.Size(176, 70);
             this.BAtrasLeccionP.TabIndex = 23;
@@ -234,7 +247,7 @@
             this.Pe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Pe.Font = new System.Drawing.Font("Berlin Sans FB Demi", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pe.ForeColor = System.Drawing.Color.Black;
-            this.Pe.Location = new System.Drawing.Point(354, 114);
+            this.Pe.Location = new System.Drawing.Point(349, 114);
             this.Pe.Name = "Pe";
             this.Pe.Size = new System.Drawing.Size(107, 76);
             this.Pe.TabIndex = 18;
@@ -266,18 +279,8 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(244, 540);
+            this.panel2.Size = new System.Drawing.Size(244, 551);
             this.panel2.TabIndex = 15;
-            // 
-            // Velocidad
-            // 
-            this.Velocidad.Location = new System.Drawing.Point(419, 407);
-            this.Velocidad.Minimum = -10;
-            this.Velocidad.Name = "Velocidad";
-            this.Velocidad.Size = new System.Drawing.Size(171, 45);
-            this.Velocidad.TabIndex = 10;
-            this.Velocidad.Value = -2;
-            this.Velocidad.Visible = false;
             // 
             // Tiempo1
             // 
@@ -285,11 +288,26 @@
             this.Tiempo1.Interval = 1000;
             this.Tiempo1.Tick += new System.EventHandler(this.Tiempo1_Tick);
             // 
+            // PapáO
+            // 
+            this.PapáO.BackColor = System.Drawing.Color.SteelBlue;
+            this.PapáO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PapáO.Font = new System.Drawing.Font("Berlin Sans FB Demi", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PapáO.ForeColor = System.Drawing.Color.DarkBlue;
+            this.PapáO.Location = new System.Drawing.Point(278, 391);
+            this.PapáO.Name = "PapáO";
+            this.PapáO.Size = new System.Drawing.Size(467, 76);
+            this.PapáO.TabIndex = 29;
+            this.PapáO.Text = "papá ama a mamá";
+            this.PapáO.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.PapáO.UseVisualStyleBackColor = false;
+            this.PapáO.Visible = false;
+            // 
             // FPapá
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(805, 540);
+            this.ClientSize = new System.Drawing.Size(834, 551);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Name = "FPapá";
@@ -320,5 +338,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TrackBar Velocidad;
         private System.Windows.Forms.Timer Tiempo1;
+        private System.Windows.Forms.Button PapáO;
     }
 }

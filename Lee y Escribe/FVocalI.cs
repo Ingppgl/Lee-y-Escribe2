@@ -102,5 +102,50 @@ namespace Lee_y_Escribe
             Thread Decir = new Thread(new ParameterizedThreadStart(Narrador));
             Decir.Start("Isla ");
         }
+
+        private void PIsla_MouseHover(object sender, EventArgs e)
+        {
+            PIsla.Size = new Size(245, 155);
+        }
+
+        private void PIsla_MouseLeave(object sender, EventArgs e)
+        {
+            PIsla.Size = new Size(235, 145);
+        }
+
+        private void PIglesia_MouseHover(object sender, EventArgs e)
+        {
+            PIglesia.Size = new Size(163, 196);
+        }
+
+        private void PIglesia_MouseLeave(object sender, EventArgs e)
+        {
+            PIglesia.Size = new Size(153, 186);
+        }
+
+        private void PIman_MouseHover(object sender, EventArgs e)
+        {
+            PIman.Size = new Size(166, 208);
+        }
+
+        private void PIman_MouseLeave(object sender, EventArgs e)
+        {
+            PIman.Size = new Size(156, 198);
+        }
+
+        private void pictureBox1_MouseHover(object sender, EventArgs e)
+        {
+           pictureBox1.Size = new Size(355, 330);
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox1.Size = new Size(345, 320);
+        }
+
+        private void FVocalI_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
