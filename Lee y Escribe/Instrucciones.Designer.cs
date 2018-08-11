@@ -323,6 +323,7 @@
             this.Salir.Text = "   Salir";
             this.Salir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Salir.UseVisualStyleBackColor = true;
+            this.Salir.Click += new System.EventHandler(this.Salir_Click_1);
             // 
             // Inicio
             // 

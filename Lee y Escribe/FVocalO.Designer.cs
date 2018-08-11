@@ -86,6 +86,7 @@
             // 
             this.BRepO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.BRepO.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BRepO.Enabled = false;
             this.BRepO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BRepO.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BRepO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));

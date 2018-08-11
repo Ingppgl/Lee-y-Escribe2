@@ -78,6 +78,7 @@ namespace Lee_y_Escribe
             POso.Visible = false;
             POjo.Visible = false;
             POlla.Visible = false;
+            BRepO.Enabled = false;
             Time1 = 0;
             Tiempo1.Start();
         }

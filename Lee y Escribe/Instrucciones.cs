@@ -24,7 +24,7 @@ namespace Lee_y_Escribe
         {
             voz.Rate = TVelocidad.Value;
             voz.SelectVoiceByHints(VoiceGender.Female);
-            voz.SetOutputToDefaultAudioDevice();
+            //voz.SetOutputToDefaultAudioDevice();
             voz.Speak(texto.ToString());
         }
         private void Tiempo_Tick(object sender, EventArgs e)
@@ -98,6 +98,12 @@ namespace Lee_y_Escribe
         private void Salir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Salir_Click_1(object sender, EventArgs e)
+        {
+            voz.Pause();
+            Application.Exit();
         }
 
         private void Tiempo3_Tick(object sender, EventArgs e)
